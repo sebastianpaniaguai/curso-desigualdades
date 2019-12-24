@@ -10,13 +10,13 @@ html {
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif !important;
     font-size: 14px;
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(242, 242, 242, 0.7);
+    background-color: #EBF3F8;
 }
 
 body.dhbgapp_fullview {
@@ -25,37 +25,44 @@ body.dhbgapp_fullview {
 
 #body {
     clear: both;
-    margin: auto;
-    padding: 20px 0 70px;
+    margin: 0;
+    padding: 0;
     position: relative;
-    max-width: 1200px;
 }
 
 h1 {
-    font-size: 25px;
-    color: #3f637e;
+    font-size: 42px;
+    color: #5869C9;
+    font-weight: bold;
+    margin: 0 auto;
+} .header-text span {
+    font-size: 18px;
+    color: #5869C9;
     font-weight: normal;
+    margin: 0 auto;
 }
 
 h2 {
-    font-size: 19px;
-    color: #3f637e;
-    border-bottom: dotted 2px #3f637e;
+    font-size: 26px;
+    color: #5869C9;
+    font-weight: bold;
 }
 
 h3 {
-    font-size: 18px;
-    color: #666666;
-    border-bottom: dotted 2px #3f637e;
-    margin-top: 15px;
+    font-size: 23px;
+    color: #5869C9;
+    font-weight: normal;
 }
 
 h4 {
-    font-size: 15px;
+    font-size: 21px;
+    color: #000;
+    font-weight: normal;
 }
 
 h5 {
-    font-size: 14px;
+    font-size: 18px;
+    font-weight: normal;
 }
 
 h6 {
@@ -74,11 +81,11 @@ pre {
 cite {
     font-weight: normal;
     font-style: italic;
-    color: #444;
+    color: #211915;
 }
 
 em {
-    color: #b24926;
+    color: #FFA630;
 }
 
 p {
@@ -87,6 +94,11 @@ p {
 
 img {
     border: 0;
+}
+
+a {
+    color: #5869C9;
+    font-weight: 600;
 }
 
 br.clear, div.clear {
@@ -228,16 +240,52 @@ img.animation, img.play-animation, .animation_image .label {
 /* CONTENT AREA
 /********************************************************************************/
 main {
-    padding: 15px;
+    padding: 25px 10px 25px 50px;
     border: 1px solid #c9c9c9;
     border-radius: 15px;
-    box-shadow: 8px 8px 8px #c9c9c9;
+    box-shadow: 0 0 2.4px rgba(0,0,0,0.3);
     background-color: #fff;
+    width: 73%;
+    margin: 0 auto;
+    max-height: 70vh;
+}
+
+main section {
+    max-height: 70vh;
+    overflow-y: scroll;
+    margin: 0 auto;
+    width: calc(100% - 15px);
+}
+
+main section::-webkit-scrollbar {
+    width: 1em;
+    margin-left: 15px;
+}
+main section::-webkit-scrollbar-track {
+    background-color: #DFE5F0;
+    height: 90%;
+    border-radius: 10px;
+}
+main section::-webkit-scrollbar-thumb {
+    background-color: #5869C9;
+    outline: 1px solid #5869C9;
+    border-radius: 10px;
 }
 
 .page-title {
-    text-align: center;
+    text-align: left;
 }
+
+header.current {
+    width: 100%;
+}
+
+.header-text {
+    width: 75%;
+    margin: 30px auto;
+    text-transform: uppercase;
+}
+
 
 /********************************************************************************/
 /* MENUS
@@ -248,12 +296,13 @@ main {
 /*--------------------------*/
 
 nav.horizontal {
-    background-color: #007fff;
     font-size: 14px;
     z-index: 99;
-    box-shadow: 0 4px 5px 2px #c4c4c4;
+    width: 95%;
+    margin: 0 auto;
     margin-bottom: 10px;
-    border-radius: 5px;
+    border-radius: 0 0 35px 35px;
+    background-image: linear-gradient(to right, #00E2D6, #00BAAC);
 }
 
 nav.horizontal:after {
@@ -262,10 +311,10 @@ nav.horizontal:after {
     display: block;
 }
 
-nav.horizontal.scroll_top {
+/* nav.horizontal.scroll_top {
     position: fixed;
     top: 0;
-}
+} */
 
 nav.horizontal ul.menu {
     margin: 0;
@@ -297,7 +346,7 @@ nav.horizontal ul.menu > li.withsubitems:after {
 }
 
 nav.horizontal ul.menu > li.first-child {
-    border-radius: 5px 0 0 5px;
+    border-radius: 0 0 0 35px;
 }
 
 nav.horizontal ul.menu > li.active, nav.horizontal ul.menu li.current {
