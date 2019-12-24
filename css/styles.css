@@ -122,11 +122,11 @@ ul.data_list li {
 }
 
 ul.data_list li:before {
-    content: "\f109";
+    content: "\f400";
     font-family: "Ionicons";
     position: relative;
     left: -5px;
-    color: #f6ae00;
+    color: #5869C9;
     font-weight: bold;
 }
 
@@ -247,14 +247,19 @@ main {
     background-color: #fff;
     width: 73%;
     margin: 0 auto;
-    max-height: 70vh;
+    max-height: 67vh;
 }
 
 main section {
-    max-height: 70vh;
+    max-height: 60vh;
     overflow-y: scroll;
     margin: 0 auto;
     width: calc(100% - 15px);
+}
+
+main section>* {
+    width: 95%;
+    margin: 0 auto;
 }
 
 main section::-webkit-scrollbar {
@@ -548,13 +553,33 @@ footer {
 }
 
 .box-text > .title {
-    font-size: 18px;
+    font-size: 22px;
     margin: 0 0 5px 0;
     font-weight: bold;
+    background: #e87469;
+    color: #fff;
+    border-radius: 25px;
+    padding: 5px 0 5px 47px;
+    width: 50%;
+}
+
+.box-text {
+    max-width: 800px;
+    margin: 10px auto;
+    position: relative;
+    padding: 20px;
+    text-align: justify;
+    font-size: 14px;
+}
+
+.box-text .box_body{
+    background-color: #F1F4F7;
+    border-radius: 25px;
+    padding: 3rem;
 }
 
 /********* important ********/
-.box-text.important {
+/* .box-text.important {
     max-width: 800px;
     margin: 10px auto;
     background: #E2793D;
@@ -574,7 +599,7 @@ footer {
 .box-text.important .box_body em {
     color: #ffffff;
     font-weight: bold;
-}
+} */
 
 /********* box_example ********/
 .box-text.example {
