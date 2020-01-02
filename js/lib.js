@@ -118,13 +118,13 @@ dhbgApp.standard.start = function() {
 
             switch (type) {
                 case 'horizontal':
-                    var $box_label = $('<div class="results_value"><label>0</label><br />%</div>');
+                    var $box_label = $('<div class="results_value"><label>0</label>%</div>');
                     var $label = $box_label.find('label');
                     var $box_bar = $('<div class="results_level"><div></div></div>');
                     var $bar = $box_bar.find('div');
-                    $this.append($box_label);
-                    $this.append($box_bar);
                     $this.append('<div class="progress_text">' + progress_text + '</div>')
+                    $this.append($box_bar);
+                    $this.append($box_label);
                     dhbgApp.loadProgress = function(progress) {
                         $bar.css('width', progress + '%');
                         $label.text(progress);

@@ -1917,9 +1917,9 @@ sup.tooltip {
 /********************************************************************************/
 /* GLOBALS
 /********************************************************************************/
-.globals i.maximize { display: none; }
-.globals .minimized i.minimize { display: none; }
-.globals .minimized i.maximize { display: inline; }
+i.maximize { display: none; }
+.minimized i.minimize { display: none; }
+.minimized i.maximize { display: inline; }
 
 /********************************************************************************/
 /* RESULTS
