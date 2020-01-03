@@ -28,6 +28,7 @@ body.dhbgapp_fullview {
     margin: 0;
     padding: 0;
     position: relative;
+    margin: 0 auto;
 }
 
 h1 {
