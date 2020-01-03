@@ -661,3 +661,32 @@
     padding: 3%;
     border: 2px dotted #aaaaaa;
 }
+
+/* Custom styles for each OVA */
+.text-image.right .box_media {
+    width: 300px;
+    float: right;
+}
+.text-image.left .box_media {
+    width: 300px;
+    float: left;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.text-image {
+    *zoom: 1;
+  }
+  .text-image:before, 
+  .text-image:after {
+    content: '';
+    display: table;
+  }
+  .text-image:after {
+    clear: both;
+  }

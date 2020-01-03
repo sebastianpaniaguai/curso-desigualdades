@@ -32,7 +32,7 @@ body.dhbgapp_fullview {
 }
 
 h1 {
-    font-size: 42px;
+    font-size: 35px;
     color: #5869C9;
     font-weight: bold;
     margin: 0 auto;
@@ -239,6 +239,10 @@ img.animation.loading {
 
 .box_media {
     text-align: center;
+}
+
+.box_media img {
+    max-width: 600px;
 }
 
 /********************************************************************************/
