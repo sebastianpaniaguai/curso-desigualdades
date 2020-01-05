@@ -1326,14 +1326,14 @@ sup.tooltip {
 
 /* Vertical pagination */
 .ctrl-pagination.vertical ul.pagination {
-    position: absolute;
+    /* position: absolute; */
     right: 12px;
     top: 0;
     bottom: 0;
 }
 
 .ctrl-pagination.vertical .pagination.arrows .button {
-    position: absolute;
+    /* position: absolute; */
     right: 0;
 }
 
