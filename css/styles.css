@@ -93,6 +93,8 @@ em {
 
 p {
     line-height: 20px;
+    text-align: justify;
+    margin: 0.3rem auto;
 }
 
 img {
@@ -239,6 +241,7 @@ img.animation.loading {
 
 .box_media {
     text-align: center;
+    margin: 0.3rem auto;
 }
 
 .box_media img {

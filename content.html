@@ -58,6 +58,8 @@
     <script src="components/scorm/SCORM_12_APIWrapper.js"> </script>
     <script src="components/scorm/scorm_api.js"> </script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/maphilight/1.4.0/jquery.maphilight.js"></script>
+
     <style type='text/css'>
         body {
             background-color: rgba(242, 242, 242, 0.7);
@@ -100,7 +102,7 @@
                             data-page="pag-que-se-mide">
                         </menuitem>
                         <menuitem label="3. ¿Cómo se explican las desigualdades geográficas de la salud?"
-                            data-page="pag-contenidointeractivo">
+                            data-page="pag-como-se-explican">
                         </menuitem>
                         <menuitem label="4. Monitoreo de las desigualdades e inequidades geográficas de la salud"
                             data-page="pag-actividades">
@@ -250,23 +252,160 @@
                         <p>Manual para el Monitoreo de las Desigualdades en Salud, con especial énfasis en países de
                             ingresos medianos y bajos. Washington, D.C.: OPS, 2016.</p>
                     </div>
-                    <p>Uno de los primeros pasos para determinar la magnitud de las inequidades geográficas de la salud es la medición de las desigualdades geográficas, esto es, de las diferencias entre los territorios en los resultados en salud (desigualdad total). En este sentido, la valoración de las desigualdades geográficas en salud es una tarea relativamente fácil, dado que se basa en la valoración de igualdad en los niveles de salud de los territorios. <br>El segundo paso se basa en la evaluación de la equidad geográfica, la cual se realiza a través del análisis de las desigualdades geográficas de la salud entre los territorios con diferentes características sociales (desigualdad social). De acuerdo a la Organización Panamericana de la Salud; las diferencias observables entre territorios que pueden asociarse con distintas desventajas, como la pobreza, el desarrollo, la calidad de vida, la ruralidad y la falta de acceso a servicios o bienes; sirven como un medio indirecto para evaluar la inequidad geográfica en salud.
+                    <p>Uno de los primeros pasos para determinar la magnitud de las inequidades geográficas de la salud
+                        es la medición de las desigualdades geográficas, esto es, de las diferencias entre los
+                        territorios en los resultados en salud (desigualdad total). En este sentido, la valoración de
+                        las desigualdades geográficas en salud es una tarea relativamente fácil, dado que se basa en la
+                        valoración de igualdad en los niveles de salud de los territorios. <br>El segundo paso se basa
+                        en la evaluación de la equidad geográfica, la cual se realiza a través del análisis de las
+                        desigualdades geográficas de la salud entre los territorios con diferentes características
+                        sociales (desigualdad social). De acuerdo a la Organización Panamericana de la Salud; las
+                        diferencias observables entre territorios que pueden asociarse con distintas desventajas, como
+                        la pobreza, el desarrollo, la calidad de vida, la ruralidad y la falta de acceso a servicios o
+                        bienes; sirven como un medio indirecto para evaluar la inequidad geográfica en salud.
                     </p>
                     <div class="box-text connection">
-                        <p>Surge entonces la pregunta: ¿Por qué estudiar las desigualdades e inequidades geográficas de la salud? 
+                        <p>Surge entonces la pregunta: ¿Por qué estudiar las desigualdades e inequidades geográficas de
+                            la salud?
                         </p>
                     </div>
                     <p>Existen razones de peso para preocuparse  —y ocuparse—  de tales diferencias en salud:
                     </p>
-                    <div class="ctrl-pagination" data-layer-height="180px" data-orientation="vertical" >
+                    <div class="ctrl-pagination" data-layer-height="260px" data-orientation="vertical">
                         <li>
-                          Contenido primera página
+                            <div class="flexbox">
+                                <p>La persistencia de diferencias en salud basadas en territorios y sus factores
+                                    sociales generan preocupaciones morales, ofendiendo la noción básica de rectitud y
+                                    justicia de mucha gente.</p>
+                                <div class="box_media">
+                                    <img src="content/img8_1.png">
+                                    <div class="about"><b>Imagen 3</b> Rectitud y justicia (2019)</div>
+                                </div>
+                            </div>
                         </li>
                         <li>
-                          Segunda página
+                            <div class="flexbox">
+                                <p>Aunque una miríada de recursos y resultados están distribuidos irregularmente entre
+                                    territorios, las diferencias en salud pueden considerarse un problema
+                                    particularmente objetable desde la perspectiva de los derechos humanos.</p>
+                                <div class="box_media">
+                                    <img src="content/img8_2.png">
+                                    <div class="about"><b>Imagen 4</b> Derechos humanos (2019)</div>
+                                </div>
+                            </div>
                         </li>
-                      </div>
+                        <li>
+                            <div class="flexbox">
+                                <p>El concepto de salud como derecho humano se consagró en la Declaración Universal de
+                                    Derechos Humanos de la Asamblea General de las Naciones Unidas de 1948 y desde
+                                    entonces se ha reflejado en las constituciones nacionales, los tratados y las leyes,
+                                    políticas y programas domésticos en países de todo el mundo, enfatizando el valor
+                                    singular que las sociedades adscriben a la salud. </p>
+                                <div class="box_media">
+                                    <img src="content/img8_3.png">
+                                    <div class="about"><b>Imagen 5</b> Asamblea General de
+                                        las Naciones Unidas (2019)</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="flexbox">
+                                <p>La propia equidad geográfica en salud también está valorándose cada vez en mayor
+                                    medida. <br><b>Por ejemplo:</b><br>
+                                    La Organización Mundial de la Salud reconoce la equidad geográfica en salud como una
+                                    prioridad,
+                                    como se refleja en parte con el establecimiento de su Comisión sobre los
+                                    Determinantes Sociales de la Salud en 2005.
+                                </p>
+                                <div class="box_media">
+                                    <img src="content/img8_4.png">
+                                    <div class="about"><b>Imagen 6</b> Equidad geográfica (2019)</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="flexbox">
+                                <p>Esta comisión recopila y sintetiza evidencia global sobre los determinantes sociales
+                                    de la salud y recomienda acciones que se dirigen a las inequidades geográficas en
+                                    salud. <br>
+                                    De manera análoga, la Organización de las Naciones Unidas también ha asignado un
+                                    valor explícito a la equidad. Los Objetivos de Desarrollo Sostenible, que caducan en
+                                    2030, se han centrado en metas que van más allá de los promedios nacionales, los
+                                    cuales ocultan las desigualdades geográficas, abordando por lo tanto las
+                                    desigualdades en salud por razones de área geográfica y el acceso inequitativo a la
+                                    atención de salud.
+                                </p>
+                            </div>
+                        </li>
+                    </div>
+                    <div class="box-text important" label="Mensaje clave…">
+                        <h3>Desigualdad geográfica total versus inequidad geográfica en salud</h3>
+                        <div class="text-image right">
+                            <div class="box_media">
+                                <img src="content/img9.png">
+                                <div class="about"><b>Imagen 7</b> Desigualdad geográfica total versus
+                                    inequidad geográfica en salud (2019)</div>
+                            </div>
+                            <p>Quienes estudian las desigualdades en salud deberían considerar una decisión fundamental
+                                respecto a si desean medir la distribución general de la salud (desigualdad total) o las
+                                desigualdades entre grupos sociales (desigualdad social). Las mediciones de la
+                                desigualdad total solo consideran variables de indicadores de salud y requieren cálculos
+                                como la desviación estándar y la varianza. Estudiar la desigualdad social en salud
+                                (inequidad geográfica) exige la convergencia de al menos dos variables: el indicador de
+                                salud y el indicador de equidad. Las mediciones de la desigualdad social pueden indicar
+                                situaciones de inequidad en salud cuando las diferencias en salud entre distintos grupos
+                                sociales se juzgan injustas o arbitrarias.</p>
+                        </div>
+                    </div>
+                    <div class="box-text connection">
+                        <p>Identifiquemos cómo se explican las desigualdades geográficas de la salud. Haz clic en
+                            siguiente para continuar.</p>
+                    </div>
                 </div>
+            </section>
+            <section id="pag-como-se-explican" ptitle="¿Cómo se explican las desigualdades geográficas de la salud?">
+                <h2 class="page-title"></h2>
+                <div class="box_media">
+                    <img src="content/img10.png">
+                    <div class="about"><b>Foto 3</b> Descripción de las desigualdades geográficas de la salud (2019)
+                        Fotografía recuperada de<br><a
+                            href="https://pixabay.com/es/photos/mujer-c%C3%A1mara-mano-lente-tierra-246236/ "
+                            target="_blank">https://pixabay.com/es/photos/mujer-c%C3%A1mara-mano-lente-tierra-246236/</a>
+                    </div>
+                </div>
+                <div class="box-text note" label="Fuente">
+                    <p>Arcaya MC, Arcaya AL, Subramanian SV. Inequalities in health: definitions, concepts, and
+                        theories. Glob Health Action. 2015, 8:27106 - <a href="http://dx.doi.org/10.3402 /gha.v8.27106"
+                            target="_blank">http://dx.doi.org/10.3402 /gha.v8.27106</a></p>
+                </div>
+                <p>Los epidemiólogos sociales aplican los conceptos presentados anteriormente para tratar de comprender
+                    mejor los mecanismos por los cuales surgen las diferencias geográficas en salud y con ello
+                    proporcionar más opciones para diseñar soluciones de política a problemas reales.
+                </p>
+                <p>En este sentido, un concepto fundamental es el de selección, que se refiere al hecho de que la gente
+                    tiende a auto-clasificarse en barrios, municipios y otros conglomerados.
+                </p>
+                <div class="box-text example" label="Por ejemplo...">
+                    <p>La gente que valora la actividad física puede estar más dispuesta a mudarse a zonas caminables,
+                        mientras que los individuos sedentarios podrían escoger vivir en suburbios auto‑dependientes.
+                    </p>
+                </div>
+                <p>Cuando la selección puede ser una fuente de desigualdades geográficas en salud, los investigadores
+                    generalmente buscan distinguir los efectos contextuales de los efectos composicionales, veamos en
+                    qué consisten esos conceptos:
+                </p>
+                <img class="maphilight" src="content/img11.png" alt="Esquema de contenidos" usemap="#newmap"
+                    data-mark-stroke-color="B9E6F5" data-mark-fill-color="B9E6F5" data-mark-opacity="0.5" />
+                <map name="newmap">
+                    <area shape="rect" coords="16,15,211,257" href="#" alt="Textos especiales" data-ref="pag-textos">
+                    <area shape="rect" coords="317,16,512,258" href="#" alt="Multimedia" data-ref="pag-media">
+                    <area shape="rect" coords="635,15,830,257" href="#" alt="Formato de contenido"
+                        data-ref="pag-contenidointeractivo">
+                    <area shape="rect" coords="17,328,212,570" href="#" alt="Actividades" data-ref="pag-actividades">
+                    <area shape="circle" coords="412,422,90" href="#" alt="Referencias" data-ref="pag-referencias">
+                    <area shape="poly" coords="644,410,673,369,795,369,820,407,789,447,677,444,658,427" href="#"
+                        alt="Maquetación" data-ref="pag-maquetacion">
+                </map>
             </section>
         </main>
 

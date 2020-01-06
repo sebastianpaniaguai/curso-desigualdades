@@ -423,6 +423,51 @@ dhbgApp.standard.start = function() {
     });
 
     // ==============================================================================================
+    // "Custom Mouse over"
+    // ==============================================================================================
+
+    //Special activity, mouse over
+    $('.act_mouse_over').on('mouseover', function() {
+        var selector = $(this).attr('data-ref');
+        $(selector).show();
+    });
+
+    $('.act_mouse_over').on('mouseout', function() {
+        var selector = $(this).attr('data-ref');
+        $(selector).hide();
+    });
+
+    //Map object
+    $('.show_map').on('click', function () {
+        var $this = $(this);
+        var w = $this.attr('data-property-width') ? $this.attr('data-property-width') : 920;
+
+        $this.find('.element').dialog({ width: w, modal: true, dialogClass: 'map_dialog',
+            close: function( event, ui ) {
+                $(this).dialog( "destroy" );
+            }
+        });
+    });
+
+    //Special activity, mouse over with one visible
+    $('.act_mouse_over_one').each(function(){
+        var $this = $(this);
+
+        $this.find('[data-ref]').on('mouseover', function() {
+            $this.find('[data-ref]').each(function() {
+                $($(this).attr('data-ref')).hide();
+            });
+
+            $this.parent().find('.button').removeClass('current');
+
+            var selector = $(this).attr('data-ref');
+            $(selector).show();
+            $(this).addClass('current');
+        });
+    });
+
+
+    // ==============================================================================================
     // Image animations
     // ==============================================================================================
     var f_reloadanimation = function ($this) {
@@ -2818,6 +2863,15 @@ dhbgApp.standard.load_operations = function() {
 
             $this.find('img').maphilight( { fill : true, fillColor: fill_color, fillOpacity: opacity, strokeColor: stroke_color } );
         }
+
+        $('.maphilight').maphilight({
+            fillColor: "40d9ca",
+            strokeColor: "40d9ca",
+            strokeWidth: 0.1,
+            fillOpacity: 0.5,
+            groupBy: 'rel'
+        });
+        $('img[usemap]').imageMap();
     };
 
     dhbgApp.actions.activitySelection = function ($this) {

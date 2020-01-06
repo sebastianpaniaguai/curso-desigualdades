@@ -690,3 +690,17 @@ img {
   .text-image:after {
     clear: both;
   }
+
+.flexbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.flexbox p {
+    flex-grow: 1;
+}
+.flexbox .box_media {
+    flex-grow: 1;
+}
