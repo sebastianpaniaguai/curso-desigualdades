@@ -829,7 +829,7 @@ footer {
     font-family: Poppins, sans-serif;
     padding: 0;
     max-height: 90vh;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .global-modal .ui-dialog-titlebar {
@@ -1531,6 +1531,31 @@ sup.tooltip {
 
 .box_end .wrong {
     color: #D60C1B;
+}
+
+.global-modal .feedback_activities_img {
+    content: " ";
+    background: url(../img/sprite_actividades.png);
+    background-repeat: no-repeat;
+    background-size: 200%;
+    width: 100%;
+    height: 0;
+    padding-bottom: 50%;
+    flex: 0 0 60%;
+}
+
+.global-modal .correct, .global-modal .wrong {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+} 
+
+.global-modal .correct .feedback_activities_img {
+    background-position: 0 0;
+}
+.global-modal .wrong .feedback_activities_img {
+    background-position: 100% 0;
 }
 
 .saving .activity_modal {
