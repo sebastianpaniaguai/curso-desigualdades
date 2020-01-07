@@ -2856,23 +2856,32 @@ dhbgApp.standard.load_operations = function() {
         $box_verify.append($verify);
         $this.append($box_verify);
 
-        if (mark_type == 'map') {
-            var fill_color = $this.attr('data-mark-fill-color') ? $this.attr('data-mark-fill-color') : 'ffffff';
-            var stroke_color = $this.attr('data-mark-stroke-color') ? $this.attr('data-mark-stroke-color') : 'ffffff';
-            var opacity = $this.attr('data-mark-opacity') ? parseFloat($this.attr('data-mark-opacity')) : 0.4;
+        // $('.maphilight').each(function(){
+        //     var $this = $(this);
+        //     var fill_color = $this.attr('data-mark-fill-color') ? $this.attr('data-mark-fill-color') : 'ffffff';
+        //     var stroke_color = $this.attr('data-mark-stroke-color') ? $this.attr('data-mark-stroke-color') : 'ffffff';
+        //     var opacity = $this.attr('data-mark-opacity') ? parseFloat($this.attr('data-mark-opacity')) : 0.4;
+        //     // $("#pag-esquema").fadeIn(500, function(){
+        //       $this.maphilight( { fill : true, fillColor: fill_color, fillOpacity: opacity, strokeColor: stroke_color } );
+        //     // });
+        // });
+        // $('canvas').css({ 'width': '', 'height': '' }); //Esta linea permite el funcionamiento del plugin maphilight
+    
 
-            $this.find('img').maphilight( { fill : true, fillColor: fill_color, fillOpacity: opacity, strokeColor: stroke_color } );
-        }
-
-        $('.maphilight').maphilight({
-            fillColor: "40d9ca",
-            strokeColor: "40d9ca",
-            strokeWidth: 0.1,
-            fillOpacity: 0.5,
-            groupBy: 'rel'
-        });
-        $('img[usemap]').imageMap();
+        
     };
+
+    $('.maphilight').each(function(){
+        var $this = $(this);
+        var fill_color = $this.attr('data-mark-fill-color') ? $this.attr('data-mark-fill-color') : 'ffffff';
+        var stroke_color = $this.attr('data-mark-stroke-color') ? $this.attr('data-mark-stroke-color') : 'ffffff';
+        var opacity = $this.attr('data-mark-opacity') ? parseFloat($this.attr('data-mark-opacity')) : 0.4;
+        // $("#pag-esquema").fadeIn(500, function(){
+          $this.maphilight( { fill : true, fillColor: fill_color, fillOpacity: opacity, strokeColor: stroke_color } );
+        // });
+    });
+    $('canvas').css({ 'width': '', 'height': '' }); //Esta linea permite el funcionamiento del plugin maphilight
+
 
     dhbgApp.actions.activitySelection = function ($this) {
         var scorm_id = $this.attr('data-act-id') ? $this.attr('data-act-id') : 'selection';
