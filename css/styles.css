@@ -32,7 +32,7 @@ body.dhbgapp_fullview {
 }
 
 h1 {
-    font-size: 42px;
+    font-size: 35px;
     color: #5869C9;
     font-weight: bold;
     margin: 0 auto;
@@ -93,6 +93,8 @@ em {
 
 p {
     line-height: 20px;
+    text-align: justify;
+    margin: 0.3rem auto;
 }
 
 img {
@@ -239,6 +241,15 @@ img.animation.loading {
 
 .box_media {
     text-align: center;
+    margin: 0.3rem auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box_media img {
+    max-width: 600px;
 }
 
 /********************************************************************************/
@@ -327,6 +338,11 @@ header.current {
     margin: 30px auto;
     text-transform: uppercase;
 }
+
+.maphilight {
+    display: inherit;
+}
+
 
 
 /********************************************************************************/
@@ -764,10 +780,11 @@ footer {
 /********************************************************************************/
 .wf-content {
     position: absolute;
-    padding: 10px 15px;
+    padding: 10px 40px;
     background: #F1F4F7;
     ;
     border-radius: 10px;
+    bottom: 50%;
 }
 
 .wf-content.autox {
@@ -811,6 +828,8 @@ footer {
     border-radius: 25px;
     font-family: Poppins, sans-serif;
     padding: 0;
+    max-height: 90vh;
+    overflow-y: scroll;
 }
 
 .global-modal .ui-dialog-titlebar {
@@ -1023,7 +1042,7 @@ sup.tooltip {
 
 .text_tooltip {
     padding: 10px;
-    line-height: 10px;
+    line-height: 15px;
 }
 
 .ui-tooltip-content {
@@ -1354,7 +1373,7 @@ sup.tooltip {
     margin-left: -50px;
     box-shadow: 2px 2px 5px #acacac;
     color: #ffffff;
-    background-color: #E2793D;
+    background-color: #5869C9;
     padding: 5px 20px;
     border-radius: 9px;
     font-size: 16px;
@@ -2323,6 +2342,15 @@ ul.menu.horizontal>li:nth-child(7) .top-menu-icons {background-position: 105% 0;
 .measuring-progress.vertical .progress_text {
     position: absolute;
     top: 30px;
+}
+
+
+ul.bibliografia {
+    list-style: none;
+}
+
+ul.bibliografia li {
+    margin: 1rem auto;
 }
 
 /********************************************************************************/
