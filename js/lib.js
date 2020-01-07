@@ -1900,13 +1900,17 @@ dhbgApp.standard.load_operations = function() {
                     if (count_questions > 1) {
                         var msg;
                         if (weight >= dhbgApp.evaluation.approve_limit) {
-                            msg = '<div class="correct">' + dhbgApp.s('all_correct_percent', weight) + '</div>';
+                            msg = '<div class="correct">' + dhbgApp.s('all_correct_percent', weight) + '<div class="feedback_activities_img"></div></div>';
                         }
                         else {
-                            msg = '<div class="wrong">' + dhbgApp.s('wrong_percent', (100 - weight)) + '</div>';
+                            msg = '<div class="wrong">' + dhbgApp.s('wrong_percent', (100 - weight)) + '<div class="feedback_activities_img"></div></div>';
                         }
                         $box_end.empty();
                         $box_end.append(msg).show();
+                        var $dialog_answer_required = $('<div>' + msg + '</div>').dialog({modal: true, autoOpen: true, classes: {"ui-dialog":"global-modal"}, width: "60%", maxWidth: "1000px" });
+                        $dialog_answer_required.dialog('open')
+    
+                        
                     }
                     else {
                         $box_end.show();
