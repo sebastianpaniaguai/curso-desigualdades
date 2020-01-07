@@ -829,7 +829,7 @@ footer {
     font-family: Poppins, sans-serif;
     padding: 0;
     max-height: 90vh;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .global-modal .ui-dialog-titlebar {

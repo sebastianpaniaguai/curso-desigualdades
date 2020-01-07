@@ -586,7 +586,8 @@ dhbgApp.standard.start = function() {
         width: dhbgApp.documentWidth - 50,
         height: dhbgApp.documentHeight - 50,
         classes: {
-            "ui-dialog": "results_page_dialog"
+            "ui-dialog": "results_page_dialog",
+            "ui-dialog": "global-modal"
         },
         close: function() {
             $('body').removeClass('dhbgapp_fullview');
@@ -2680,12 +2681,21 @@ dhbgApp.standard.load_operations = function() {
 
             var msg;
             if (weight >= dhbgApp.evaluation.approve_limit) {
-                msg = '<div class="correct">' + dhbgApp.s('all_correct_percent', weight) + '</div>';
+                if(scorm_id==='Actividad 1 - Ordenar') {
+                    msg = '<div class="correct"><p>' + dhbgApp.s('act_1_correct') + '</p></div>';
+                } else
+                msg = '<div class="correct"><p>' + dhbgApp.s('all_correct_percent', weight) + '</p></div>';
             }
             else {
-                msg = '<div class="wrong">' + dhbgApp.s('wrong_percent', (100 - weight)) + '</div>';
+                if(scorm_id==='Actividad 1 - Ordenar') {
+                    msg = '<div class="wrong"><p>' + dhbgApp.s('act_1_wrong') + '</p></div>';
+                } else
+                msg = '<div class="wrong"><p>' + dhbgApp.s('wrong_percent', (100 - weight)) + '</p></div>';
             }
             $box_end.append(msg).show();
+            var $dialog_answer_required = $('<div>' + msg + '</div>').dialog({modal: true, autoOpen: true, classes: {"ui-dialog":"global-modal"} });
+            $dialog_answer_required.dialog('open')
+
 
             activity.disable();
             activity.highlight('correct', 'wrong');
