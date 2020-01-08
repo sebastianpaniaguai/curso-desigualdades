@@ -1395,7 +1395,7 @@ sup.tooltip {
 .datatable th {
     padding: 5px;
     text-align: center;
-    background-color: #E2793D;
+    background-color: #5869C9;
     border: 1px solid #999999;
     border-top-width: 0;
     color: #ffffff;
@@ -1638,7 +1638,7 @@ span.feedback_title {
 
 .jpit_activities_quiz_question_option_answer label:hover,
 .jpit_activities_quiz_question_option_answer_selected label {
-    background-color: #E2793D;
+    background-color: #5869C9;
 }
 
 .jpit_activities_quiz_question_option_answer_selected {
@@ -1794,7 +1794,7 @@ span.feedback_title {
 }
 
 .jpit-activities-wordpuzzle .layout button.jpit_activity_wordpuzzle_cell_selected {
-    background-color: #E2793D;
+    background-color: #5869C9;
     color: #ffffff;
 }
 
@@ -1849,7 +1849,7 @@ span.feedback_title {
 
 .jpit-activities-crossword .jpit_activity_crossword_label {
     border-radius: 10px;
-    background-color: #E2793D;
+    background-color: #5869C9;
     color: #ffffff;
     background-image: none;
 }
@@ -1869,6 +1869,7 @@ span.feedback_title {
     text-align: center;
     cursor: move;
     padding: 5px;
+    max-width: 350px;
 }
 
 .jpit-activities-droppable .draggable.disabled {
@@ -1876,7 +1877,7 @@ span.feedback_title {
 }
 
 .jpit-activities-droppable .jpit_activities_jpitdroppable_dropped {
-    background-color: #E2793D;
+    background-color: #5869C9;
     color: #ffffff;
     border: 1px solid #ffffff;
 }
@@ -1891,6 +1892,14 @@ span.feedback_title {
 .jpit-activities-droppable:after {
     content: "";
     display: inline-block;
+}
+
+.droppable-dialog-text {
+    text-align: center;
+    color: #5869C9;
+    font-weight: bold;
+    max-width: 80%;
+    font-size: 18px;
 }
 
 /********************************************************************************/

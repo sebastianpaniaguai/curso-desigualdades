@@ -2743,6 +2743,15 @@ dhbgApp.standard.load_operations = function() {
 
         $this.find('words').empty();
 
+        var feedbacktrue = dhbgApp.s('all_correct'), feedbackfalse = dhbgApp.s('all_wrong');
+        if ($this.find('feedback correct').text() != '') {
+            feedbacktrue = $this.find('feedback correct').html();
+        }
+
+        if ($this.find('feedback wrong').text() != '') {
+            feedbackfalse = $this.find('feedback wrong').html();
+        }
+
         var properties = {
             "onfinished": function (a) {
                 var weight = Math.round(a.countCorrect() * 100 / a.words.length);
@@ -2755,12 +2764,24 @@ dhbgApp.standard.load_operations = function() {
                     dhbgApp.scorm.activityAttempt(scorm_id, weight);
                 }
                 dhbgApp.printProgress();
+
+                var msg;
+                if (weight == 100) {
+                    msg = '<div class="correct"><p>' + (feedbacktrue ? feedbacktrue : dhbgApp.s('all_correct_percent', weight)) + '</p><div class="feedback_activities_img"></div></div>';
+                }
+                else {
+                    msg = '<div class="wrong"><p>' + (feedbackfalse ? feedbackfalse : dhbgApp.s('wrong_percent', (100 - weight))) + '</p><div class="feedback_activities_img"></div></div>';
+                }
+
+                var $dialog_answer_required = $('<div>' + msg + '</div>').dialog({modal: true, autoOpen: true, classes: {"ui-dialog":"global-modal"}, width: "60%", maxWidth: "1000px" });
+                $dialog_answer_required.dialog('open')    
             },
         };
 
         // Build the board.
         var activity = new jpit.activities.check.init($this, words, properties);
         activity.noneString = dhbgApp.s('none');
+
 
     };
 

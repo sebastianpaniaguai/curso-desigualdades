@@ -334,6 +334,14 @@
     color: #D60C1B;
 }
 
+.jpit-activities-droppable .droppable {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid;
+    width: 350px;
+    height: 25px;
+}
+
 /********************************************************************************/
 /* Actividad arrastrar y soltar - completar
 /********************************************************************************/
@@ -526,8 +534,12 @@
 /********************************************************************************/
 /* Actividad Clasificar, formato de marcador.
 /********************************************************************************/
+
+.jpit-activities-check .board {
+    display: flex;
+}
 .jpit-activities-check .check_left {
-    float: left;
+    /* float: left; */
     width: 50%;
 }
 
@@ -541,7 +553,7 @@
 }
 
 .jpit-activities-check .check_right {
-    float: right;
+    /* float: right; */
 }
 
 .jpit-activities-check .buttons {
