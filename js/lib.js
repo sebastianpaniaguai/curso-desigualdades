@@ -2439,6 +2439,15 @@ dhbgApp.standard.load_operations = function() {
             revert: true
         });
 
+        var feedbacktrue = '', feedbackfalse = '';
+        if ($this.find('feedback correct').text() != '') {
+            feedbacktrue = $this.find('feedback correct').html();
+        }
+
+        if ($this.find('feedback wrong').text() != '') {
+            feedbackfalse = $this.find('feedback wrong').html();
+        }
+
         // Build the board.
         var origins = [], targets = [], pairs = [],  pair_indexs = [];
 
@@ -2506,14 +2515,16 @@ dhbgApp.standard.load_operations = function() {
                 dhbgApp.printProgress();
 
                 var msg;
-                if (weight >= dhbgApp.evaluation.approve_limit) {
-                    msg = '<div class="correct">' + dhbgApp.s('all_correct_percent', weight) + '</div>';
-                }
-                else {
-                    msg = '<div class="wrong">' + dhbgApp.s('wrong_percent', (100 - weight)) + '</div>';
-                }
+                    if (weight >= dhbgApp.evaluation.approve_limit) {
+                        msg = '<div class="correct">' + (feedbacktrue ? feedbacktrue : dhbgApp.s('all_correct_percent', weight)) + '<div class="feedback_activities_img"></div></div>';
+                    }
+                    else {
+                        msg = '<div class="wrong">' + (feedbackfalse ? feedbackfalse : dhbgApp.s('wrong_percent', (100 - weight))) + '<div class="feedback_activities_img"></div></div>';
+                    }
 
-                $box_end.append(msg).show();
+                    $box_end.append(msg).show();
+                    var $dialog_answer_required = $('<div>' + msg + '</div>').dialog({modal: true, autoOpen: true, classes: {"ui-dialog":"global-modal"}, width: "60%", maxWidth: "1000px" });
+                    $dialog_answer_required.dialog('open')
 
                 if (weight < 100) {
                     $continue.show();
