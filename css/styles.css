@@ -236,7 +236,7 @@ img.animation.loading {
     margin: 0;
 }
 
-.animation_image {
+.animation_image, .centered-text {
     text-align: center;
 }
 
