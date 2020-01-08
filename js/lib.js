@@ -2515,7 +2515,7 @@ dhbgApp.standard.load_operations = function() {
                 dhbgApp.printProgress();
 
                 var msg;
-                    if (weight >= dhbgApp.evaluation.approve_limit) {
+                    if (weight >= 100) {
                         msg = '<div class="correct">' + (feedbacktrue ? feedbacktrue : dhbgApp.s('all_correct_percent', weight)) + '<div class="feedback_activities_img"></div></div>';
                     }
                     else {
@@ -2534,7 +2534,7 @@ dhbgApp.standard.load_operations = function() {
                 var d_drop_buttons = {};
                 var ok = dhbgApp.s('accept');
                 d_drop_buttons[ok] = function() { $(this).dialog('close'); };
-                $('<div>' + dhbgApp.s('drop_required') + '</div>').dialog({ modal: true, autoOpen: true, buttons: d_drop_buttons });
+                $('<div>' + dhbgApp.s('drop_required') + '</div>').dialog({ modal: true, autoOpen: true, buttons: d_drop_buttons, classes: {"ui-dialog":"global-modal"} });
             }
         });
 

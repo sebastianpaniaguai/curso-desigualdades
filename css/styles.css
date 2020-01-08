@@ -1924,6 +1924,9 @@ span.feedback_title {
     padding: 5px;
     background-color: #FFFFFF;
     z-index: 1;
+    margin: 0 auto;
+    border-radius: 25px;
+    width: 250px !important;
 }
 
 .jpit-activities-multidroppable .draggable {
@@ -1935,6 +1938,7 @@ span.feedback_title {
     position: relative;
     z-index: 2;
     border-radius: 25px;
+    width: 140px !important;
 }
 
 .jpit-activities-multidroppable .draggable i {
