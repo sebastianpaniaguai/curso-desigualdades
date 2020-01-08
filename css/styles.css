@@ -32,7 +32,7 @@ body.dhbgapp_fullview {
 }
 
 h1 {
-    font-size: 35px;
+    font-size: 25px;
     color: #5869C9;
     font-weight: bold;
     margin: 0 auto;
@@ -336,7 +336,7 @@ header.current {
 
 .header-text {
     width: 75%;
-    margin: 30px auto;
+    margin: 20px auto;
     text-transform: uppercase;
 }
 
