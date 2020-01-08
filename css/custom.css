@@ -684,6 +684,10 @@
     float: left;
 }
 
+.flexbox.image .box_media {
+    flex: 0 0 30%;
+}
+
 img {
     display: block;
     width: 100%;
@@ -708,6 +712,11 @@ img {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+}
+
+.flexbox img {
+    flex: 0 0 50%;
+    max-width: 200px;
 }
 
 .flexbox p {

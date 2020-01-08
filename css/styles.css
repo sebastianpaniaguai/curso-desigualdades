@@ -194,12 +194,22 @@ blockquote label {
     color: #5869C9;
     text-align: center;
     background: #EDF2F7;
-    width: 60%;
+    width: fit-content;
     margin: 5px auto;
     border-radius: 25px;
     position: relative;
     font-style: italic;
-    padding: 0.3rem 1rem;
+    padding: 0.3rem 3rem;
+    margin-bottom: 1rem;
+}
+
+.about.left {
+    margin-left: 0;
+    text-align: left;
+}
+.about.right {
+    margin-right: 0;
+    text-align: right;
 }
 
 .instruction i {
@@ -342,6 +352,7 @@ header.current {
 
 .maphilight {
     display: inherit;
+    margin: 0 auto;
 }
 
 
@@ -785,7 +796,8 @@ footer {
     background: #F1F4F7;
     ;
     border-radius: 10px;
-    bottom: 50%;
+    bottom: 10%;
+    left: 36%;
 }
 
 .wf-content.autox {
