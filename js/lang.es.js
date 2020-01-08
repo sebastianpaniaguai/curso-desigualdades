@@ -104,6 +104,6 @@ dhbgApp.strings = {
 
     'wrong_percent': '{0}% de sus respuestas son incorrectas. Lo invitamos a que repase el contenido e intente resolver la actividad de nuevo.',
 
-    'act_1_correct': '¡Excelente! Has identificado correctamente los pasos para llevar a cabo  un proceso de monitoreo de desigualdades en salud. Ahora puedes aplicar este conocimiento para planear el monitoreo a los avances en los resultados de salud que son de tu interés, bien sea desde la perspectiva de desigualdades geográficas o de inequidades geográficas.',
-    'act_1_wrong': '¡Bien! Has reconocido algunos pasos para el monitoreo. Sin embargo te falta identificar plenamente cuál es el orden correcto de dichos pasos. Estudia un poco más y reintenta la actividad hasta que definas completamente cómo se llevan a cabo estas etapas.',
+    'act_1_correct': '<span class="feedback_title">¡Excelente!</span><br> Has identificado correctamente los pasos para llevar a cabo  un proceso de monitoreo de desigualdades en salud. Ahora puedes aplicar este conocimiento para planear el monitoreo a los avances en los resultados de salud que son de tu interés, bien sea desde la perspectiva de desigualdades geográficas o de inequidades geográficas.',
+    'act_1_wrong': '<span class="feedback_title">¡Bien!</span><br> Has reconocido algunos pasos para el monitoreo. Sin embargo te falta identificar plenamente cuál es el orden correcto de dichos pasos. Estudia un poco más y reintenta la actividad hasta que definas completamente cómo se llevan a cabo estas etapas.',
 };
