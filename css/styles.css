@@ -104,6 +104,7 @@ img {
 a {
     color: #5869C9;
     font-weight: 600;
+    word-break: break-all;
 }
 
 br.clear,
