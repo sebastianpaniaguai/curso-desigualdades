@@ -695,6 +695,10 @@ img {
     margin: 0 auto;
 }
 
+#expand_image_content img {
+    width: 60%;
+}
+
 .text-image {
     *zoom: 1;
   }
@@ -717,6 +721,7 @@ img {
 .flexbox img {
     flex: 0 0 50%;
     max-width: 200px;
+    margin: 0 10px;
 }
 
 .flexbox p {

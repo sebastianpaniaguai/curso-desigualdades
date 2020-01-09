@@ -96,13 +96,14 @@
                 <menu>
                     <menuitem label="Contenido">
                     <menu>
-                        <menuitem label="1. Criterios prácticos para calcular indicadores de salud" data-page="pag-criterios">
+                        <menuitem label="1. Criterios prácticos para calcular indicadores de salud"
+                            data-page="pag-criterios">
                         </menuitem>
-                        <menuitem label="2. Fuentes de Datos" data-page="pag-fuentes">
+                        <menuitem
+                            label="2. Calcular los indicadores de salud para el análisis de desigualdades geográficas"
+                            data-page="pag-calculo">
                         </menuitem>
-                        <menuitem label="2.1. Fuentes de datos de base poblacional" data-page="pag-poblacional">
-                        </menuitem>
-                        <menuitem label="2.2. Fuentes de datos de base institucional" data-page="pag-institucional">
+                        <menuitem label="3. Análisis: estadísticos, tablas y gráficos" data-page="pag-analisis">
                         </menuitem>
                     </menu>
                     </menuitem>
@@ -141,393 +142,592 @@
                     <h2 class="page-title"></h2>
                     <div class="box_media">
                         <img src="content/img4_1.png">
-                        <div class="about"><b>Foto 1</b> Criterios para calcular indicadores (2019). Fotografía recuperada de<br><a
-                                href="https://pixabay.com/es/photos/tratamiento-dedo-mantener-mano-1327811/" target="_blank">Pixabay</a>
+                        <div class="about"><b>Foto 1</b> Criterios para calcular indicadores (2019). Fotografía
+                            recuperada de<br><a
+                                href="https://pixabay.com/es/photos/tratamiento-dedo-mantener-mano-1327811/"
+                                target="_blank">Pixabay</a>
                         </div>
                     </div>
                     <div class="box-text note" label="Fuente">
-                        <p>Indicadores de Salud: Aspectos conceptuales y operativos (Sección 2). Washington, D.C.: OPS, s.f.</p>
+                        <p>Indicadores de Salud: Aspectos conceptuales y operativos (Sección 2). Washington, D.C.: OPS,
+                            s.f.</p>
                     </div>
-                    <div class="horizonta-menu">
-                        <dl>
-                            <dt>Definición del periodo</dt>
-                            <dd>
-                                <h3>1.1. Definición del periodo de análisis</h3>
-                            </dd>
-                        </dl>
-                        <dl>
-                            <dt>Definición del área</dt>
-                            <dd>
-                                <h3>1.1. Definición del área geográfica a la cual se asignan los casos de mortalidad o del evento de interés: residencia u ocurrencia</h3>
-                            </dd>
-                        </dl>
+                    <div class="subpage">
+                        <div class="horizontal-menu">
+                            <dl>
+                                <dt>Definición del periodo</dt>
+                                <dd>
+                                    <h3>1.1. Definición del periodo de análisis</h3>
+                                    <div class="flexbox">
+                                        <img src="./content/img4_2.png" alt="Base Poblacional">
+                                        <p>El período del indicador es esencial y debe señalarse explícitamente cuando
+                                            se divulga e interpreta un indicador en salud. La definición del período
+                                            depende del evento y de la finalidad del indicador. Cuando la finalidad es
+                                            estimar el indicador para áreas geográficas la frecuencia del evento en
+                                            dichas áreas geográficas es fundamental para definir el periodo de análisis.
+                                            Los datos de mortalidad se suelen calcular por año, pero si el interés es
+                                            mortalidad por causas específicas por ejemplo, en donde es común encontrar
+                                            áreas geográficas con cero reporte de casos, es más usual calcular los
+                                            indicadores para años agregados, siendo trienios y los quinquenios los más
+                                            utilizados como periodo de análisis.</p>
+                                    </div>
+                                    <div class="about left">Período de análisis (2019) Fotografía recuperada de <a
+                                            href="https://pixabay.com/es/photos/calendario-a%C3%B1o-calendario-oficina-1255953/"
+                                            target="_blank">Pixabay</a></div>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>Definición del área</dt>
+                                <dd>
+                                    <h3>1.1. Definición del área geográfica a la cual se asignan los casos de mortalidad
+                                        o del evento de interés: residencia u ocurrencia</h3>
+                                    <div class="flexbox">
+                                        <p>En general, los indicadores de salud y de mortalidad se calculan para áreas
+                                            geográficas que responden a la división político-administrativa del país, y
+                                            su elección para el cálculo de los indicadores depende la frecuencia del
+                                            evento en dichas áreas geográficas. Un aspecto esencial a considerarse en el
+                                            análisis de las inequidades geográficas se relaciona con la asignación de
+                                            casos a las áreas geográficas. Para algunos eventos de salud como por
+                                            ejemplo la mortalidad por diferentes causas, puede no ser relevante
+                                            contabilizar los casos en las áreas geográfica en donde ocurre la muerte
+                                            sino en el área geográfica en la que residen. Esto dada la intención de
+                                            focalizar intervenciones en aquellas áreas con peores indicadores de salud.
+                                            Para otros eventos como los homicidios y los accidentes de tránsito, es más
+                                            relevante asignar los casos a las áreas geográficas en donde ocurre la
+                                            muerte, dado que serían estas áreas geográficas las que estarían sujetas a
+                                            programas de intervención para reducir el riesgo de mortalidad por estas
+                                            causas.
+                                        </p>
+                                        <img src="./content/img4_3.png" alt="Base Poblacional">
+                                    </div>
+                                    <div class="about right">Definición del área geográfica (2019) . Fotografía
+                                        recuperada de <a
+                                            href="https://pixabay.com/es/photos/de-viaje-cubri%C3%B3-a-alfileres-mapas-2650303/"
+                                            target="_blank">Pixabay</a></div>
+                                </dd>
+                            </dl>
+                        </div>
                     </div>
             </section>
-            <section id="pag-fuentes" ptitle="Fuentes de Datos">
+            <section id="pag-calculo"
+                ptitle="Calcular los indicadores de salud para el análisis de desigualdades geográficas">
                 <div class="subpage">
                     <h2 class="page-title"></h2>
                     <div class="box_media">
                         <img src="content/img5.png">
-                        <div class="about"><b>Foto 2</b> Fuentes de datos (2019) Fotografía recuperada de<br><a
-                                href="https://www.lifeofpix.com/photo/270-jira0555445424-jj-jpg/"
-                                target="_blank">lifeofpix</a>
+                        <div class="about"><b>Foto 2</b> Indicadores de salud para análisis de desigualdades geográficas
+                            (2019). Fotografía recuperada de<br><a
+                                href="https://pixabay.com/es/illustrations/empresario-tabla-curva-4664726/"
+                                target="_blank">Pixabay</a>
                         </div>
                     </div>
+                    <div class="box-text note" label="Fuente">
+                        <p>Barceló MA et al. Métodos para la suavización de indicadores de mortalidad: aplicación al
+                            análisis de desigualdades en mortalidad en ciudades del Estado español (Proyecto MEDEA). Gac
+                            Sanit. 2008;22(6):596-608.</p>
+                    </div>
+                    <p>El análisis más simple de las desigualdades geográficas de indicadores de salud pudiera ser
+                        hacerse a través de mapas de enfermedades representando los casos o muertes observadas en cada
+                        área geográfica. Sin embargo, cualquier interpretación en la estructura geográfica de los casos
+                        está limitada por la falta de información sobre la distribución espacial de la población que
+                        podría estar «en riesgo» y, consecuentemente, ha generado esos casos observados. Por tanto, se
+                        prefiere la representación de tasas que permitan incorporar el efecto de la población en riesgo,
+                        en vez de representar los casos brutos. <br><br>Sin embargo, cuando el interés es comparar
+                        indicadores de población entre distintas áreas geográficas debe considerarse que las poblaciones
+                        pueden diferir por un gran número de variables, lo cual determina, por sí mismo, riegos de
+                        enfermarse y morir distintos. La edad, el sexo, origen étnico, nivel socioeconómico, son
+                        variables que influyen en gran medida en esa diferenciación. Por lo tanto, el uso directo de las
+                        tasas brutas no permite la comparación entre distintas áreas, ya que las diferencias observadas
+                        entre ellas pueden deberse a factores de riesgo principalmente demográficas como la edad y el
+                        sexo. <br><br>Para evitar conclusiones erróneas en la comparación de tasas entre distintas áreas
+                        geográficas se ha usado como estrategia no solamente el cálculo de indicadores separados para
+                        hombres y para mujeres, sino también el uso de métodos matemáticos que anulen el efecto de esa
+                        distribución demográfica desigual, lo cual se conoce como la estandarización o ajuste de las
+                        tasas por edad.
+                    </p>
+                    <div class="box-text connection">
+                        <p>Veamos en qué consiste el método de estandarización o ajuste:</p>
+                    </div>
+                    <h3>2.1. Indicadores estandarizados o ajustados por edad</h3>
+                    <div class="flexbox">
+                        <p>Dado que la mortalidad es un evento cuyo riesgo incrementa con la edad, aquellos municipios
+                            con alta densidad de población adulta mayor presentan, generalmente, las más altas tasas de
+                            mortalidad cuando comparados con aquellos municipios con poblaciones más jóvenes. Esto es
+                            especialmente evidente para los casos de mortalidad de causas que están fuertemente
+                            asociadas con la edad.</p>
+                        <img src="./content/img6.jpg" alt="Indicadores ajustados por edad">
+                    </div>
+                    <div class="about right">Indicadores ajustados por edad (2019). Fotografía recuperada de <a
+                            href="https://pixabay.com/es/photos/latino-familia-latina-hispanos-2569583/"
+                            target="_blank">Pixabay</a></div>
+                    <div class="box-text example" label="Por ejemplo,">
+                        <p>Las tasas de mortalidad general en países con diferente esperanza de vida pueden ofrecer la
+                            falsa idea de mayor riesgo de muerte en los países con mayor número de adultos mayores.
+                            También pudiera observarse que en municipios que tienen mayor proporción de adultos mayores
+                            podrían aparecer en el mapa con los mayores riesgos de mortalidad por enfermedades
+                            cerebrovasculares cuando son comparados con municipios con menores proporciones de adultos
+                            mayores. <br><br>Este resultado llevaría a conclusiones incorrectas que en parte, o del
+                            todo, pueden ser explicadas por las diferencias en la estructura por edad de la población.
+                        </p>
+                    </div>
+                    <p>Hay dos métodos para la estandarización por edad, que se conocen como estandarización directa e
+                        indirecta. <br><br>En la representación de los mapas, particularmente de mortalidad, el método
+                        más utilizado es la estandarización indirecta de las tasas, que consiste en la comparación de
+                        las muertes observadas en un área con las esperadas si las tasas de mortalidad para cada grupo
+                        de edad fueran los mismos que en cierta población de referencia. La razón observada/esperada se
+                        llama Razón de Mortalidad Estandarizada (RME), que no es más que un estimador del riesgo
+                        relativo del área, es decir, el riesgo de muerte en relación con el grupo considerado de
+                        referencia.</p>
+                    <div class="box-text important" label="Importante">
+                        <p>En general, los atlas que exploran de manera geográfica indicadores de mortalidad a escalas
+                            geográficas subnacionales, utilizan como población de referencia la propia población
+                            nacional. Esto se conoce como “estandarización interna”</p>
+                    </div>
+                    <p>Comúnmente, la RME es multiplicada por 100, donde 100 es el riesgo de mortalidad promedio, es
+                        decir el riesgo de la población de referencia.</p>
+                    <div class="box-text example" label="Veamos un ejemplo de su interpretación">
+                        <p>El Atlas de la Salud de Colombia representa RME de indicadores de mortalidad para los
+                            municipios de Antioquia, utilizando como referencia a la población de toda Antioquia. En
+                            este caso, supongamos que el valor de la RME para el municipio de Angelópolis por
+                            enfermedades transmisibles es de 180, esto indica que este municipio presenta un riesgo de
+                            mortalidad 80% mayor que el riesgo de Antioquia. En otras palabras, este municipio tiene un
+                            número de muertes observadas mayor que las esperadas si el municipio tuviera la estructura
+                            de mortalidad de Antioquia. Para este mismo municipio, su RME para neoplasias fue de 40
+                            indicando en este municipio tiene un riesgo de mortalidad 60% menor que el riesgo del
+                            departamento. Es decir, dicho municipio tiene un número de muertes observadas menor que las
+                            esperadas.</p>
+                    </div>
+                    <div class="box-text important" label="¡Ojo!">
+                        <p>Este método sugiere ser el más apropiado cuando se analizan áreas geográficas con escaso
+                            número de población, resultando en estimaciones de tasas más precisas. Por esto es el método
+                            de estandarización más común para los indicadores que se representan en mapas con el
+                            objetivo es explorar sus variaciones geográficas. <br><br>Es importante mencionar que bajo
+                            la estandarización indirecta, la comparación de las RME entre dos o más municipios es sólo
+                            posible mediante comparaciones indirectas a través de la población de referencia.</p>
+                    </div>
+                    <div class="box-text important" label="Clave del aprendizaje">
+                        <h3>¿Es lo mismo una Razón de Mortalidad Estandarizada (RME) y un Riesgo de mortalidad
+                            estandarizado?</h3>
+                        <p>Es común que la Razón de Mortalidad Estandarizada sea interpretada como riesgo relativo de
+                            mortalidad, dado que ésta representa el riesgo relativo de mortalidad de un municipio
+                            comparado con el riesgo promedio de su población de referencia.</p>
+                    </div>
+                    <div class="box-text connection">
+                        <p>Ahora veamos cómo se comporta este estimador del riesgo en áreas geográficas pequeñas.</p>
+                    </div>
+                </div>
+                <div class="subpage">
+                    <h3>2.2. La RME en áreas geográficas pequeñas</h3>
+                    <div class="flexbox">
+                        <img src="./content/img8.png" alt="La RME en áreas geográficas pequeñas">
+                        <p>Las RME, aun cuando han sido ampliamente utilizadas en los atlas de mortalidad, tienen
+                            algunas limitaciones al ser calculadas para áreas pequeñas. Aunque no hay una definición
+                            exacta de lo que se considera un área geográfica pequeña, ya que esta definición dependería
+                            del contexto de estudio y del número de casos de la enfermedad analizada, algunos autores
+                            han definido un área pequeña como cualquier región cuyo tamaño muestral en un estudio es
+                            demasiado pequeño como para producir estimaciones con un nivel de precisión aceptable. Otros
+                            autores consideran que las áreas pequeñas son las que presentan menos de 20 casos de
+                            enfermedad y con una población que debería ser al menos de 10.000 habitantes. </p>
+                    </div>
+                    <div class="about left">La RME en áreas geográficas pequeñas (2019)</div>
+                    <p>Los análisis de indicadores de salud a escalas geográficas menores al departamento –como el
+                        municipio por ejemplo– ofrecen ventajas importantes, dado que, en general, áreas geográficas
+                        pequeñas tienden a ser más homogéneas en sus características, mientras que las áreas mayores
+                        tienden a ser más diversas. <br><br>En consecuencia, la exploración de eventos de salud a
+                        escalas geográficas pequeñas permite a los entes territoriales e investigadores:</p>
+                    <ul>
+                        <li>analizar más detalladamente los patrones espaciales de los eventos de salud</li>
+                        <li>identificar las diferencias entre las áreas geográficas en la magnitud de ocurrencia de los
+                            eventos</li>
+                        <li>apoyar la búsqueda de explicaciones para tales diferencias</li>
+                        <li>identificar municipios en alto riesgo</li>
+                        <li>apoyar la toma de decisiones para la focalización de los recursos y definición de
+                            estrategias de salud.</li>
+                    </ul>
+                    <p>Sin embargo, este tipo de análisis trae desafíos metodológicos que deben considerarse como, por
+                        ejemplo, el efecto que podría tener el reducido número de eventos de una área geográfica sobre
+                        los resultados de las RME. En el análisis de desigualdades geográficas para áreas pequeñas (por
+                        ejemplo municipios, barrios, unidades censales), el problema radica en que éstas áreas pequeñas
+                        además de que tienen poca población, pueden tener pocos casos de mortalidad, por lo que sus
+                        estimaciones de RME son más inestables debido a su gran variabilidad. En este sentido, las RME
+                        extremas y, por tanto, dominantes en los mapas, son aquellas estimadas con menor precisión en
+                        áreas que tienen pocos casos. <br><br>Con el fin de solucionar los problemas derivados de la
+                        utilización directa de las RME, se han propuesto varias alternativas para «suavizarlas». Lo más
+                        habitual es utilizar métodos estadísticos para el análisis de eventos muy poco frecuentes, como
+                        la distribución de Poisson, particularmente el modelo propuesto por Besag, York y Mollie (BYM).
+                        <br><br>Este modelo estima cada una de las RME, combinando el conteo de eventos de cada área
+                        geográfica con el promedio del conteo de eventos de las áreas aledañas. El resultado del modelo
+                        es la estimación de la Razón de <i>Mortalidad Estandarizada y Suavizada</i> (RMEs) para cada
+                        área, cuya interpretación sigue siendo el riesgo de muerte de cada área en relación a la
+                        población de referencia.
+                    </p>
+                    <div class="box-text example" label="Por ejemplo,">
+                        <p>Valores de RMEs municipales de 90 o 60 representan municipios con riesgos de mortalidad
+                            aproximadamente 10% y 40% inferiores respecto al riesgo promedio de la población de
+                            referencia. Los RMEs municipales de 110 o 140 representan municipios con riesgos superiores
+                            del 10% y 40% respecto al riesgo promedio de la población de referencia.
+                        </p>
+                    </div>
+                    <p>La suavización es una técnica estadística que se utiliza para ajustar las fluctuaciones en el
+                        riesgo de una enfermedad de áreas geográficas que tienen bajo número de casos o baja población.
+                        Una RMEs indica que la RME de cada área geográfica fue estimada combinando la información de
+                        mortalidad de cada área (local) con el promedio de la información de mortalidad de las áreas
+                        aledañas (vecinas).
+                    </p>
+                    <p>Además de la RMEs, el modelo de Besag, York y Mollie (BYM) estima otro indicador muy útil para
+                        cuantificar en términos de significación estadística la fuerza de la evidencia sobre el exceso o
+                        defecto de riesgo de cada una de las áreas geográficas comparadas con la población de
+                        referencia. Este indicador se conoce como Probabilidad a Posteriori (PrP), el cual estima la
+                        probabilidad de que cada una de las RMEs sea mayor a100, esto es, la probabilidad de que se una
+                        área geográfica presente un riesgo de mortalidad significativamente mayor o menor que el riesgo
+                        de la población de referencia (p&lt;0.05).
+                    </p>
+                    <div class="box-text note" label="Nota">
+                        <p>Áreas con probabilidades mayores al 80% se consideran áreas con riesgos significativamente
+                            mayores al riesgo de mortalidad de referencia (p&lt;0.05). Áreas con probabilidades menores
+                            al 20% son áreas con riesgos de mortalidad significativamente menores al promedio.
+                        </p>
+                    </div>
+                    <div class="box-text important" label="En síntesis:">
+                        <p>Las áreas geográficas pueden diferir por un gran número de variables, principalmente por su
+                            estructura demográfica definida por la edad y el sexo. Por lo tanto, para garantizar la
+                            pertinencia en las comparaciones en los riesgos de mortalidad de las áreas geográficas, se
+                            recomienda la estimación de indicadores indirectamente estandarizados por edad para hombres
+                            y para mujeres.</p>
+                    </div>
+                    <div class="box-text connection">
+                        <p>Identifiquemos ahora los diferentes metodologías para representar estos indicadores y para
+                            mejor comunicar las conclusiones en términos de desigualdades geográficas. <br><br>Haz clic
+                            en <i>siguiente</i> para continuar.</p>
+                    </div>
+                </div>
+            </section>
+            <section id="pag-analisis" ptitle="Análisis: estadísticos, tablas y gráficos">
+                <h2 class="page-title"></h2>
+                <div class="box_media">
+                    <img src="content/img10.png">
+                    <div class="about"><b>Foto 3</b> Análisis estadísticos, tablas y gráficos (2019). Fotografía
+                        recuperada de<br><a
+                            href="https://commons.wikimedia.org/wiki/File:Statistics_on_a_laptop_(Unsplash).jpg"
+                            target="_blank">Wikimedia</a>
+                    </div>
+                </div>
+                <div class="box-text note" label="Fuente">
+                    <p>C. Borrell, M. Rué, M. I. Pasarín, J. Benach y cols.— La medición de las desigualdades en salud.
+                        Gac Sanit 2000;14(Supl. 3):20-33.</p>
+                </div>
+                <p>Indicadores con poca variabilidad geográfica nos llevarán a un análisis poco ilustrativo en términos
+                    de desigualdades. Por lo tanto, el paso inicial en el análisis de desigualdades geográficas es el
+                    cálculo de medidas descriptivas que proporcionen una idea de la necesidad de análisis de dichas
+                    desigualdades.</p>
+                <div class="box-text connection">
+                    <p>En el monitoreo de las desigualdades geográficas se puede utilizar una amplia gama de
+                        herramientas para la presentación visual y estadísticas de desigualdades siendo las más
+                        utilizadas las que se describen a continuación:<sup class="tooltip"
+                            title="Every Woman Every Child Latin America and Caribbean (EWEC LAC). Guía paso a paso para el cálculo de métricas de desigualdad en salud">3</sup>
+                    </p>
+                </div>
+                <div class="subpage">
+                    <h3>3.1. Mapas</h3>
+                    <div class="flexbox">
+                        <p>El primer paso es la inspección visual de la distribución en las diferentes áreas geográficas
+                            del indicador de salud (lo que se conoce como desigualdad total), así como también de los
+                            estratificadores de equidad. Los mapas entonces se convierten en la primera forma de
+                            representación de la desigualdad total, proporcionando un resumen visual de la información
+                            para identificar patrones geográficos que de otro modo podrían pasar inadvertidos en las
+                            presentaciones tabulares.</p>
+                        <img src="./content/img11_1.png"
+                            alt="Análisis visual mediante mapas para monitrear dedigualdades geográficas">
+                    </div>
+                    <div class="about right">Análisis visual mediante mapas para monitrear dedigualdades geográficas
+                        (2019)</div>
+                    <p>Comúnmente, el análisis de desigualdades geográficas de la mortalidad se realiza a escalas
+                        geográficas como el municipio o menores. Para su representación se utilizan mapas con dos tipos
+                        de información:</p>
+                    <img src="./content/img11_2.png" class="maphilight" usemap="#info-type-map"
+                        alt="Análisis visual mediante mapas para monitrear dedigualdades geográficas">
+                    <div class="about"><b>Imagen 2. </b>Tipos de información para los mapas</div>
+                    <map name="info-type-map">
+                        <area class="w-content-controler general" shape="circle" coords="170,123,91" href="#"
+                            data-content="#img_izq" />
+                        <area class="w-content-controler general" shape="circle" coords="525,122,91" href="#"
+                            data-content="#img_der" />
+                    </map>
+                    <div id="img_izq" class="w-content" data-cssclass="global-modal" data-property-width="1000px">
+                        <h4>Mapas de representación geográfica de la Razón de Mortalidad Estandarizada (RME)</h4>
+                        <div class="text-image right">
+                            <div class="box_media">
+                                <img src="./content/img12.png"
+                                    alt="Mapa del indicador de mortalidad municipal: Razón de mortalidad estandarizada y suavizada">
+                                <div class="about"><b>Figura 1. </b>Mapa del indicador de mortalidad municipal: Razón de
+                                    mortalidad estandarizada y suavizada (2019)</div>
+                            </div>
+                            <p>Este indicador representa el riesgo relativo de un municipio comparado con el riesgo
+                                promedio de la población de referencia. Retomando lo presentado en el capítulo anterior,
+                                la RME se obtiene al estandarizar las tasas de mortalidad por el método indirecto que,
+                                el cual compara las muertes observadas en cada municipio en un periodo con las esperadas
+                                para el mismo periodo. Para el cálculo de los casos esperados generalmente se toma como
+                                referencia las tasas de mortalidad por quinquenios de edad del país o departamento al
+                                cual pertenece el municipio (esto se conoce como estandarización interna). De esta
+                                manera, la RME mide el riesgo de muerte de cada municipio con relación al país o
+                                departamento al que pertenece.<sup class="tooltip"
+                                    title="arceló MA et al. Métodos para la suavización de indicadores de mortalidad:
+                                aplicación al análisis de desigualdades en mortalidad en ciudades del Estado español (Proyecto MEDEA). Gac Sanit. 2008;22(6):596-608"></sup>
+                                <br><br>Para facilitar su interpretación, la RME es comúnmente multiplicada por 100,
+                                donde 100 es el riesgo de mortalidad del país o departamento. Cuando un municipio tiene
+                                un RME mayor a 100 indica que presenta exceso de riesgo de mortalidad comparado con el
+                                riesgo de referencia. Por el contrario, un municipio con una RME menor que 100 indica
+                                que tiene defecto de riesgo dicho comparado con el riesgo de referencia. <br><br>Para la
+                                representación de los RME, los mapas utilizan una escala de colores divergente con siete
+                                categorías (septiles) del RME. La Figura 1 muestra un ejemplo de dicha representación
+                                para un indicador de mortalidad. La categoría del medio (blanco) representa riesgo
+                                similar al del promedio del departamento de Antioquia, y los otros colores representan
+                                municipios con riesgos mayores que el promedio de Antioquia (tonos marrones) o menores
+                                que el promedio de Antioquia (tonos verdes).
+                            </p>
+                        </div>
+                    </div>
+                    <div id="img_der" class="w-content global_modal" data-cssclass="global-modal"
+                        data-property-width="1000px">
+                        <h4>Mapas de alta probabilidad de exceso o defecto de riesgo</h4>
+                        <div class="text-image right">
+                            <div class="box_media">
+                                <img src="./content/img13_1.png"
+                                    alt="Mapa de probabilidad posterior: fuerza (estadística) de la evidencia de que la RME sea mayor o menor que el riesgo de la población de referencia">
+                            </div>
+                            <p>Estos mapas deben ser interpretados en conjunto con el respectivo mapa del RME. El mapa
+                                de probabilidad indica la fuerza estadística de la evidencia sobre el exceso o defecto
+                                de riesgo de cada una de los municipios comparados con la población de referencia.
+                                <br>En la Figura 2, municipios en color rojo indican que son municipios en donde hay una
+                                probabilidad mayor del 80% de tener un RME superior al riesgo promedio de referencia
+                                (exceso de riesgo). Mientras que los municipios en color verde indican son los
+                                municipios en donde hay 80% de probabilidad o más de que los riesgos sean menores que el
+                                riesgo promedio (defecto de riesgo).</p>
+                        </div>
+                        <div class="about right"><b>Figura 2. </b>Mapa de probabilidad posterior: fuerza (estadística)
+                            de la evidencia de que la RME sea mayor o menor que el riesgo de la población de referencia
+                            (2017)</div>
+                    </div>
+                </div>
+                <div class="subpage">
+                    <h3>3.2. Estadística: Medidas de dispersión</h3>
+                    <div class="flexbox">
+                        <img src="./content/img13_2.png"
+                            alt="Análisis estadístico para monitrear dedigualdades geográficas">
+                        <p>La segunda herramienta de análisis es la valoración de la variabilidad de los indicadores de
+                            salud en múltiples territorios. Estos cálculos son importantes dado que para indicadores con
+                            poca variabilidad su análisis no será muy ilustrativo en términos de las desigualdades
+                            geográficas.</p>
+                    </div>
+                    <div class="about left">Análisis estadístico para monitrear dedigualdades geográficas (2019)
+                        Fotografía recuperada de <a href="https://www.piqsels.com/es/public-domain-photo-zkmpn"
+                            target="_blank">Piqsels</a></div>
+                    <p>Las medidas más utilizadas son:</p>
+                    <ul>
+                        <li>La varianza: Esta medida representa una medida absoluta de las desigualdades, y fue
+                            reportada en el estudio de Lu TH et al<sup class="tooltip"
+                                title="Lu TH, Lai CH, Chiang TL. Reducing regional inequality in mortality from road traffic injuries through enforcement of the mandatory motorcycle helmet law in Taiwan. Inj Prev. 2012;18(3):150–7">5</sup>
+                            para analizar diferencias entre 22 ciudades de Taiwan en la mortalidad por accidentes de
+                            tránsito. De acuerdo con los resultados, la varianza entre-ciudades disminuyó de 179 en 1997
+                            a 49 en el año 2008.</li>
+                        <li>Otra medida ampliamente utilizada es la desviación estándar, la cual fue utilizada con datos
+                            de la zona rural de Irán para estimar las inequidades regionales en fertilidad.<sup
+                                class="tooltip"
+                                title="Movahedi M, Hajarizadeh B, Rahimi A, Arshinchi M, Amirhosseini K, Haghdoost AA. Trends and geographical inequalities of the main health indicators for rural Iran. Health Policy Plan. 2009;24(3):229–37.">6</sup>
+                            De acuerdo con los autores, la desviación estándar del porcentaje de nacimientos atendidos
+                            por personal no calificado evidenció una disminución de la inequidad entre los periodos
+                            1996-2000 y 2001-2005 al pasar de 15.3 a 10.9 puntos porcentuales.</li>
+                        <li>Finalmente, el coeficiente de variación es frecuentemente utilizado para comparar la
+                            magnitud de las inequidades de dos o más indicadores incluso si se miden en diferentes
+                            unidades. Una aplicación de esta medida se observa en un estudio con datos de 17 países
+                            entre los años 1980 y 1994<sup class="tooltip"
+                                title="Galal OM, Qureshi AK. Dispersion Index: measuring trend assessment of geographical inequality in health–the example of under-five mortality in the Middle East/north African region, 1980–1994. Soc Sci Med. 1997;44(12):1893–902.">7</sup>,
+                            el cual mostró una reducción en la tasa de mortalidad en menores de cinco años, pasando de
+                            144.5 a 62.4 muertes por 1000 nacidos vivos, y un incremento en el coeficiente de variación
+                            de 28.8 % en 1980 a 52.3 % in 1992.</li>
+                    </ul>
+                </div>
+                <div class="subpage">
+                    <h3>3.3. Tablas</h3>
                     <div class="box-text note" label="Fuente">
                         <p>Manual para el Monitoreo de las Desigualdades en Salud, con especial énfasis en países de
                             ingresos medianos y bajos. Washington, D.C.: OPS, 2016.</p>
                     </div>
-                    <p>
-                        El principal insumo en todo proceso de monitoreo es la disponibilidad de datos válidos y fiables
-                        cuyo uso sea aceptable desde un punto de vista ético y cultural.<sup class="tooltip"
-                            title="Manual para el Monitoreo de las Desigualdades en Salud, con especial énfasis en países de ingresos medianos y bajos. Washington, D.C. : OPS, 2016.">3</sup>
-                        <br>
-                        Existen básicamente dos grandes categorías de fuentes de datos:
-                    </p>
-                    <div class="instruction desktop"></i>Haga clic sobre cada fuente para conocer su descripción</div>
-                    <img class="maphilight" src="content/img6_1.png" alt="Fuentes de datos" usemap="#map-fuentes"
-                        data-mark-stroke-color="B9E6F5" data-mark-fill-color="B9E6F5" data-mark-opacity="0.5" />
-                    <div class="about"><b>Imagen 2</b> Tipos de fuentes de datos (2019)</div>
-                    <map name="map-fuentes">
-                        <area shape="poly"
-                            coords="485,34,678,36,685,40,693,47,696,53,698,64,699,72,698,88,694,97,690,103,681,109,676,113,490,110,481,116,474,121,466,124,460,126,447,127,433,125,420,120,411,112,403,104,397,91,395,82,394,74,395,63,398,54,402,47,406,41,414,34,422,28,431,24,440,22,451,21,463,22,472,25,481,30"
-                            class="w-content-controler general" href="#" data-content="#base_poblacional" />
-                        <area shape="poly"
-                            coords="485,257,678,259,685,263,693,270,696,276,698,287,699,295,698,311,694,320,690,326,681,332,676,336,490,333,481,339,474,344,466,347,460,349,447,350,433,348,420,343,411,335,403,327,397,314,395,305,394,297,395,286,398,277,402,270,406,264,414,257,422,251,431,247,440,245,451,244,463,245,472,248,481,253"
-                            class="w-content-controler general" href="#" data-content="#base_institucional" />
-                    </map>
-                    <div id="base_poblacional" class="w-content" data-cssclass="global-modal"
-                        data-property-width="1000px">
-                        <div class="flexbox">
-                            <p>Las fuentes de datos poblacionales son las que contienen información sobre cada individuo
-                                de una población (por ejemplo, datos censales) y las que contienen información sobre una
-                                muestra representativa de la población (por ejemplo, encuestas de hogares).</p>
-                            <img src="./content/img6_2.png" alt="Base Poblacional">
+                    <div class="flexbox">
+                        <div>
+                            <p>En el monitoreo de la desigualdad en salud, las tablas pueden presentarse de manera tal
+                                que cada indicador de salud pueda estar desagregado por cada estratificador de equidad.
+                                Esto significa que la información presentada muestra la situación para un único
+                                indicador de salud en una única dimensión de desigualdad.
+                            </p>
+                            <div class="box-text example" label="Por ejemeplo,">
+                                <p>asa de mortalidad infantil por zona de residencia, quintiles de cobertura de
+                                    vacunación contra el sarampión por municipio. </p>
+                            </div>
                         </div>
+                        <img src="./content/img14.png"
+                            alt="Análisis mediante tablas para monitrear dedigualdades geográficas">
                     </div>
-                    <div id="base_institucional" class="w-content" data-cssclass="global-modal"
-                        data-property-width="1000px">
-                        <div class="flexbox image">
-                            <p>Las fuentes institucionales recolectan datos en el curso de sus actividades
-                                administrativas y operativas, por lo que únicamente incluyen a personas que han tenido
-                                interacción con una institución dada. Es posible que los datos administrativos de
-                                fuentes de base institucional reflejen información individual o del hogar (por ejemplo,
-                                tiempo de espera para cirugías electivas o tasa de infección de heridas quirúrgicas), o
-                                información consolidada a nivel nacional o subnacional (por ejemplo, preparación general
-                                de los servicios o gasto total en salud per cápita).</p>
-                            <img src="./content/img6_3.png" alt="Base Institucional">
-                        </div>
+                    <div class="about right">Análisis mediante tablas para monitrear dedigualdades geográficas (2019)
                     </div>
+                    <p>Una ventaja de las tablas es que no existe ambigüedad sobre los valores de los datos, ya que
+                        ellos son presentados explícitamente. Sin embargo, una desventaja de ellas es que carecen de la
+                        interpretación visual inmediata de los gráficos y los mapas y, por tanto, demandan más esfuerzo
+                        por parte de la audiencia para extraer conclusiones. <br><br>Se puede facilitar la
+                        interpretación de tablas resaltando valores prominentes, codificando a color valores o celdas o
+                        acentuando la tipografía (como con letras en negrita).</p>
+                    <div class="box-text example" label="Veamos un ejemplo">
+                        <p>En la tabla 1 se observan datos sobre desigualdad en la mortalidad por causas externas en
+                            Antioquia según nivel de riqueza municipal para los años 2000, 2005, 2010 y 2014. De acuerdo
+                            a las estimaciones, durante el periodo de estudio Antioquia experimentó una disminución de
+                            las desigualdades en sus riesgos de mortalidad. Esto es, que los riesgos de mortalidad en
+                            todos los quintiles de pobreza y desarrollo tuvieron una importante disminución a lo largo
+                            del periodo.</p>
+                    </div>
+                    <div class="about"><b>Tabla 1. </b>Desigualdad en el riesgo relativo de mortalidad por causas
+                        externas según quintiles de pobreza municipal. Antioquia, 2000-2005-2010 y 2014</div>
+                    <table class="datatable">
+                        <thead>
+                            <th>Año</th>
+                            <th>Quintil 1 (q1) (más rico) (RME)</th>
+                            <th>Quintil 2 (RME)</th>
+                            <th>Quintil 3 (RME)</th>
+                            <th>Quintil 4 (RME)</th>
+                            <th>Quintil 5 (q5) (más pobre) (RME)</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Hombres (2000)</td>
+                                <td>111.50</td>
+                                <td>121.85</td>
+                                <td>139.54</td>
+                                <td>121.23</td>
+                                <td>113.30</td>
+                            </tr>
+                            <tr>
+                                <td>Hombres (2005)</td>
+                                <td>117.76</td>
+                                <td>156.99</td>
+                                <td>150.16</td>
+                                <td>150.62</td>
+                                <td>142.43</td>
+                            </tr>
+                            <tr>
+                                <td>Hombres (2010)</td>
+                                <td>75.05</td>
+                                <td>97.02</td>
+                                <td>99.13</td>
+                                <td>129.47</td>
+                                <td>124.05</td>
+                            </tr>
+                            <tr>
+                                <td>Hombres (2014)</td>
+                                <td>59.92</td>
+                                <td>79.05</td>
+                                <td>86.61</td>
+                                <td>80.68</td>
+                                <td>70.56</td>
+                            </tr>
+                            <tr>
+                                <td>Mujeres (2000)</td>
+                                <td>114.22</td>
+                                <td>137.77</td>
+                                <td>160.63</td>
+                                <td>135.64</td>
+                                <td>109.59</td>
+                            </tr>
+                            <tr>
+                                <td>Mujeres (2005)</td>
+                                <td>113.96</td>
+                                <td>116.14</td>
+                                <td>128.65</td>
+                                <td>138.17</td>
+                                <td>143.18</td>
+                            </tr>
+                            <tr>
+                                <td>Mujeres (2010)</td>
+                                <td>101.58</td>
+                                <td>107.33</td>
+                                <td>115.73</td>
+                                <td>128.18</td>
+                                <td>122.62</td>
+                            </tr>
+                            <tr>
+                                <td>Mujeres (2014)</td>
+                                <td>62.24</td>
+                                <td> 81.76</td>
+                                <td> 80.36</td>
+                                <td> 83.83</td>
+                                <td> 89.97</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="subpage">
+                    <h3>Gráficos o figuras</h3>
+                    <div class="box-text note" label="Fuente">
+                        <p>Cómo hacer comprensibles los datos. Parte 2: Una guía para presentar estadísticas. Naciones Unidas, Comisión económica para Europa. Ginebra, 2009. Recuperado de <a href="https://www.unece.org/fileadmin/DAM/stats/documents/writing/MDM_Part2_Spanish.pdf" target="_blank">https://www.unece.org/</a></p>
+                    </div>
+                    <p>Las estadísticas a menudo pueden entenderse mejor si se presentan en un gráfico en lugar de en una tabla. Un gráfico es una representación visual de los datos estadísticos mediante símbolos como barras o líneas. Es una herramienta visual muy eficaz, ya que muestra datos de manera rápida y sencilla, facilita la comparación y puede revelar las tendencias y las relaciones entre los datos. <br><br>Los gráficos que reportan sobre el monitoreo de la desigualdad en salud presentan la información de manera simple, clara y precisa. Entre los más utilizados se encuentran los gráficos de líneas, gráficos de barras y gráficos de Equiplot.</p>
                     <div class="box-text connection">
-                        <p>Ahora veamos cuáles son los tipos que conforman cada categoría.
-                        </p>
+                        <p>Veamos en qué consiste cada tipo:</p>
                     </div>
-            </section>
-            <section id="pag-poblacional" ptitle="Fuentes de datos de base poblacional">
-                <h2 class="page-title"></h2>
-                <h3>Censos Poblacionales</h3>
-                <div class="box-text note" label="Fuente">
-                    <p>Manual para el Monitoreo de las Desigualdades en Salud, con especial énfasis en países de
-                        ingresos medianos y bajos. Washington, D.C.: OPS, 2016. Pag 17 </p>
-                </div>
-                <div class="flexbox image">
-                    <div class="box_media">
-                        <img src="./content/img7_1.png" alt="Censos poblacionales">
-                    </div>
-                    <p>En la actualidad, la mayoría de los países conducen censos de población y vivienda cada 10 años.
-                        En muchos países, el censo ofrece información sobre sexo, estado socioeconómico,
-                        raza o etnicidad, edad y zona geográfica; toda ella se puede usar como estratificadores
-                        de equidad para el monitoreo de la desigualdad. No obstante, usualmente el censo no se centra en
-                        la salud y, por lo general, incluye pocos datos de salud. Por ello, los censos pueden ser de
-                        utilidad limitada para el monitoreo de la desigualdad en
-                        salud.
-                    </p>
-                </div>
-                <div class="about left"><b>Foto 5. </b>Censos poblacionales (2019) Fotografía recuperada de <br><a
-                        href="https://pixabay.com/es/photos/fotomontaje-se-enfrenta-a-556806/"
-                        target="_blank">Pixabay</a> </div>
-                <h3>Censos de Población Especial</h3>
-                <div class="box-text note" label="Fuente">
-                    <p>Observatorio para medición de desigualdades y análisis de la equidad en salud ODES Colombia.
-                        Página 84</p>
-                </div>
-                <div class="flexbox image">
-                    <p>El Ministerio de Salud y Protección Social ha definido entre las fuentes de información del
-                        sector, otra categoría que debe ser tenida en cuenta dentro del enfoque de análisis diferencial
-                        y en aquellas que se refieren a poblaciones vulnerables: se trata de los censos realizados entre
-                        grupos muy específicos de la población en general. Estos censos, denominados censos de población
-                        especial, buscan recoger información de las características socio-demográficas y económicas de
-                        poblaciones específicas de forma que permita su reconocimiento y priorización en las agendas
-                        gubernamentales.
-                        La siguiente tabla lista los censos de población especial identificados por el Ministerio de
-                        Salud y Protección Social en Colombia:
-
-                    </p>
-                    <div class="box_media">
-                        <img src="./content/img7_2.png" alt="Censos poblacionales">
-                    </div>
-                </div>
-                <div class="about right"><b>Foto 6. </b>Censos de población especial (2019) Fotografía recuperada de
-                    <br><a href="https://pixabay.com/es/photos/ind%C3%ADgena-cham%C3%AD-risaralda-personas-1418748/"
-                        target="_blank">Pixabay</a>
-                </div>
-                <div class="about"><b>Tabla 1. </b>Censos de Poblaciòn Especial en Colombia (2014). <br> <b>Fuente:</b>
-                    Grupo de Gestiòn del Conocimiento y Fuentes de Informaciòn, Direcciòn de Epidemiologìa y Demografìa.
-                    MSPS</div>
-                <table class="datatable">
-                    <thead>
-                        <th>Ítem</th>
-                        <th>Nombre del Censo Especial</th>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Censo de población con discapacidad (A través del RLCP - Registro de Localizaciòn y
-                                Caracterizaciòn de Persona con Discapacidad)</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Censo de Poblaciòn Indìgena</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>Censo de Vìctimas del Conflicto Armado (Registro Ùnico de Vìctimas RUV)</td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>Censo de Enfermedades Raras y Huèrfanas</td>
-                        </tr>
-                        <tr>
-                            <td>5</td>
-                            <td>Censo Poblaciòn Privada de la Libertad (Càrceles)</td>
-                        </tr>
-                        <tr>
-                            <td>6</td>
-                            <td>Censo de Fuerzas Militares</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <h3>Sistemas de registros vitales</h3>
-                <div class="box-text note" label="Fuente">
-                    <p>Manual para el Monitoreo de las Desigualdades en Salud, con especial énfasis en países de
-                        ingresos medianos y bajos. Washington, D.C.: OPS, 2016.</p>
-                </div>
-                <div class="flexbox image">
-                    <p>Los sistemas de registros vitales (denominados oficialmente sistemas de registro civil y
-                        estadísticas vitales) registran la ocurrencia de nacimientos, defunciones, matrimonios y
-                        divorcios en una población. En Colombia este sistema es administrado por el Departamento
-                        Administrativo Nacional de Estadística DANE, el cual funciona correctamente, constituyéndose así
-                        en la fuente más valiosa y fiable de datos sobre fecundidad, mortalidad y causas de muerte para
-                        el país. Estos registros poseen información sobre región geográfica, sexo, nivel educativo y
-                        ocupación; siendo estos datos necesarios sobre estratificadores de equidad, útiles para el
-                        monitoreo de la desigualdad, sin embargo es importante evaluar el nivel de registro de estas
-                        variables, el cual puede variar por áreas geográficas del país.
-                    </p>
-                    <div class="box_media">
-                        <img src="./content/img8.png" alt="Sistemas de registros vitales">
+                    <div class="horizontal-menu">
+                        <dl>
+                            <dt>Gráfico de barras</dt>
+                            <dd>
+                                <h4>Gráfico de barras</h4>
+                                <div class="flexbox">
+                                  <p>Es el tipo de gráfico más simple de dibujar y leer. Se utiliza para comparar las frecuencias o los valores de las distintas categorías o grupos. 
+                                    Un ejemplo se presenta en la figura 3, la cual muestra la relación entre el riesgo de mortalidad masculino y femenino por causas externas según quintiles de pobreza municipal para los años 2000-2014. Para ambos sexos, los municipios más pobres mostraron no solamente riesgos de mortalidad mayores a los del promedio de Antioquia sino también riesgos significativamente mayores cuando comparados con los municipios más ricos, diferencia que fue estadísticamente significativa a partir de la mitad del periodo.
+                                    </p> 
+                                    <img src="./content/img16_1.png" data-src="./content/img16_1.png"  class="expand-image" alt="Riesgo de mortalidad masculino y femenino por causas externas según quintiles de pobreza municipal. Antioquia 2000-2014"> 
+                                </div>
+                                <div class="about right"><b>Figura 3. </b>Riesgo de mortalidad masculino y femenino por causas externas según quintiles de pobreza municipal. Antioquia 2000-2014</div>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>Gráfico de líneas</dt>
+                            <dd>
+                                <h4>Gráfico de líneas</h4>
+                                <div class="flexbox">
+                                    <p>Es una herramienta eficaz para la visualización de tendencias en los datos a lo largo del tiempo y por lo tanto el tipo de gráfico más adecuado para series temporales. <br><br>
+                                        La Figuras 4 muestra la tendencia de los riesgos relativos de mortalidad masculinos y femeninos de acuerdo a quintiles de pobreza municipales. De acuerdo a los resultados, al inicio del periodo y ambos sexos, todos los municipios tuvieron en promedio riesgos de mortalidad superiores a los de Antioquia (RME=100), en particular los municipios de los niveles intermedios de pobreza. 
+                                        Adicionalmente, la Figura muestra una disminución del riesgo de mortalidad en todos los quintiles de pobreza. 
+                                        
+                                      </p> 
+                                      <img src="./content/img16_2.png" data-src="./content/img16_2.png" class="expand-image" alt="Riesgo relativo de mortalidad MASCULINA por causas externas según quintiles de pobreza municipal. Antioquia 2000-2005-2010 y 2014"> 
+                                  </div>
+                                  <div class="about right"><b>Figura 4. </b>Riesgo relativo de mortalidad MASCULINA por causas externas según quintiles de pobreza municipal. Antioquia 2000-2005-2010 y 2014</div>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>Gráfico de líneas</dt>
+                            <dd>
+                                <h4>Gráfico de Equiplot<sup class="tooltip" title="Equiplot: A Chart to Display Equity Data. Health Intelligence.  Analyzing health data, generating and communicating evidence to improve population health. 2011-2017. Recuperado de <a href='ttp://publichealthintelligence.org/content/equiplot-chart-display-equity-data' target='_blank'>http://publichealthintelligence.org/content/equiplot-chart-display-equity-data</a>">*</sup></h4>
+                                <div class="flexbox">
+                                    <p>Finalmente, el Equiplot, es  una figura para representar datos de equidad.<br>El Centro Internacional de Equidad en Salud (en inglés International Center for Equity in Health), de la Universidad  Federal de Pelotas, Brasil propuso una forma visual para representar y comunicar los datos sobre equidad de manera efectiva  a profesionales de la salud, administradores de la salud, tomadores de decisiones y público en general. Este gráfico se conoce como Equiplot. <br><br>Equiplot, es considerado una de las mejores formas de mostrar cómo las desigualdades afectan las condiciones de salud, por medio de la comparación entre diferentes grupos en relación a un mismo indicador – por ejemplo, los índices de mortalidad infantil en diferentes grupos de ingreso. El  equiplot permite visualizar, al mismo tiempo, la situación de cada grupo en relación al indicador y la distancia entre ellos – lo que transmite la dimensión de las desigualdades. 
+                                      </p> 
+                                      <img class="expand-image" src="./content/img17.png" data-src="./content/img17.png" alt="Riesgo relativo de mortalidad MASCULINA por causas externas según quintiles de pobreza municipal. Antioquia 2000-2005-2010 y 2014"> 
+                                  </div>
+                                  <div class="about right"><b>Figura 5. </b>Riesgos relativo de mortalidad por enfermedades del sistema circulatorio según quintiles de POBREZA MUNICIPAL. Antioquia, 2000-2014</div>
+                                  <p>La Figura 5 muestra que para todos los periodos, los municipios en el quintil más pobre  presentan mayores riesgos de mortalidad tanto de Antioquia como un todo como de los municipios en el quintil más rico. Sin embargo, la distancia entre los municipios más pobres y los más ricos claramente disminuye en el último periodo para la mortalidad masculina, pero aumenta para la femenina. 
+                                </p>
+                            </dd>
+                        </dl>
                     </div>
                 </div>
-                <div class="about right"><b>Foto 7. </b>Sistemas de registros vitales (2019) Fotografía recuperada de <a
-                        href="https://pixabay.com/es/photos/beb%C3%A9-los-pies-manta-reci%C3%A9n-nacido-1178539/"
-                        target="_blank">Pixabay</a>
-                </div>
-                <div class="box-text note" label="Nota">
-                    <p>En Colombia, el Departamento Administrativo Nacional de Estadística (DANE), es la institución
-                        encargada del sistema de registro de estadísticas vitales, por lo tanto es la fuente oficial de
-                        microdatos sobre nacimientos, defunciones fetales, no fetales, entre otros (para los años
-                        1985-2014).</p>
-                </div>
-                <h3>Encuestas de hogares</h3>
-                <div class="box-text note" label="Fuente">
-                    <p>Manual para el Monitoreo de las Desigualdades en Salud, con especial énfasis en países de
-                        ingresos medianos y bajos. Washington, D.C.: OPS, 2016.</p>
-                </div>
-                <div class="flexbox image">
-                    <div class="box_media">
-                        <img src="./content/img9.png" alt="Sistemas de registros vitales">
-                    </div>
-                    <p>Las encuestas de hogares son actualmente la fuente de datos más común y, en general,
-                        más confiable para el monitoreo de las desigualdades en salud en países de ingresos medianos y
-                        bajos. Estas encuestas se realizan con el propósito de evaluar el estado de un tema (o temas)
-                        específico a nivel nacional y pueden ser administradas por países, organismos de ayuda,
-                        organizaciones no gubernamentales u organismos internacionales.
-                        Por lo general, las encuestas de hogares abarcan una amplia gama de indicadores, todos ellos
-                        relacionados con un tema similar, como salud reproductiva, salud materna e infantil o nutrición;
-                        ademàs de que a menudo proporcionan información precisa sobre temas de salud de interés para
-                        países de ingresos medianos y bajos, junto con información socioeconómica, demográfica y
-                        geográfica tanto a nivel individual como por hogar. Esto hace a las encuestas de hogares bien
-                        adaptadas para su uso en el monitoreo de desigualdades en salud.
-                    </p>
-                </div>
-                <div class="about left"><b>Foto 8. </b>Encuestas de hogares (2019) Fotografía recuperada de <a
-                        href="https://pixabay.com/es/photos/colombia-medellin-ciudad-city-560102/"
-                        target="_blank">Pixabay</a>
-                </div>
-                <p>Aunque varios países de ingresos medianos y bajos realizan sus propias encuestas de hogar, existe un
-                    número creciente de programas multinacionales de encuestas de hogar multicíclicas. Los ciclos
-                    repetidos de estas encuestas multinacionales permiten rastrear el progreso de las desigualdades en
-                    el tiempo; mientras que la inclusión de múltiples países permite el análisis referencial entre
-                    países usando metodologías de datos comparables.</p>
-                <div class="flexbox image">
-
-                    <p>Por diseño, las encuestas de hogares extraen información de una muestra de la población más que
-                        de cada uno de los individuos de ella. La incertidumbre de describir una población entera
-                        basándose en una muestra de ella −inherente al proceso de estimación− puede exacerbarse en el
-                        curso del monitoreo de la desigualdad en salud, a medida que la muestra total se divide en
-                        varios grupos. Aunque las encuestas de hogares suelen estar diseñadas para tener tamaño muestral
-                        suficiente para extraer conclusiones precisas sobre la población en conjunto, ellas no están
-                        necesariamente diseñadas con el propósito de tener tamaños muestrales suficientes en todos los
-                        subgrupos. Por lo que si se anticipa que la encuesta tendrá tamaño muestral pequeño en cierto
-                        grupo, puede compensarse con sobremuestreo en el diseño. Esto podría implicar extraer muestras
-                        más grandes de ciertos grupos minoritarios, regiones, niveles de educación, grupos de edad u
-                        otras categorías, aunque tales subgrupos puedan representar una proporción relativamente pequeña
-                        de la población total.
-                    </p>
-                    <div class="box_media">
-                        <img src="./content/img9.png" alt="Sistemas de registros vitales">
-                    </div>
-                </div>
-                <div class="about right"><b>Foto 9. </b>Encuestas de hogares (2019) Fotografía recuperada de <a
-                        href="https://pixabay.com/es/photos/realidad-brasile%C3%B1a-brasil-641231/"
-                        target="_blank">Pixabay</a>
-                </div>
-                <p>La siguiente tabla presenta los estudios y encuestas poblacionales disponibles para Colombia con
-                    información sobre diferentes aspectos de interés en salud pública<sup class="tooltip"
-                        title="Fuente: Observatorio para medición de desigualdades y análisis de la equidad en salud ODES Colombia. Página 83">4</sup>:
-                    El DANE, es la institución
-                    encargada de la disponibilización de los microdatos de estas encuestas poblacionales<sup
-                        class="tooltip"
-                        title="Fuente: Estadísticas vitales nacimientos y defunciones - DANE <a href='http://www.dane.gov.co/index.php/estadisticas-por-tema/demografia-y-poblacion/nacimientos-y-defunciones' target='_blank'>DANE</a>">5</sup>:
-                </p>
-                <div class="about"><b>Tabla 2. </b>Agenda programàtica del Sistema Nacional de Estudios y Encuestas
-                    poblacionales para Salud (2013). <br> <b>Fuente:</b>
-                    Grupo de Gestiòn del Conocimiento y Fuentes de Informaciòn, Direcciòn de Epidemiologìa y Demografìa.
-                    MSPS</div>
-                <table class="datatable">
-                    <thead>
-                        <th>Ítem</th>
-                        <th>Encuesta/Estudio</th>
-                        <th>Ùltima</th>
-                        <th>Periodicidad</th>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Anàlisis de Situaciòn de Salud - ASIS</td>
-                            <td>2013</td>
-                            <td>Anual</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Estudio Nacional de Salud Mental - ENSM</td>
-                            <td>2003</td>
-                            <td>Cada 10 años</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>Encuesta Nacional de Salud - ENS</td>
-                            <td>2007</td>
-                            <td>Cada 5 años</td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>Encuesta Nacional de Salud Bucal IV - ENSAB IV</td>
-                            <td>1998</td>
-                            <td>Cada 10 años</td>
-                        </tr>
-                        <tr>
-                            <td>5</td>
-                            <td>ncuesta Mundial de Tabaquismo en Adultos - GATS</td>
-                            <td>2013</td>
-                            <td>Cada 5 años</td>
-                        </tr>
-                        <tr>
-                            <td>6</td>
-                            <td>Encuesta Nacional de Salud, Bienestar y Envejecimiento - SABE</td>
-                            <td>2013</td>
-                            <td>Cada 10 años</td>
-                        </tr>
-                        <tr>
-                            <td>7</td>
-                            <td>Encuesta Nacional de Demografìa y Salud - ENDS</td>
-                            <td>2010</td>
-                            <td>Cada 5 años</td>
-                        </tr>
-                        <tr>
-                            <td>8</td>
-                            <td>Encuesta Nacional de Situaciòn Nutricional en Colombia - ENSIN</td>
-                            <td>2010</td>
-                            <td>Cada 5 años</td>
-                        </tr>
-                        <tr>
-                            <td>9</td>
-                            <td>Encuesta de Calidad de Vida</td>
-                            <td>2012</td>
-                            <td>Anual</td>
-                        </tr>
-                        <tr>
-                            <td>10</td>
-                            <td>Gran Encuesta Integrada de Hogares - GEIH</td>
-                            <td>2014</td>
-                            <td>Continua</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-            <section id="pag-institucional" ptitle="Fuentes de datos de base institucional">
-                <h2 class="page-title"></h2>
-                <div class="box-text note" label="Fuente">
-                    <p>Manual para el Monitoreo de las Desigualdades en Salud, con especial énfasis en países de
-                        ingresos medianos y bajos. Washington, D.C.: OPS, 2016.</p>
-                </div>
-                <p>Las fuentes de datos de base institucional producen datos administrativos en el curso de las
-                    actividades del gobierno y de los sistemas de salud.
-                </p>
-                <div class="box-text example" label="Ejemplo">
-                    <p>Algunos ejemplos de datos administrativos son los muchos registros institucionales que existen
-                        para individuos, como historias médicas, registros policiales, registros laborales y registros
-                        escolares.</p>
-                </div>
-                <div class="flexbox image">
-                    <div>
-                        <p>Fuentes de datos institucionales incluyen también los registros de uso interno que describen
-                            las actividades de instituciones, como registros de recursos de establecimientos de salud
-                            que contienen información a nivel distrital acerca del personal movilizado a determinada
-                            región, o registros de servicios provistos.</p>
-                        <div class="box-text example" label="Por ejemplo">
-                            <p>el número de vacunas administradas o el número de mosquiteros distribuidos.</p>
-                        </div>
-                    </div>
-                    <div class="box_media">
-                        <img src="./content/img11.png" alt="Fuentes de datos de base institucional">
-                    </div>
-                </div>
-                <div class="about right"><b>Foto 10. </b>Fuentes de datos de base institucional (2019) Fotografía
-                    recuperada de <a href="https://pixabay.com/es/photos/archivo-cajas-documentos-carpetas-1850170/"
-                        target="_blank">Pixabay</a></div>
-
-                <p>Estas fuentes de datos tienden a ser numerosas y proveen datos detallados a nivel comunitario. Los
-                    datos de fuente institucional pueden reflejar cualquier componente del marco de monitoreo,
-                    evaluación y análisis; los indicadores de salud listados bajo el componente de insumos y procesos se
-                    derivan a menudo de fuentes institucionales. <br><br>Prácticamente todo ministerio gubernamental,
-                    desde educación hasta justicia, dispondrá
-                    de registros administrativos que podrían ser utilizados para determinar estratificadores de equidad
-                    para el monitoreo de la desigualdad en salud; no obstante, a menudo resulta difícil o imposible
-                    vincular estos datos administrativos con bases de datos de salud. <br><br>Los datos administrativos
-                    solo capturan información sobre individuos que interactúan
-                    con una determinada institución. Por ejemplo, los registros de un centro de salud no pueden ofrecer
-                    ninguna información sobre quienes no acceden al centro de salud. <br>Para el monitoreo de la
-                    desigualdad en salud, sin embargo, las poblaciones con acceso institucional limitado son a menudo de
-                    alto interés. Más aún, a nivel país, el uso de datos administrativos está limitado por su
-                    fragmentación y falta de estandarización. Por estas razones, las fuentes de datos de base
-                    institucional tienden a ser de menor importancia para el monitoreo de la desigualdad en salud a
-                    escala nacional, sobre todo en países con ingresos medianos y bajos, por lo que los varios tipos de
-                    datos administrativos no se examinarán en detalle aquí.
-                </p>
                 <div class="box-text connection">
-                    <p>Para terminar el estudio de este documento, te invitamos a realizar las siguientes actividades
-                        que te permitirán validar los contenidos abordados. Es importante leer con atención las
-                        instrucciones para resolverlas correctamente.</p>
+                    <p>Finalicemos el estudio de este documento, abordando elementos importantes de la temática:</p>
+                    
+                </div>
+                <div class="box-text important" label="Claves del aprendizaje">
+                    <img src="./content/img18_1.png" alt="¿Por qué los mapas muestran riesgos y no tasas?">
+                    <img src="./content/img18_2.png" alt="¿Es lo mismo una Razón de Mortalidad Estandarizada (RME) y un Riesgo de mortalidad estandarizado?">
+                    <img src="./content/img18_3.png" alt="Mi municipio tiene un riesgo de mortalidad mayor que el de Antioquia y que mi municipio vecino! ¿debo pasarme de municipio?">
+                </div>
+                <div class="box-text connection">
+                    <p>Ahora te invitamos a realizar las siguientes actividades que te permitirán validar los contenidos abordados. Es importante leer con atención las instrucciones para resolverlas correctamente.</p>
                 </div>
             </section>
             <section id="pag-actividades" ptitle="Actividades">
@@ -559,24 +759,30 @@
                             <button class="general continue" style="display: none;">Continuar intentando</button>
                         </div>
                         <div class="box_end"></div>
-                        <div class="instruction"><i class="ion-help-circled"></i><span class="onlymobile">Toque</span><span class="notmobile">De clic en</span> el ícono de cada imagen para ver la información.</div>
+                        <div class="instruction"><i class="ion-help-circled"></i><span
+                                class="onlymobile">Toque</span><span class="notmobile">De clic en</span> el ícono de
+                            cada imagen para ver la información.</div>
                         <div class="sources">
                             <div data-group="1">
                                 <img src="./content/img13_1.png" />
-                                <i class="ion-information-circled tooltip" title="<p><b>CENSOS</b><br>
+                                <i class="ion-information-circled tooltip"
+                                    title="<p><b>CENSOS</b><br>
                                     Recuento de individuos que conforman una población como fuente de información sociodemográfica y socioeconómica. En muchos casos, la información sobre el estado de salud con este sistema, es limitada. Sin embargo, la información sociodemográfica y socioeconómica disponible puede ser utilizada como estratificadores de equidad para monitorear desigualdades.</p>"></i>
                             </div>
                             <div data-group="1">
                                 <img src="./content/img13_2.png" />
-                                <i class="ion-information-circled tooltip" title="<p><b>ENCUESTAS DE HOGARES</b><br>Recopilan información sobre las condiciones de empleo de la población, de salud, de calidad de vida, etc. Son actualmente la fuente de datos más común y confiable para el monitoreo de las desigualdades en salud en países de ingresos medianos y bajos. </p>"></i>
+                                <i class="ion-information-circled tooltip"
+                                    title="<p><b>ENCUESTAS DE HOGARES</b><br>Recopilan información sobre las condiciones de empleo de la población, de salud, de calidad de vida, etc. Son actualmente la fuente de datos más común y confiable para el monitoreo de las desigualdades en salud en países de ingresos medianos y bajos. </p>"></i>
                             </div>
                             <div data-group="2">
                                 <img src="./content/img13_3.png" />
-                                <i class="ion-information-circled tooltip" title="<p><b>REGISTROS DE SALUD</b><br>Datos administrativos de actividades del gobierno y los sistemas de salud. Incluyen entre otros, historias médicas, registros policiales, laborales y escolares; así como recursos de establecimientos de salud e información de servicios provistos. Son útiles para el monitoreo de la desigualdad, dado que ofrecen un alto grado de detalle que puede no existir en otras fuentes de datos</p>"></i>
+                                <i class="ion-information-circled tooltip"
+                                    title="<p><b>REGISTROS DE SALUD</b><br>Datos administrativos de actividades del gobierno y los sistemas de salud. Incluyen entre otros, historias médicas, registros policiales, laborales y escolares; así como recursos de establecimientos de salud e información de servicios provistos. Son útiles para el monitoreo de la desigualdad, dado que ofrecen un alto grado de detalle que puede no existir en otras fuentes de datos</p>"></i>
                             </div>
                             <div data-group="1">
                                 <img src="./content/img13_4.png" />
-                                <i class="ion-information-circled tooltip" title="<p><b>SISTEMAS DE REGISTROS VITALES</b><br>Recogen información sobre nacimientos, defunciones fetales y no fetales, que revela los cambios ocurridos en los niveles y patrones de mortalidad y fecundidad. Proveen datos necesarios sobre estratificadores de equidad, útiles para el monitoreo de la desigualdad.</p>"></i>
+                                <i class="ion-information-circled tooltip"
+                                    title="<p><b>SISTEMAS DE REGISTROS VITALES</b><br>Recogen información sobre nacimientos, defunciones fetales y no fetales, que revela los cambios ocurridos en los niveles y patrones de mortalidad y fecundidad. Proveen datos necesarios sobre estratificadores de equidad, útiles para el monitoreo de la desigualdad.</p>"></i>
                             </div>
                         </div>
                         <feedback style="display: none;">
@@ -608,7 +814,16 @@
                                 <tbody>
                                     <tr>
                                         <td>
-                                            <p class="droppable-dialog-text">Muchos países de ingresos medianos y bajos no disponen de sistemas para recolectar información de salud completa y confiable a través de sus instituciones. Debido a ello, para muchos de esos países,<button data-target-group="1"> </button> suelen ser la principal fuente de datos. <br>Además, desafortunadamente <button data-target-group="2"> </button> suelen ser incompletos y sucede que <button data-target-group="3"> </button> tengan una periodicidad irregular. <br>Estos aspectos hacen más compleja la labor de identificar estratificadores de equidad, útiles para el monitoreo de la desigualdad en estos países.
+                                            <p class="droppable-dialog-text">Muchos países de ingresos medianos y bajos
+                                                no disponen de sistemas para recolectar información de salud completa y
+                                                confiable a través de sus instituciones. Debido a ello, para muchos de
+                                                esos países,<button data-target-group="1"> </button> suelen ser la
+                                                principal fuente de datos. <br>Además, desafortunadamente <button
+                                                    data-target-group="2"> </button> suelen ser incompletos y sucede que
+                                                <button data-target-group="3"> </button> tengan una periodicidad
+                                                irregular. <br>Estos aspectos hacen más compleja la labor de identificar
+                                                estratificadores de equidad, útiles para el monitoreo de la desigualdad
+                                                en estos países.
                                             </p>
                                         </td>
                                     </tr>
@@ -651,11 +866,13 @@
                             href="http://www.dane.gov.co/index.php/estadisticas-por-tema/demografia-y-poblacion/nacimientos-y-defunciones"
                             target="_blank">http://www.dane.gov.co/index.php/estadisticas-por-tema/demografia-y-poblacion/nacimientos-y-defunciones</a>.
                     </li>
-                    <li>Manual para el Monitoreo de las Desigualdades en Salud, con especial énfasis en países de ingresos medianos y bajos. Washington, D.C.: OPS, 2016.
+                    <li>Manual para el Monitoreo de las Desigualdades en Salud, con especial énfasis en países de
+                        ingresos medianos y bajos. Washington, D.C.: OPS, 2016.
                     </li>
                     <li>Observatorio para medición de desigualdades y análisis de la equidad en salud ODES Colombia
                     </li>
-                    <li>Schneider et al. Métodos de medición de las desigualdades de salud. Rev Panam Salud Publica/Pan Am J Public Health 12(6), 2002
+                    <li>Schneider et al. Métodos de medición de las desigualdades de salud. Rev Panam Salud Publica/Pan
+                        Am J Public Health 12(6), 2002
                     </li>
                 </ul>
             </section>
