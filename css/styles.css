@@ -805,8 +805,8 @@ footer {
     background: #F1F4F7;
     ;
     border-radius: 10px;
-    bottom: 10%;
-    left: 36%;
+    bottom: 20%;
+    left: 25%;
 }
 
 .wf-content.autox {
@@ -1935,7 +1935,7 @@ span.feedback_title {
     z-index: 1;
     margin: 0 auto;
     border-radius: 25px;
-    width: 250px !important;
+    width: 350px !important;
 }
 
 .jpit-activities-multidroppable .draggable {
@@ -1947,7 +1947,7 @@ span.feedback_title {
     position: relative;
     z-index: 2;
     border-radius: 25px;
-    width: 140px !important;
+    width: 330px !important;
 }
 
 .jpit-activities-multidroppable .draggable i {

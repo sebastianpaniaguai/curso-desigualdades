@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <link rel="shortcut icon" href="img/icon.svg">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>Métodos para la medición de la desigualdad geográfica de la salud</title>
+    <title>Métodos para la medición de la inequidad geográfica de la salud</title>
 
     <link href="components/jquery/css/custom/jquery-ui.min.css" rel="stylesheet" type="text/css">
     <link href="components/ionicons/css/ionicons.min.css" rel="stylesheet" type="text/css">
@@ -96,14 +96,13 @@
                 <menu>
                     <menuitem label="Contenido">
                     <menu>
-                        <menuitem label="1. Criterios prácticos para calcular indicadores de salud"
-                            data-page="pag-criterios">
+                        <menuitem
+                            label="1. Análisis de datos para medidas simples de desigualdad: Medidas de diferencia y razón"
+                            data-page="pag-simples">
                         </menuitem>
                         <menuitem
-                            label="2. Calcular los indicadores de salud para el análisis de desigualdades geográficas"
-                            data-page="pag-calculo">
-                        </menuitem>
-                        <menuitem label="3. Análisis: estadísticos, tablas y gráficos" data-page="pag-analisis">
+                            label="2. Análisis de datos para las medidas complejas de desigualdad: Índice de desigualdad de la pendiente"
+                            data-page="pag-complejas">
                         </menuitem>
                     </menu>
                     </menuitem>
@@ -128,765 +127,469 @@
                 </menu>
             </nav>
             <div class="header-text">
-                <h1>Desigualdades e inequidades socio-geográficas</h1>
-                <span>Métodos para la medición de la desigualdad geográfica de la salud</span>
+                <h1>Métodos para la medición</h1>
+                <span>Métodos para la medición de la inequidad geográfica de la salud</span>
             </div>
             <!-- <h2 class="page-title"></h2> -->
         </header>
 
         <main style="display: none;">
 
-            <section id="pag-criterios" ptitle="Criterios prácticos para calcular indicadores de salud">
-
+            <section id="pag-simples"
+                ptitle="Análisis de datos para medidas simples de desigualdad: Medidas de diferencia y razón">
                 <div class="subpage">
                     <h2 class="page-title"></h2>
                     <div class="box_media">
                         <img src="content/img4_1.png">
-                        <div class="about"><b>Foto 1</b> Criterios para calcular indicadores (2019). Fotografía
-                            recuperada de<br><a
-                                href="https://pixabay.com/es/photos/tratamiento-dedo-mantener-mano-1327811/"
+                        <div class="about"><b>Foto 1</b> Métricas simples (2019) Fotografía recuperada de<br><a
+                                href="https://pixabay.com/es/photos/persona-hombre-masculina-negocio-731479/"
                                 target="_blank">Pixabay</a>
                         </div>
                     </div>
                     <div class="box-text note" label="Fuente">
-                        <p>Indicadores de Salud: Aspectos conceptuales y operativos (Sección 2). Washington, D.C.: OPS,
-                            s.f.</p>
-                    </div>
-                    <div class="subpage">
-                        <div class="horizontal-menu">
-                            <dl>
-                                <dt>Definición del periodo</dt>
-                                <dd>
-                                    <h3>1.1. Definición del periodo de análisis</h3>
-                                    <div class="flexbox">
-                                        <img src="./content/img4_2.png" alt="Base Poblacional">
-                                        <p>El período del indicador es esencial y debe señalarse explícitamente cuando
-                                            se divulga e interpreta un indicador en salud. La definición del período
-                                            depende del evento y de la finalidad del indicador. Cuando la finalidad es
-                                            estimar el indicador para áreas geográficas la frecuencia del evento en
-                                            dichas áreas geográficas es fundamental para definir el periodo de análisis.
-                                            Los datos de mortalidad se suelen calcular por año, pero si el interés es
-                                            mortalidad por causas específicas por ejemplo, en donde es común encontrar
-                                            áreas geográficas con cero reporte de casos, es más usual calcular los
-                                            indicadores para años agregados, siendo trienios y los quinquenios los más
-                                            utilizados como periodo de análisis.</p>
-                                    </div>
-                                    <div class="about left">Período de análisis (2019) Fotografía recuperada de <a
-                                            href="https://pixabay.com/es/photos/calendario-a%C3%B1o-calendario-oficina-1255953/"
-                                            target="_blank">Pixabay</a></div>
-                                </dd>
-                            </dl>
-                            <dl>
-                                <dt>Definición del área</dt>
-                                <dd>
-                                    <h3>1.1. Definición del área geográfica a la cual se asignan los casos de mortalidad
-                                        o del evento de interés: residencia u ocurrencia</h3>
-                                    <div class="flexbox">
-                                        <p>En general, los indicadores de salud y de mortalidad se calculan para áreas
-                                            geográficas que responden a la división político-administrativa del país, y
-                                            su elección para el cálculo de los indicadores depende la frecuencia del
-                                            evento en dichas áreas geográficas. Un aspecto esencial a considerarse en el
-                                            análisis de las inequidades geográficas se relaciona con la asignación de
-                                            casos a las áreas geográficas. Para algunos eventos de salud como por
-                                            ejemplo la mortalidad por diferentes causas, puede no ser relevante
-                                            contabilizar los casos en las áreas geográfica en donde ocurre la muerte
-                                            sino en el área geográfica en la que residen. Esto dada la intención de
-                                            focalizar intervenciones en aquellas áreas con peores indicadores de salud.
-                                            Para otros eventos como los homicidios y los accidentes de tránsito, es más
-                                            relevante asignar los casos a las áreas geográficas en donde ocurre la
-                                            muerte, dado que serían estas áreas geográficas las que estarían sujetas a
-                                            programas de intervención para reducir el riesgo de mortalidad por estas
-                                            causas.
-                                        </p>
-                                        <img src="./content/img4_3.png" alt="Base Poblacional">
-                                    </div>
-                                    <div class="about right">Definición del área geográfica (2019) . Fotografía
-                                        recuperada de <a
-                                            href="https://pixabay.com/es/photos/de-viaje-cubri%C3%B3-a-alfileres-mapas-2650303/"
-                                            target="_blank">Pixabay</a></div>
-                                </dd>
-                            </dl>
-                        </div>
-                    </div>
-            </section>
-            <section id="pag-calculo"
-                ptitle="Calcular los indicadores de salud para el análisis de desigualdades geográficas">
-                <div class="subpage">
-                    <h2 class="page-title"></h2>
-                    <div class="box_media">
-                        <img src="content/img5.png">
-                        <div class="about"><b>Foto 2</b> Indicadores de salud para análisis de desigualdades geográficas
-                            (2019). Fotografía recuperada de<br><a
-                                href="https://pixabay.com/es/illustrations/empresario-tabla-curva-4664726/"
-                                target="_blank">Pixabay</a>
-                        </div>
-                    </div>
-                    <div class="box-text note" label="Fuente">
-                        <p>Barceló MA et al. Métodos para la suavización de indicadores de mortalidad: aplicación al
-                            análisis de desigualdades en mortalidad en ciudades del Estado español (Proyecto MEDEA). Gac
-                            Sanit. 2008;22(6):596-608.</p>
-                    </div>
-                    <p>El análisis más simple de las desigualdades geográficas de indicadores de salud pudiera ser
-                        hacerse a través de mapas de enfermedades representando los casos o muertes observadas en cada
-                        área geográfica. Sin embargo, cualquier interpretación en la estructura geográfica de los casos
-                        está limitada por la falta de información sobre la distribución espacial de la población que
-                        podría estar «en riesgo» y, consecuentemente, ha generado esos casos observados. Por tanto, se
-                        prefiere la representación de tasas que permitan incorporar el efecto de la población en riesgo,
-                        en vez de representar los casos brutos. <br><br>Sin embargo, cuando el interés es comparar
-                        indicadores de población entre distintas áreas geográficas debe considerarse que las poblaciones
-                        pueden diferir por un gran número de variables, lo cual determina, por sí mismo, riegos de
-                        enfermarse y morir distintos. La edad, el sexo, origen étnico, nivel socioeconómico, son
-                        variables que influyen en gran medida en esa diferenciación. Por lo tanto, el uso directo de las
-                        tasas brutas no permite la comparación entre distintas áreas, ya que las diferencias observadas
-                        entre ellas pueden deberse a factores de riesgo principalmente demográficas como la edad y el
-                        sexo. <br><br>Para evitar conclusiones erróneas en la comparación de tasas entre distintas áreas
-                        geográficas se ha usado como estrategia no solamente el cálculo de indicadores separados para
-                        hombres y para mujeres, sino también el uso de métodos matemáticos que anulen el efecto de esa
-                        distribución demográfica desigual, lo cual se conoce como la estandarización o ajuste de las
-                        tasas por edad.
-                    </p>
-                    <div class="box-text connection">
-                        <p>Veamos en qué consiste el método de estandarización o ajuste:</p>
-                    </div>
-                    <h3>2.1. Indicadores estandarizados o ajustados por edad</h3>
-                    <div class="flexbox">
-                        <p>Dado que la mortalidad es un evento cuyo riesgo incrementa con la edad, aquellos municipios
-                            con alta densidad de población adulta mayor presentan, generalmente, las más altas tasas de
-                            mortalidad cuando comparados con aquellos municipios con poblaciones más jóvenes. Esto es
-                            especialmente evidente para los casos de mortalidad de causas que están fuertemente
-                            asociadas con la edad.</p>
-                        <img src="./content/img6.jpg" alt="Indicadores ajustados por edad">
-                    </div>
-                    <div class="about right">Indicadores ajustados por edad (2019). Fotografía recuperada de <a
-                            href="https://pixabay.com/es/photos/latino-familia-latina-hispanos-2569583/"
-                            target="_blank">Pixabay</a></div>
-                    <div class="box-text example" label="Por ejemplo,">
-                        <p>Las tasas de mortalidad general en países con diferente esperanza de vida pueden ofrecer la
-                            falsa idea de mayor riesgo de muerte en los países con mayor número de adultos mayores.
-                            También pudiera observarse que en municipios que tienen mayor proporción de adultos mayores
-                            podrían aparecer en el mapa con los mayores riesgos de mortalidad por enfermedades
-                            cerebrovasculares cuando son comparados con municipios con menores proporciones de adultos
-                            mayores. <br><br>Este resultado llevaría a conclusiones incorrectas que en parte, o del
-                            todo, pueden ser explicadas por las diferencias en la estructura por edad de la población.
+                        <p>Aluısio J. D. Barros, Cesar G. Victora. 2013 Measuring Coverage in MNCH: Determining and
+                            Interpreting Inequalities in Coverage of Maternal, New born, and Child Health Interventions.
+                            <br>
+                            Manual para el Monitoreo de las Desigualdades en Salud, con especial énfasis en países de
+                            ingresos medianos y bajos. Washington, D.C.: OPS, 2016.
                         </p>
                     </div>
-                    <p>Hay dos métodos para la estandarización por edad, que se conocen como estandarización directa e
-                        indirecta. <br><br>En la representación de los mapas, particularmente de mortalidad, el método
-                        más utilizado es la estandarización indirecta de las tasas, que consiste en la comparación de
-                        las muertes observadas en un área con las esperadas si las tasas de mortalidad para cada grupo
-                        de edad fueran los mismos que en cierta población de referencia. La razón observada/esperada se
-                        llama Razón de Mortalidad Estandarizada (RME), que no es más que un estimador del riesgo
-                        relativo del área, es decir, el riesgo de muerte en relación con el grupo considerado de
-                        referencia.</p>
-                    <div class="box-text important" label="Importante">
-                        <p>En general, los atlas que exploran de manera geográfica indicadores de mortalidad a escalas
-                            geográficas subnacionales, utilizan como población de referencia la propia población
-                            nacional. Esto se conoce como “estandarización interna”</p>
-                    </div>
-                    <p>Comúnmente, la RME es multiplicada por 100, donde 100 es el riesgo de mortalidad promedio, es
-                        decir el riesgo de la población de referencia.</p>
-                    <div class="box-text example long" label="Veamos un ejemplo de su interpretación">
-                        <p>El Atlas de la Salud de Colombia representa RME de indicadores de mortalidad para los
-                            municipios de Antioquia, utilizando como referencia a la población de toda Antioquia. En
-                            este caso, supongamos que el valor de la RME para el municipio de Angelópolis por
-                            enfermedades transmisibles es de 180, esto indica que este municipio presenta un riesgo de
-                            mortalidad 80% mayor que el riesgo de Antioquia. En otras palabras, este municipio tiene un
-                            número de muertes observadas mayor que las esperadas si el municipio tuviera la estructura
-                            de mortalidad de Antioquia. Para este mismo municipio, su RME para neoplasias fue de 40
-                            indicando en este municipio tiene un riesgo de mortalidad 60% menor que el riesgo del
-                            departamento. Es decir, dicho municipio tiene un número de muertes observadas menor que las
-                            esperadas.</p>
-                    </div>
-                    <div class="box-text important" label="¡Ojo!">
-                        <p>Este método sugiere ser el más apropiado cuando se analizan áreas geográficas con escaso
-                            número de población, resultando en estimaciones de tasas más precisas. Por esto es el método
-                            de estandarización más común para los indicadores que se representan en mapas con el
-                            objetivo es explorar sus variaciones geográficas. <br><br>Es importante mencionar que bajo
-                            la estandarización indirecta, la comparación de las RME entre dos o más municipios es sólo
-                            posible mediante comparaciones indirectas a través de la población de referencia.</p>
-                    </div>
-                    <div class="box-text important" label="Clave del aprendizaje">
-                        <h3>¿Es lo mismo una Razón de Mortalidad Estandarizada (RME) y un Riesgo de mortalidad
-                            estandarizado?</h3>
-                        <p>Es común que la Razón de Mortalidad Estandarizada sea interpretada como riesgo relativo de
-                            mortalidad, dado que ésta representa el riesgo relativo de mortalidad de un municipio
-                            comparado con el riesgo promedio de su población de referencia.</p>
-                    </div>
-                    <div class="box-text connection">
-                        <p>Ahora veamos cómo se comporta este estimador del riesgo en áreas geográficas pequeñas.</p>
-                    </div>
-                </div>
-                <div class="subpage">
-                    <h3>2.2. La RME en áreas geográficas pequeñas</h3>
                     <div class="flexbox">
-                        <img src="./content/img8.png" alt="La RME en áreas geográficas pequeñas">
-                        <p>Las RME, aun cuando han sido ampliamente utilizadas en los atlas de mortalidad, tienen
-                            algunas limitaciones al ser calculadas para áreas pequeñas. Aunque no hay una definición
-                            exacta de lo que se considera un área geográfica pequeña, ya que esta definición dependería
-                            del contexto de estudio y del número de casos de la enfermedad analizada, algunos autores
-                            han definido un área pequeña como cualquier región cuyo tamaño muestral en un estudio es
-                            demasiado pequeño como para producir estimaciones con un nivel de precisión aceptable. Otros
-                            autores consideran que las áreas pequeñas son las que presentan menos de 20 casos de
-                            enfermedad y con una población que debería ser al menos de 10.000 habitantes. </p>
-                    </div>
-                    <div class="about left">La RME en áreas geográficas pequeñas (2019)</div>
-                    <p>Los análisis de indicadores de salud a escalas geográficas menores al departamento –como el
-                        municipio por ejemplo– ofrecen ventajas importantes, dado que, en general, áreas geográficas
-                        pequeñas tienden a ser más homogéneas en sus características, mientras que las áreas mayores
-                        tienden a ser más diversas. <br><br>En consecuencia, la exploración de eventos de salud a
-                        escalas geográficas pequeñas permite a los entes territoriales e investigadores:</p>
-                    <ul>
-                        <li>analizar más detalladamente los patrones espaciales de los eventos de salud</li>
-                        <li>identificar las diferencias entre las áreas geográficas en la magnitud de ocurrencia de los
-                            eventos</li>
-                        <li>apoyar la búsqueda de explicaciones para tales diferencias</li>
-                        <li>identificar municipios en alto riesgo</li>
-                        <li>apoyar la toma de decisiones para la focalización de los recursos y definición de
-                            estrategias de salud.</li>
-                    </ul>
-                    <p>Sin embargo, este tipo de análisis trae desafíos metodológicos que deben considerarse como, por
-                        ejemplo, el efecto que podría tener el reducido número de eventos de una área geográfica sobre
-                        los resultados de las RME. En el análisis de desigualdades geográficas para áreas pequeñas (por
-                        ejemplo municipios, barrios, unidades censales), el problema radica en que éstas áreas pequeñas
-                        además de que tienen poca población, pueden tener pocos casos de mortalidad, por lo que sus
-                        estimaciones de RME son más inestables debido a su gran variabilidad. En este sentido, las RME
-                        extremas y, por tanto, dominantes en los mapas, son aquellas estimadas con menor precisión en
-                        áreas que tienen pocos casos. <br><br>Con el fin de solucionar los problemas derivados de la
-                        utilización directa de las RME, se han propuesto varias alternativas para «suavizarlas». Lo más
-                        habitual es utilizar métodos estadísticos para el análisis de eventos muy poco frecuentes, como
-                        la distribución de Poisson, particularmente el modelo propuesto por Besag, York y Mollie (BYM).
-                        <br><br>Este modelo estima cada una de las RME, combinando el conteo de eventos de cada área
-                        geográfica con el promedio del conteo de eventos de las áreas aledañas. El resultado del modelo
-                        es la estimación de la Razón de <i>Mortalidad Estandarizada y Suavizada</i> (RMEs) para cada
-                        área, cuya interpretación sigue siendo el riesgo de muerte de cada área en relación a la
-                        población de referencia.
-                    </p>
-                    <div class="box-text example" label="Por ejemplo,">
-                        <p>Valores de RMEs municipales de 90 o 60 representan municipios con riesgos de mortalidad
-                            aproximadamente 10% y 40% inferiores respecto al riesgo promedio de la población de
-                            referencia. Los RMEs municipales de 110 o 140 representan municipios con riesgos superiores
-                            del 10% y 40% respecto al riesgo promedio de la población de referencia.
-                        </p>
-                    </div>
-                    <p>La suavización es una técnica estadística que se utiliza para ajustar las fluctuaciones en el
-                        riesgo de una enfermedad de áreas geográficas que tienen bajo número de casos o baja población.
-                        Una RMEs indica que la RME de cada área geográfica fue estimada combinando la información de
-                        mortalidad de cada área (local) con el promedio de la información de mortalidad de las áreas
-                        aledañas (vecinas).
-                    </p>
-                    <p>Además de la RMEs, el modelo de Besag, York y Mollie (BYM) estima otro indicador muy útil para
-                        cuantificar en términos de significación estadística la fuerza de la evidencia sobre el exceso o
-                        defecto de riesgo de cada una de las áreas geográficas comparadas con la población de
-                        referencia. Este indicador se conoce como Probabilidad a Posteriori (PrP), el cual estima la
-                        probabilidad de que cada una de las RMEs sea mayor a100, esto es, la probabilidad de que se una
-                        área geográfica presente un riesgo de mortalidad significativamente mayor o menor que el riesgo
-                        de la población de referencia (p&lt;0.05).
-                    </p>
-                    <div class="box-text note" label="Nota">
-                        <p>Áreas con probabilidades mayores al 80% se consideran áreas con riesgos significativamente
-                            mayores al riesgo de mortalidad de referencia (p&lt;0.05). Áreas con probabilidades menores
-                            al 20% son áreas con riesgos de mortalidad significativamente menores al promedio.
-                        </p>
-                    </div>
-                    <div class="box-text important" label="En síntesis:">
-                        <p>Las áreas geográficas pueden diferir por un gran número de variables, principalmente por su
-                            estructura demográfica definida por la edad y el sexo. Por lo tanto, para garantizar la
-                            pertinencia en las comparaciones en los riesgos de mortalidad de las áreas geográficas, se
-                            recomienda la estimación de indicadores indirectamente estandarizados por edad para hombres
-                            y para mujeres.</p>
-                    </div>
-                    <div class="box-text connection">
-                        <p>Identifiquemos ahora los diferentes metodologías para representar estos indicadores y para
-                            mejor comunicar las conclusiones en términos de desigualdades geográficas. <br><br>Haz clic
-                            en <i>siguiente</i> para continuar.</p>
-                    </div>
-                </div>
-            </section>
-            <section id="pag-analisis" ptitle="Análisis: estadísticos, tablas y gráficos">
-                <h2 class="page-title"></h2>
-                <div class="box_media">
-                    <img src="content/img10.png">
-                    <div class="about"><b>Foto 3</b> Análisis estadísticos, tablas y gráficos (2019). Fotografía
-                        recuperada de<br><a
-                            href="https://commons.wikimedia.org/wiki/File:Statistics_on_a_laptop_(Unsplash).jpg"
-                            target="_blank">Wikimedia</a>
-                    </div>
-                </div>
-                <div class="box-text note" label="Fuente">
-                    <p>C. Borrell, M. Rué, M. I. Pasarín, J. Benach y cols.— La medición de las desigualdades en salud.
-                        Gac Sanit 2000;14(Supl. 3):20-33.</p>
-                </div>
-                <p>Indicadores con poca variabilidad geográfica nos llevarán a un análisis poco ilustrativo en términos
-                    de desigualdades. Por lo tanto, el paso inicial en el análisis de desigualdades geográficas es el
-                    cálculo de medidas descriptivas que proporcionen una idea de la necesidad de análisis de dichas
-                    desigualdades.</p>
-                <div class="box-text connection">
-                    <p>En el monitoreo de las desigualdades geográficas se puede utilizar una amplia gama de
-                        herramientas para la presentación visual y estadísticas de desigualdades siendo las más
-                        utilizadas las que se describen a continuación:<sup class="tooltip"
-                            title="Every Woman Every Child Latin America and Caribbean (EWEC LAC). Guía paso a paso para el cálculo de métricas de desigualdad en salud">3</sup>
-                    </p>
-                </div>
-                <div class="subpage">
-                    <h3>3.1. Mapas</h3>
-                    <div class="flexbox">
-                        <p>El primer paso es la inspección visual de la distribución en las diferentes áreas geográficas
-                            del indicador de salud (lo que se conoce como desigualdad total), así como también de los
-                            estratificadores de equidad. Los mapas entonces se convierten en la primera forma de
-                            representación de la desigualdad total, proporcionando un resumen visual de la información
-                            para identificar patrones geográficos que de otro modo podrían pasar inadvertidos en las
-                            presentaciones tabulares.</p>
-                        <img src="./content/img11_1.png"
-                            alt="Análisis visual mediante mapas para monitrear dedigualdades geográficas">
-                    </div>
-                    <div class="about right">Análisis visual mediante mapas para monitrear dedigualdades geográficas
-                        (2019)</div>
-                    <p>Comúnmente, el análisis de desigualdades geográficas de la mortalidad se realiza a escalas
-                        geográficas como el municipio o menores. Para su representación se utilizan mapas con dos tipos
-                        de información:</p>
-                    <img src="./content/img11_2.png" class="maphilight" usemap="#info-type-map"
-                        alt="Análisis visual mediante mapas para monitrear dedigualdades geográficas">
-                    <div class="about"><b>Imagen 2. </b>Tipos de información para los mapas</div>
-                    <map name="info-type-map">
-                        <area class="w-content-controler general" shape="circle" coords="170,123,91" href="#"
-                            data-content="#img_izq" />
-                        <area class="w-content-controler general" shape="circle" coords="525,122,91" href="#"
-                            data-content="#img_der" />
-                    </map>
-                    <div id="img_izq" class="w-content" data-cssclass="global-modal" data-property-width="1000px">
-                        <h4>Mapas de representación geográfica de la Razón de Mortalidad Estandarizada (RME)</h4>
-                        <div class="text-image right">
-                            <div class="box_media">
-                                <img src="./content/img12.png"
-                                    alt="Mapa del indicador de mortalidad municipal: Razón de mortalidad estandarizada y suavizada">
-                                <div class="about"><b>Figura 1. </b>Mapa del indicador de mortalidad municipal: Razón de
-                                    mortalidad estandarizada y suavizada (2019)</div>
-                            </div>
-                            <p>Este indicador representa el riesgo relativo de un municipio comparado con el riesgo
-                                promedio de la población de referencia. Retomando lo presentado en el capítulo anterior,
-                                la RME se obtiene al estandarizar las tasas de mortalidad por el método indirecto que,
-                                el cual compara las muertes observadas en cada municipio en un periodo con las esperadas
-                                para el mismo periodo. Para el cálculo de los casos esperados generalmente se toma como
-                                referencia las tasas de mortalidad por quinquenios de edad del país o departamento al
-                                cual pertenece el municipio (esto se conoce como estandarización interna). De esta
-                                manera, la RME mide el riesgo de muerte de cada municipio con relación al país o
-                                departamento al que pertenece.<sup class="tooltip"
-                                    title="arceló MA et al. Métodos para la suavización de indicadores de mortalidad:
-                                aplicación al análisis de desigualdades en mortalidad en ciudades del Estado español (Proyecto MEDEA). Gac Sanit. 2008;22(6):596-608"></sup>
-                                <br><br>Para facilitar su interpretación, la RME es comúnmente multiplicada por 100,
-                                donde 100 es el riesgo de mortalidad del país o departamento. Cuando un municipio tiene
-                                un RME mayor a 100 indica que presenta exceso de riesgo de mortalidad comparado con el
-                                riesgo de referencia. Por el contrario, un municipio con una RME menor que 100 indica
-                                que tiene defecto de riesgo dicho comparado con el riesgo de referencia. <br><br>Para la
-                                representación de los RME, los mapas utilizan una escala de colores divergente con siete
-                                categorías (septiles) del RME. La Figura 1 muestra un ejemplo de dicha representación
-                                para un indicador de mortalidad. La categoría del medio (blanco) representa riesgo
-                                similar al del promedio del departamento de Antioquia, y los otros colores representan
-                                municipios con riesgos mayores que el promedio de Antioquia (tonos marrones) o menores
-                                que el promedio de Antioquia (tonos verdes).
-                            </p>
-                        </div>
-                    </div>
-                    <div id="img_der" class="w-content global_modal" data-cssclass="global-modal"
-                        data-property-width="1000px">
-                        <h4>Mapas de alta probabilidad de exceso o defecto de riesgo</h4>
-                        <div class="text-image right">
-                            <div class="box_media">
-                                <img src="./content/img13_1.png"
-                                    alt="Mapa de probabilidad posterior: fuerza (estadística) de la evidencia de que la RME sea mayor o menor que el riesgo de la población de referencia">
-                            </div>
-                            <p>Estos mapas deben ser interpretados en conjunto con el respectivo mapa del RME. El mapa
-                                de probabilidad indica la fuerza estadística de la evidencia sobre el exceso o defecto
-                                de riesgo de cada una de los municipios comparados con la población de referencia.
-                                <br>En la Figura 2, municipios en color rojo indican que son municipios en donde hay una
-                                probabilidad mayor del 80% de tener un RME superior al riesgo promedio de referencia
-                                (exceso de riesgo). Mientras que los municipios en color verde indican son los
-                                municipios en donde hay 80% de probabilidad o más de que los riesgos sean menores que el
-                                riesgo promedio (defecto de riesgo).</p>
-                        </div>
-                        <div class="about right"><b>Figura 2. </b>Mapa de probabilidad posterior: fuerza (estadística)
-                            de la evidencia de que la RME sea mayor o menor que el riesgo de la población de referencia
-                            (2017)</div>
-                    </div>
-                </div>
-                <div class="subpage">
-                    <h3>3.2. Estadística: Medidas de dispersión</h3>
-                    <div class="flexbox">
-                        <img src="./content/img13_2.png"
-                            alt="Análisis estadístico para monitrear dedigualdades geográficas">
-                        <p>La segunda herramienta de análisis es la valoración de la variabilidad de los indicadores de
-                            salud en múltiples territorios. Estos cálculos son importantes dado que para indicadores con
-                            poca variabilidad su análisis no será muy ilustrativo en términos de las desigualdades
-                            geográficas.</p>
-                    </div>
-                    <div class="about left">Análisis estadístico para monitrear dedigualdades geográficas (2019)
-                        Fotografía recuperada de <a href="https://www.piqsels.com/es/public-domain-photo-zkmpn"
-                            target="_blank">Piqsels</a></div>
-                    <p>Las medidas más utilizadas son:</p>
-                    <ul>
-                        <li>La varianza: Esta medida representa una medida absoluta de las desigualdades, y fue
-                            reportada en el estudio de Lu TH et al<sup class="tooltip"
-                                title="Lu TH, Lai CH, Chiang TL. Reducing regional inequality in mortality from road traffic injuries through enforcement of the mandatory motorcycle helmet law in Taiwan. Inj Prev. 2012;18(3):150–7">5</sup>
-                            para analizar diferencias entre 22 ciudades de Taiwan en la mortalidad por accidentes de
-                            tránsito. De acuerdo con los resultados, la varianza entre-ciudades disminuyó de 179 en 1997
-                            a 49 en el año 2008.</li>
-                        <li>Otra medida ampliamente utilizada es la desviación estándar, la cual fue utilizada con datos
-                            de la zona rural de Irán para estimar las inequidades regionales en fertilidad.<sup
-                                class="tooltip"
-                                title="Movahedi M, Hajarizadeh B, Rahimi A, Arshinchi M, Amirhosseini K, Haghdoost AA. Trends and geographical inequalities of the main health indicators for rural Iran. Health Policy Plan. 2009;24(3):229–37.">6</sup>
-                            De acuerdo con los autores, la desviación estándar del porcentaje de nacimientos atendidos
-                            por personal no calificado evidenció una disminución de la inequidad entre los periodos
-                            1996-2000 y 2001-2005 al pasar de 15.3 a 10.9 puntos porcentuales.</li>
-                        <li>Finalmente, el coeficiente de variación es frecuentemente utilizado para comparar la
-                            magnitud de las inequidades de dos o más indicadores incluso si se miden en diferentes
-                            unidades. Una aplicación de esta medida se observa en un estudio con datos de 17 países
-                            entre los años 1980 y 1994<sup class="tooltip"
-                                title="Galal OM, Qureshi AK. Dispersion Index: measuring trend assessment of geographical inequality in health–the example of under-five mortality in the Middle East/north African region, 1980–1994. Soc Sci Med. 1997;44(12):1893–902.">7</sup>,
-                            el cual mostró una reducción en la tasa de mortalidad en menores de cinco años, pasando de
-                            144.5 a 62.4 muertes por 1000 nacidos vivos, y un incremento en el coeficiente de variación
-                            de 28.8 % en 1980 a 52.3 % in 1992.</li>
-                    </ul>
-                </div>
-                <div class="subpage">
-                    <h3>3.3. Tablas</h3>
-                    <div class="box-text note" label="Fuente">
-                        <p>Manual para el Monitoreo de las Desigualdades en Salud, con especial énfasis en países de
-                            ingresos medianos y bajos. Washington, D.C.: OPS, 2016.</p>
-                    </div>
-                    <div class="flexbox">
+                        <img src="./content/img4_2.png" alt="Métricas simple">
                         <div>
-                            <p>En el monitoreo de la desigualdad en salud, las tablas pueden presentarse de manera tal
-                                que cada indicador de salud pueda estar desagregado por cada estratificador de equidad.
-                                Esto significa que la información presentada muestra la situación para un único
-                                indicador de salud en una única dimensión de desigualdad.
-                            </p>
-                            <div class="box-text example" label="Por ejemeplo,">
-                                <p>asa de mortalidad infantil por zona de residencia, quintiles de cobertura de
-                                    vacunación contra el sarampión por municipio. </p>
+                            <p>Conocidas como métricas de brecha (gap) o de comparación por pares o de-a-dos, valoran la
+                                desigualdad a través de la comparación de la salud entre dos territorios.</p>
+                            <div class="box-text example" label="Por ejemplo,">
+                                <p>el promedio (proporción o razón) de un indicador de salud en el territorio A es
+                                    comparado con el promedio en el territorio B. También puede realizarse la
+                                    comparación entre el promedio del territorio A con el promedio nacional, o el
+                                    promedio de los territorios en los extremos opuestos del ordenamiento jerárquico del
+                                    estratificador de equidad. </p>
                             </div>
                         </div>
-                        <img src="./content/img14.png"
-                            alt="Análisis mediante tablas para monitrear dedigualdades geográficas">
                     </div>
-                    <div class="about right">Análisis mediante tablas para monitrear dedigualdades geográficas (2019)
+                    <p>Es usual que este tipo de comparaciones por pares o de-a-dos realicen comparaciones de la salud
+                        entre un territorio y un punto de referencia. Estos puntos de referencia son normalmente
+                        definidos como el territorio con el mejor desempeño, o un territorio modelo (ciudad capital) o
+                        el promedio de salud nacional.<sup class="tooltip"
+                            title="Monitoring subnational regional inequalities in health: measurement approaches and challenges Ahmad Reza Hosseinpoor1*, Nicole Bergen1 , Aluisio J. D. Barros2 , Kerry L. M. Wong2 , Ties Boerma1 and Cesar G. Victora">1</sup>
+                        <br><br>Es también usual que los territorios sean ordenados de acuerdo con el valor del
+                        estratificador de equidad y agrupados en quintiles (desde el de menor condición social hasta el
+                        de mayor condición social), y las comparaciones se realicen entre los quintiles extremos.
+                        <br><br>Aunque un territorio puede cambiar su nivel del estratificador de equidad en el tiempo,
+                        es poco probable que estos cambios generen cambios importantes en la composición de los
+                        quintiles.<sup class="tooltip"
+                            title="Croydon Joint Strategic Needs Assessment 2009-10 Geographical health inequalities <a href='https://www.croydonobservatory.org/wp-content/uploads/2016/11/JSNA-Geographical-Health-Inequalities-2009-10.pdf' target='_blank'>https://www.croydonobservatory.org</a>">2</sup><br><br>Este
+                        tipo de mediciones son las más básicas para medir la desigualdad territorial, y se basan en la
+                        diferencia y la razón.</p>
+                    <div class="instruction desktop"></i>Haz click sobre cada tipo de métrica para conocer su
+                        descripción</div>
+                    <img class="maphilight" src="./content/img5.png" alt="Métricas simples"
+                        usemap="#metricas-simples-map" data-mark-stroke-color="B9E6F5" data-mark-fill-color="B9E6F5"
+                        data-mark-opacity="0.5">
+                    <map name="metricas-simples-map">
+                        <area class="wf-content-controler general" shape="circle" coords="138,327,75" href="#"
+                            data-content="#diferencia" alt="">
+                        <area class="wf-content-controler general" shape="circle" coords="557,328,73" href="#"
+                            data-content="#razon" alt="">
+                    </map>
+                    <div id="diferencia" class="wf-content" data-property-width="600px">
+                        <h4>DIFERENCIA </h4>
+                        <p>Mide la <b>desigualdad o brecha absoluta</b> en el indicador de salud entre la experiencia de
+                            salud del(os) territorio(s) de menor condición social, comparado con el(los) territorio(s)
+                            de mayor condición social, manteniendo la unidad de medida del indicador de salud.</p>
                     </div>
-                    <p>Una ventaja de las tablas es que no existe ambigüedad sobre los valores de los datos, ya que
-                        ellos son presentados explícitamente. Sin embargo, una desventaja de ellas es que carecen de la
-                        interpretación visual inmediata de los gráficos y los mapas y, por tanto, demandan más esfuerzo
-                        por parte de la audiencia para extraer conclusiones. <br><br>Se puede facilitar la
-                        interpretación de tablas resaltando valores prominentes, codificando a color valores o celdas o
-                        acentuando la tipografía (como con letras en negrita).</p>
-                    <div class="box-text example" label="Veamos un ejemplo">
-                        <p>En la tabla 1 se observan datos sobre desigualdad en la mortalidad por causas externas en
-                            Antioquia según nivel de riqueza municipal para los años 2000, 2005, 2010 y 2014. De acuerdo
-                            a las estimaciones, durante el periodo de estudio Antioquia experimentó una disminución de
-                            las desigualdades en sus riesgos de mortalidad. Esto es, que los riesgos de mortalidad en
-                            todos los quintiles de pobreza y desarrollo tuvieron una importante disminución a lo largo
-                            del periodo.</p>
+                    <div id="razon" class="wf-content" data-property-width="600px">
+                        <h4>RAZÓN</h4>
+                        <p>Expresa la <b>desigualdad o brecha relativa</b> o diferencia proporcional que existe en el
+                            indicador de salud entre el(los) territorio(s) con menor condición social y el territorio(s)
+                            con el mayor condición social, sin retener la unidad de medida del indicador.
+                        </p>
                     </div>
-                    <div class="about"><b>Tabla 1. </b>Desigualdad en el riesgo relativo de mortalidad por causas
-                        externas según quintiles de pobreza municipal. Antioquia, 2000-2005-2010 y 2014</div>
+                    <p>Las siguientes tablas(1 y 2) ilustran los cálculos de la diferencia y la razón para un indicador
+                        de salud, un estratificador de equidad y un entorno particular. En Colombia, la diferencia en la
+                        cobertura de cuatro o más consultas prenatales entre las áreas urbana y rural fue más baja en
+                        2010 que en años previos, debido a incrementos acelerados de cobertura en áreas rurales. En
+                        Egipto, la Encuesta de Demografía y Salud (DHS) de 2000 reportó una razón hombre/mujer de 1,0 en
+                        la tasa de mortalidad en menores de cinco años; en 2008, esta razón fue 1,4 debido a reducciones
+                        más grandes de la mortalidad en mujeres que de la mortalidad en hombres durante ese período de
+                        tiempo.</p>
+                    <div class="about">
+                        <p><b>Tabla 1. </b>Desigualdad urbano-rural en la atención prenatal (al menos cuatro consultas)
+                            en Colombia; DHS 1995, 2000, 2005 y 2010. Manual para el Monitoreo de las Desigualdades en
+                            Salud, con especial énfasis en países de ingresos medianos y bajos. Washington, D.C.: OPS,
+                            2016 (30).</p>
+                    </div>
                     <table class="datatable">
                         <thead>
-                            <th>Año</th>
-                            <th>Quintil 1 (q1) (más rico) (RME)</th>
-                            <th>Quintil 2 (RME)</th>
-                            <th>Quintil 3 (RME)</th>
-                            <th>Quintil 4 (RME)</th>
-                            <th>Quintil 5 (q5) (más pobre) (RME)</th>
+                            <th>Año de encuesta</th>
+                            <th>Cobertura en el área rural (%)</th>
+                            <th>Cobertura en el área urbana (%)</th>
+                            <th>Diferencia (urbana-rural) (puntos porcentuales)</th>
+                            <th>Razón (urbana / rural)</th>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Hombres (2000)</td>
-                                <td>111.50</td>
-                                <td>121.85</td>
-                                <td>139.54</td>
-                                <td>121.23</td>
-                                <td>113.30</td>
+                                <td>1995</td>
+                                <td>53,8</td>
+                                <td>82,4</td>
+                                <td>28,6</td>
+                                <td>1,5</td>
                             </tr>
                             <tr>
-                                <td>Hombres (2005)</td>
-                                <td>117.76</td>
-                                <td>156.99</td>
-                                <td>150.16</td>
-                                <td>150.62</td>
-                                <td>142.43</td>
+                                <td>2000</td>
+                                <td>64,7</td>
+                                <td>84,9</td>
+                                <td>20,2</td>
+                                <td>1,3</td>
                             </tr>
                             <tr>
-                                <td>Hombres (2010)</td>
-                                <td>75.05</td>
-                                <td>97.02</td>
-                                <td>99.13</td>
-                                <td>129.47</td>
-                                <td>124.05</td>
+                                <td>2005</td>
+                                <td>73,1</td>
+                                <td>87,1</td>
+                                <td>14,0</td>
+                                <td>1,2</td>
                             </tr>
                             <tr>
-                                <td>Hombres (2014)</td>
-                                <td>59.92</td>
-                                <td>79.05</td>
-                                <td>86.61</td>
-                                <td>80.68</td>
-                                <td>70.56</td>
-                            </tr>
-                            <tr>
-                                <td>Mujeres (2000)</td>
-                                <td>114.22</td>
-                                <td>137.77</td>
-                                <td>160.63</td>
-                                <td>135.64</td>
-                                <td>109.59</td>
-                            </tr>
-                            <tr>
-                                <td>Mujeres (2005)</td>
-                                <td>113.96</td>
-                                <td>116.14</td>
-                                <td>128.65</td>
-                                <td>138.17</td>
-                                <td>143.18</td>
-                            </tr>
-                            <tr>
-                                <td>Mujeres (2010)</td>
-                                <td>101.58</td>
-                                <td>107.33</td>
-                                <td>115.73</td>
-                                <td>128.18</td>
-                                <td>122.62</td>
-                            </tr>
-                            <tr>
-                                <td>Mujeres (2014)</td>
-                                <td>62.24</td>
-                                <td> 81.76</td>
-                                <td> 80.36</td>
-                                <td> 83.83</td>
-                                <td> 89.97</td>
+                                <td>2010</td>
+                                <td>80,5</td>
+                                <td>90,3</td>
+                                <td>9,8</td>
+                                <td>1,1</td>
                             </tr>
                         </tbody>
                     </table>
-                </div>
-                <div class="subpage">
-                    <h3>Gráficos o figuras</h3>
-                    <div class="box-text note" label="Fuente">
-                        <p>Cómo hacer comprensibles los datos. Parte 2: Una guía para presentar estadísticas. Naciones Unidas, Comisión económica para Europa. Ginebra, 2009. Recuperado de <a href="https://www.unece.org/fileadmin/DAM/stats/documents/writing/MDM_Part2_Spanish.pdf" target="_blank">https://www.unece.org/</a></p>
+                    <div class="about">
+                        <p><b>Tabla 2. </b>Desigualdad entre sexos en la mortalidad en menores de 5 años en Egipto; DHS
+                            1995, 2000, 2005 y 2008. Manual para el Monitoreo de las Desigualdades en Salud, con
+                            especial énfasis en países de ingresos medianos y bajos. Washington, D.C.: OPS, 2016 (32).
+                        </p>
                     </div>
-                    <p>Las estadísticas a menudo pueden entenderse mejor si se presentan en un gráfico en lugar de en una tabla. Un gráfico es una representación visual de los datos estadísticos mediante símbolos como barras o líneas. Es una herramienta visual muy eficaz, ya que muestra datos de manera rápida y sencilla, facilita la comparación y puede revelar las tendencias y las relaciones entre los datos. <br><br>Los gráficos que reportan sobre el monitoreo de la desigualdad en salud presentan la información de manera simple, clara y precisa. Entre los más utilizados se encuentran los gráficos de líneas, gráficos de barras y gráficos de Equiplot.</p>
+                    <table class="datatable">
+                        <thead>
+                            <th>Año de encuesta</th>
+                            <th>Mujer (muertes por 1000 nacidos vivos)</th>
+                            <th>Hombre (muertes por 1000 nacidos vivos)</th>
+                            <th>Diferencia (hombre - mujer) (muertes por 1000 nacidos vivos)</th>
+                            <th>Razón (hombre / mujer)</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1995</td>
+                                <td>98,9</td>
+                                <td>92,1</td>
+                                <td>-6,8</td>
+                                <td>0,9</td>
+                            </tr>
+                            <tr>
+                                <td>2000</td>
+                                <td>69,3</td>
+                                <td>68,6</td>
+                                <td>-0,7</td>
+                                <td>1,0</td>
+                            </tr>
+                            <tr>
+                                <td>2005</td>
+                                <td>46,3</td>
+                                <td>52,1</td>
+                                <td>5,8</td>
+                                <td>1,1</td>
+                            </tr>
+                            <tr>
+                                <td>2008</td>
+                                <td>27,7</td>
+                                <td>38,4</td>
+                                <td>10,7</td>
+                                <td>1,4</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>Ahora veamos como en la tabla 3, por ejemplo, los estados de las Filipinas se dividieron en
+                        quintiles de riqueza y se calcularon métricas simples de desigualdad basadas en el valor
+                        promedio de cobertura de atención del parto por personal de salud capacitado en el quintil más
+                        pobre y el valor promedio de ese indicador de salud en el quintil más rico. <br><br>Aún cuando
+                        se ignora la salud de la población en los tres quintiles medianos, este cálculo nos puede
+                        ofrecer una indicación general sobre la desigualdad según nivel de riqueza. <br><br>Comparando
+                        el indicador del 20% más pobre en los diferentes años, se observa un mayor aumento absoluto que
+                        el cambio en el 20% más rico Comparando los municipios más pobres con los más ricos, en todos
+                        los años, los municipios situados en el 20% más pobre tuvieron menor proporción de partos
+                        atendidos por personal de salud capacitado que el 20% más rico. En cuanto a la brecha absoluta,
+                        en el 2008, la diferencia absoluta entre la atención del parto por personal de salud capacitado
+                        del grupo de municipios más pobres y el grupo de municipios más ricos es de 68,7%. En términos
+                        relativos, para el 2008, la atención del parto por personal de salud capacitado en el grupo de
+                        municipios más ricos es 3.7 veces mayor que la atención del parto por personal de salud
+                        capacitado en el grupo de municipios más pobres.</p>
+                    <div class="about">
+                        <p><b>Tabla 3. </b>Desigualdad según el nivel de riqueza en la atención del parto por personal
+                            de salud capacitado en las Filipinas; DHS 1998, 2003 y 2008. Manual para el Monitoreo de las
+                            Desigualdades en Salud, con especial énfasis en países de ingresos medianos y bajos.
+                            Washington, D.C.: OPS, 2016 (33).</p>
+                    </div>
+                    <table class="datatable">
+                        <thead>
+                            <th>Año de encuesta</th>
+                            <th>Quintil 1 (q1) (más pobre) (%)</th>
+                            <th>Quintil 2 (%)</th>
+                            <th>Quintil 3
+                                (%)
+                            </th>
+                            <th>Quintil 4
+                                (%)
+                            </th>
+                            <th>Quintil 5
+                                (%)
+                            </th>
+                            <th>Diferencia
+                                (q5 - q1) (%)
+                            </th>
+                            <th>Razón
+                                (q5 / q1)
+                            </th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1998</td>
+                                <td>21,2</td>
+                                <td>45,9</td>
+                                <td>72,8</td>
+                                <td>83,9</td>
+                                <td>91,9</td>
+                                <td>70,7</td>
+                                <td>4,3</td>
+                            </tr>
+                            <tr>
+                                <td>2003</td>
+                                <td>25,1</td>
+                                <td>51,4</td>
+                                <td>72,4</td>
+                                <td>84,4</td>
+                                <td>92,3</td>
+                                <td>67,2</td>
+                                <td>3,7</td>
+                            </tr>
+                            <tr>
+                                <td>2008</td>
+                                <td>25,7</td>
+                                <td>55,6</td>
+                                <td>75,8</td>
+                                <td>86,0</td>
+                                <td>94,4</td>
+                                <td>68,7</td>
+                                <td>3,7</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>A pesar de su simplicidad, estas medidas que comparan solamente los quintiles extremos de las
+                        áreas geográficas bajo estudio (Q5 y Q1) tienen algunas limitaciones. En primer lugar resaltamos
+                        que no sucede siempre que los quintiles más pobres y los quintiles más ricos sean los que tienen
+                        los peores y mejores niveles de salud. Este es el caso por ejemplo de la cobertura de vacunación
+                        para sarampión en Bolivia (cobertura de 75% en Q1 y 67% en Q5) y Tajikistan (cobertura de 88% en
+                        Q4 y 84% en Q5). Otra limitación, y la más importante, es que las áreas geográficas de los
+                        grupos intermedios (ejm., Q2 a Q4) no son capturados en estas medidas simples de desigualdad.
+                        <br><br>El siguiente ejemplo de desigualdad según nivel de riqueza en la cobertura de atención
+                        del parto por personal de salud capacitado en Ghana (tabla 3.4) ilustra los problemas que pueden
+                        ocurrir cuando las mediciones simples de la desigualdad ignoran a los grupos intermedios.</p>
+                    <div class="about">
+                        <p><b>Tabla 4. </b>Desigualdad según nivel de riqueza en la atención del parto por personal de
+                            salud capacitado en Ghana; DHS 2003 y 2008. Manual para el Monitoreo de las Desigualdades en
+                            Salud, con especial énfasis en países de ingresos medianos y bajos. Washington, D.C.: OPS,
+                            2016 (33).</p>
+                    </div>
+                    <table class="datatable">
+                        <thead>
+                            <th>Año de encuesta</th>
+                            <th>Quintil 1 (q1) (más pobre) (%)</th>
+                            <th>Quintil 2 (%)</th>
+                            <th>Quintil 3
+                                (%)
+                            </th>
+                            <th>Quintil 4
+                                (%)
+                            </th>
+                            <th>Quintil 5
+                                (%)
+                            </th>
+                            <th>Diferencia
+                                (q5 - q1) (%)
+                            </th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2003</td>
+                                <td>20,6</td>
+                                <td>31,9</td>
+                                <td>43,3</td>
+                                <td>73,0</td>
+                                <td>90,4</td>
+                                <td>69,8</td>
+                            </tr>
+                            <tr>
+                                <td>2008</td>
+                                <td>24,2</td>
+                                <td>50,0</td>
+                                <td>64,8</td>
+                                <td>81,7</td>
+                                <td>94,6</td>
+                                <td>70,4</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>De la tabla 4 se puede concluir —basándose en los valores de las diferencias— que la desigualdad
+                        absoluta según nivel de riqueza en la cobertura de atención del parto por personal de salud
+                        capacitado casi no cambió en Ghana entre la DHS 2003 y la DHS 2008. Sin embargo, si se visualiza
+                        esta información en forma gráfica (figura 1), se torna evidente que las mediciones simples de la
+                        desigualdad no cuentan la historia completa. <br><br>Cada uno de los quintiles de riqueza
+                        intermedios (quintil 4 y, especialmente, quintiles 2 y 3) experimentaron una notable mejora de
+                        la cobertura durante ese período, acercándose al nivel de cobertura del quintil 5, una tendencia
+                        que no captura la comparación por pares de la diferencia entre grupos extremos (quintil 5 y
+                        quintil 1).</p>
+                    <div class="box_media">
+                        <img src="./content/img8.png"
+                            alt="Atención del parto por personal de salud capacitado en Ghana según quintil de riqueza, DHS 2003 y 2008">
+                        <div class="about"><b>Figura 1. </b>Atención del parto por personal de salud capacitado en Ghana
+                            según quintil de riqueza, DHS 2003 y 2008</div>
+                    </div>
                     <div class="box-text connection">
-                        <p>Veamos en qué consiste cada tipo:</p>
+                        <p>En este contexto, las medidas complejas o de gradiente corrigen estos problemas de medición,
+                            complementando así los análisis de magnitud de las inequidades. Ahora pasemos a conocer
+                            sobre estas medidas complejas. Haz clic en siguiente para continuar.</p>
                     </div>
-                    <div class="horizontal-menu">
-                        <dl>
-                            <dt>Gráfico de barras</dt>
-                            <dd>
-                                <h4>Gráfico de barras</h4>
-                                <div class="flexbox">
-                                  <p>Es el tipo de gráfico más simple de dibujar y leer. Se utiliza para comparar las frecuencias o los valores de las distintas categorías o grupos. 
-                                    Un ejemplo se presenta en la figura 3, la cual muestra la relación entre el riesgo de mortalidad masculino y femenino por causas externas según quintiles de pobreza municipal para los años 2000-2014. Para ambos sexos, los municipios más pobres mostraron no solamente riesgos de mortalidad mayores a los del promedio de Antioquia sino también riesgos significativamente mayores cuando comparados con los municipios más ricos, diferencia que fue estadísticamente significativa a partir de la mitad del periodo.
-                                    </p> 
-                                    <img src="./content/img16_1.png" data-src="./content/img16_1.png"  class="expand-image" alt="Riesgo de mortalidad masculino y femenino por causas externas según quintiles de pobreza municipal. Antioquia 2000-2014"> 
-                                </div>
-                                <div class="about right"><b>Figura 3. </b>Riesgo de mortalidad masculino y femenino por causas externas según quintiles de pobreza municipal. Antioquia 2000-2014</div>
-                            </dd>
-                        </dl>
-                        <dl>
-                            <dt>Gráfico de líneas</dt>
-                            <dd>
-                                <h4>Gráfico de líneas</h4>
-                                <div class="flexbox">
-                                    <p>Es una herramienta eficaz para la visualización de tendencias en los datos a lo largo del tiempo y por lo tanto el tipo de gráfico más adecuado para series temporales. <br><br>
-                                        La Figuras 4 muestra la tendencia de los riesgos relativos de mortalidad masculinos y femeninos de acuerdo a quintiles de pobreza municipales. De acuerdo a los resultados, al inicio del periodo y ambos sexos, todos los municipios tuvieron en promedio riesgos de mortalidad superiores a los de Antioquia (RME=100), en particular los municipios de los niveles intermedios de pobreza. 
-                                        Adicionalmente, la Figura muestra una disminución del riesgo de mortalidad en todos los quintiles de pobreza. 
-                                        
-                                      </p> 
-                                      <img src="./content/img16_2.png" data-src="./content/img16_2.png" class="expand-image" alt="Riesgo relativo de mortalidad MASCULINA por causas externas según quintiles de pobreza municipal. Antioquia 2000-2005-2010 y 2014"> 
-                                  </div>
-                                  <div class="about right"><b>Figura 4. </b>Riesgo relativo de mortalidad MASCULINA por causas externas según quintiles de pobreza municipal. Antioquia 2000-2005-2010 y 2014</div>
-                            </dd>
-                        </dl>
-                        <dl>
-                            <dt>Gráfico de líneas</dt>
-                            <dd>
-                                <h4>Gráfico de Equiplot<sup class="tooltip" title="Equiplot: A Chart to Display Equity Data. Health Intelligence.  Analyzing health data, generating and communicating evidence to improve population health. 2011-2017. Recuperado de <a href='ttp://publichealthintelligence.org/content/equiplot-chart-display-equity-data' target='_blank'>http://publichealthintelligence.org/content/equiplot-chart-display-equity-data</a>">*</sup></h4>
-                                <div class="flexbox">
-                                    <p>Finalmente, el Equiplot, es  una figura para representar datos de equidad.<br>El Centro Internacional de Equidad en Salud (en inglés International Center for Equity in Health), de la Universidad  Federal de Pelotas, Brasil propuso una forma visual para representar y comunicar los datos sobre equidad de manera efectiva  a profesionales de la salud, administradores de la salud, tomadores de decisiones y público en general. Este gráfico se conoce como Equiplot. <br><br>Equiplot, es considerado una de las mejores formas de mostrar cómo las desigualdades afectan las condiciones de salud, por medio de la comparación entre diferentes grupos en relación a un mismo indicador – por ejemplo, los índices de mortalidad infantil en diferentes grupos de ingreso. El  equiplot permite visualizar, al mismo tiempo, la situación de cada grupo en relación al indicador y la distancia entre ellos – lo que transmite la dimensión de las desigualdades. 
-                                      </p> 
-                                      <img class="expand-image" src="./content/img17.png" data-src="./content/img17.png" alt="Riesgo relativo de mortalidad MASCULINA por causas externas según quintiles de pobreza municipal. Antioquia 2000-2005-2010 y 2014"> 
-                                  </div>
-                                  <div class="about right"><b>Figura 5. </b>Riesgos relativo de mortalidad por enfermedades del sistema circulatorio según quintiles de POBREZA MUNICIPAL. Antioquia, 2000-2014</div>
-                                  <p>La Figura 5 muestra que para todos los periodos, los municipios en el quintil más pobre  presentan mayores riesgos de mortalidad tanto de Antioquia como un todo como de los municipios en el quintil más rico. Sin embargo, la distancia entre los municipios más pobres y los más ricos claramente disminuye en el último periodo para la mortalidad masculina, pero aumenta para la femenina. 
-                                </p>
-                            </dd>
-                        </dl>
+            </section>
+            <section id="pag-complejas"
+                ptitle="Análisis de datos para las medidas complejas de desigualdad: Índice de desigualdad de la pendiente">
+                <div class="subpage">
+                    <h2 class="page-title"></h2>
+                    <div class="box_media">
+                        <img src="content/img9_1.png">
+                        <div class="about"><b>Foto 2</b> Métricas complejas (2019) Fotografía recuperada de<br><a
+                                href="https://pixabay.com/es/photos/samsung-samsung-galaxia-galaxy-793043/"
+                                target="_blank">Pixabay</a>
+                        </div>
                     </div>
-                </div>
-                <div class="box-text connection">
-                    <p>Finalicemos el estudio de este documento, abordando elementos importantes de la temática:</p>
-                    
-                </div>
-                <div class="box-text important" label="Claves del aprendizaje">
-                    <img src="./content/img18_1.png" alt="¿Por qué los mapas muestran riesgos y no tasas?">
-                    <img src="./content/img18_2.png" alt="¿Es lo mismo una Razón de Mortalidad Estandarizada (RME) y un Riesgo de mortalidad estandarizado?">
-                    <img src="./content/img18_3.png" alt="Mi municipio tiene un riesgo de mortalidad mayor que el de Antioquia y que mi municipio vecino! ¿debo pasarme de municipio?">
-                </div>
-                <div class="box-text connection">
-                    <p>Ahora te invitamos a realizar las siguientes actividades que te permitirán validar los contenidos abordados. Es importante leer con atención las instrucciones para resolverlas correctamente.</p>
-                </div>
+                    <div class="text-image right">
+                        <div class="box_media">
+                            <img src="./content/img9_2.png" alt="Métricas complejas">
+                        </div>
+                        <p>Conocidas como medidas de gradiente, valoran la desigualdad haciendo uso de los datos de
+                            todos los territorios, proporcionando así una descripción de la desigualdad que existe entre
+                            toda el área analizada. <br>Los dos indicadores utilizados se conocen como el índice de
+                            desigualdad de la pendiente, y el índice de concentración y estos miden la desigualdad
+                            (absoluta y relativa) del indicador de salud entre los más privilegiados o los menos
+                            privilegiados. <br><br>La medida más utilizada es el índice de desigualdad de la pendiente,
+                            el cual mide la desigualdad absoluta en un indicador de salud entre los territorios más
+                            privilegiados y los menos privilegiados.<sup class="tooltip"
+                                title="Schneider et al. Métodos de medición de las desigualdades de salud . Rev Panam Salud Publica/Pan Am J Public Health 12(6), 2002">3</sup>
+                            Su análisis se basa en el análisis de regresión de la relación entre el indicador de salud
+                            territorial y el respectivo estratificador de equidad.<sup class="tooltip"
+                                title="Croydon Joint Strategic Needs Assessment 2009-10 Geographical health inequalities <a href='https://www.croydonobservatory.org/wp-content/uploads/2016/11/JSNA-Geographical-Health-Inequalities-2009-10.pdf' target='_blank'>https://www.croydonobservatory.org/wp-content/uploads/2016/11/JSNA-Geographical-Health-Inequalities-2009-10.pdf</a>">4</sup>
+                            <br><br>Una práctica común es ordenar los territorios de acuerdo con el valor del
+                            estratificador de equidad y agruparlos en quintiles o deciles (desde el de menor condición
+                            social hasta el de mayor condición social). En este caso, un índice de desigualdad de la
+                            pendiente positivo indica que el indicador de salud de interés es más prevalente en el grupo
+                            de territorios con mayor condición social, mientras que un índice negativo significa que el
+                            indicador de salud es más prevalente en el grupo de menor condición social.<sup
+                                class="tooltip" title="Manual para el monitoreo de las desigualdades en salud">5</sup>
+                        </p>
+                        <div class="box-text example long" label="Una aplicación de este indicador">
+                            <p>Se reporta en Inglaterra en análisis de inequidades geográficas en la esperanza de vida
+                                masculina y femenina de acuerdo a deciles de pobreza. De acuerdo con el informe, el
+                                índice de desigualdad de la pendiente en la esperanza de vida entre el 10% de las áreas
+                                más pobres con respecto a las más ricas es de 10.6 años para los hombres y 5.7 años para
+                                las mujeres.<sup class="tooltip"
+                                    title="Croydon Joint Strategic Needs Assessment 2009-10 Geographical health inequalities <a href='https://www.croydonobservatory.org/wp-content/uploads/2016/11/JSNA-Geographical-Health-Inequalities-2009-10.pdf' target='_blank'>https://www.croydonobservatory.org/wp-content/uploads/2016/11/JSNA-Geographical-Health-Inequalities-2009-10.pdf</a>">6</sup>
+                                En otro estudio con datos de cobertura de vacunación por sarampión derivados de la
+                                encuesta DHS del 2008 mostraron porcentajes de cobertura en los cinco quintiles de 17%,
+                                28%, 41%, 58%, y 75%, respectivamente. Usando estos datos, se obtuvo un coeficiente de
+                                regresión igual a 72.4, indicando que el porcentaje de vacunación entre los más ricos es
+                                72.4 puntos porcentuales mayor que entre los más pobres. </p>
+                        </div>
+                        <div class="box-text example" label="Otro ejemplo">
+                            <p>se tuvo como objetivo estudiar la asociación entre la razón de mortalidad materna y el
+                                ingreso per cápita de 32 países. El análisis de regresión lineal estimó como valor de la
+                                pendiente o del coeficiente de regresión 141.32, indicando un decrecimiento promedio en
+                                la razón de mortalidad materna al pasar desde el grupo de países en el quintil más pobre
+                                al quintil de países en el quintil más rico.</p>
+                        </div>
+                        <div class="box-text connection">
+                            <p>Finalicemos el estudio de este documento, abordando elementos importantes de la temática:
+                            </p>
+                        </div>
+                        <div class="box-text important" label="Claves del aprendizaje">
+                            <p>En la literatura reciente, es casi un consenso que ninguna de las medidas disponibles es
+                                suficiente para mostrar la total magnitud de las inequidades, y que tampoco hay alguna
+                                medida que sea mejor que la otra. Lo que se recomienda, es que los análisis de
+                                inequidades en algún punto del tiempo presenten por lo menos una medida absoluta y una
+                                medida relativa, así como también que se reporten sus tendencias en el tiempo. Medidas
+                                relativas — por ejemplo cobertura entre los ricos es dos veces mayor que entre los
+                                pobres — da una idea del grado de injusticia. Medidas absolutas — cobertura entre los
+                                ricos es 60 puntos porcentuales mayor que entre los pobres — da una idea del actual
+                                esfuerzo que será necesario para cerrar la brecha.</p>
+                            <p>Por otro lado, cuando los análisis se enfocan en inequidades geográficas comparando
+                                áreas, la literatura resalta la importancia de calcular medidas que tengan en cuenta a
+                                todas las áreas geográficas, recomendando para ello el uso del índice de desigualdad de
+                                la pendiente. Dado que la presentación de estos índices puede ser particularmente más
+                                apropiada para audiencias académicas, cuando se acompañan de cálculos de diferencias y
+                                razones entre los quintiles extremos (medidas simples), hacen más fácil su
+                                interpretación para audiencias más generales. </p>
+                        </div>
+                        <div class="box-text connection">
+                            <p>Para terminar el estudio de este documento, te invitamos a realizar la siguientes
+                                actividad que te permitirá validar los contenidos abordados. Es importante leer con
+                                atención las instrucciones para resolverla correctamente.</p>
+                        </div>
+                    </div>
             </section>
             <section id="pag-actividades" ptitle="Actividades">
                 <h2 class="page-title"></h2>
                 <div class="box-text activity" label="Actividad #1">
-                    <p><b>Objetivo de aprendizaje: </b>Reconocer elementos característicos de los indicadores de salud para análisis de desigualdades geográficas.</p>
-                    <p><b>Enunciado: </b>Identifica para cada afirmación, si es correcta o no, según lo que has estudiado en este documento sobre los indicadores ajustados por edad.</p>
-                    <img src="./content/img19_1.png" alt="">
-                        <div class="jpit-activities-check" data-act-id="Actividad 3">
-                            <words>
-                                <li>Porque debido a las edades de sus habitantes, los territorios tienen igual comportamiento, en temas como las tasas de mortalidad.</li>
-                                <li  data-val="true">Para estandarizar por edad los indicadores de salud que estén presentes en los mapas</li>
-                                <li data-val="true">Para tener un conocimiento teórico sobre los factores de riesgo asociados al evento de salud de tu interés.</li>
-                                <li>Porque existen gran cantidad de eventos de salud que se presentan tanto en municipios con alta densidad de población adulta mayor como en municipios con poblaciones jóvenes.</li>
-                                <li>Porque los riesgos para cada grupo de edad son los mismos en ciertas poblaciones consideradas de referencia.</li>
-                            </words>
-                            <div class="board">
-                                <div class="check_left">
-                                    <div class="play">
-                                        <div class="flexbox">
-                                            <div class="act-1-img"><img src="./content/img19_2.png" alt=""></div>
-                                        <div class="word_content"></div>
-                                        </div>
-                                        <div class="buttons">
-                                            <button class="yes general">Si</button>
-                                            <button class="not general">No</button>
-                                        </div>
-                                    </div>
-                                    <div class="box_conclution">
-                                        <h3>¡Ha finalizado!</h3>
-                                        <p>Al clasificar ha tenido los siguientes aciertos y desaciertos:</p>
-                                        <p>
-                                            <strong>Aciertos:</strong>
-                                            <span class="correct_words"></span>
-                                        </p>
-                                        <p>
-                                            <strong>Desaciertos:</strong>
-                                            <span class="wrong_words"></span>
-                                        </p>
-                                        <div class="buttons">
-                                            <button class="general reload">Reintentar</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="check_right">
-                                    <div class="box_result">
-                                        <div class="correct">
-                                            <div class="hits">0</div>
-                                            <div class="text">Aciertos</div>
-                                        </div>
-                                        <div class="wrong">
-                                            <div class="miss">0</div>
-                                            <div class="text">Desaciertos</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <feedback style="display: none;">
-                                <correct>
-                                    <p><span class="feedback_title">¡Excelente!</span><br> Has demostrado reconocer por qué las tasas son ajustadas por edad. Recuerda que una buena práctica de análisis es explorar las diferentes estructuras de edad de algunas de las áreas geográficas de tu interés; esto te demostrará la necesidad de estandarizar por edad los indicadores de salud presentes en los mapas.</p>
-                                </correct>
-                                <wrong>
-                                    <p><span class="feedback_title">¡Bien!</span><br> Aunque identificaste algunos elementos de por qué las tasas son ajustadas por edad, te falta reconocer otros aspectos importantes. Estudia un poco más y reintenta la actividad hasta que puedas responder plenamente para todos los enunciados si son correctos o no.</p>
-                                </wrong>
-                            </feedback>
+                    <p><b>Objetivo de aprendizaje: </b>Identificar características del análisis de datos para medidas simples y complejas de desigualdad.</p>
+                    <p><b>Enunciado: </b>Arrastra cada característica al tipo de medida (simple o compleja) que corresponda.</p>
+                    <div id="arrastrargrupos" class="jpit-activities-multidroppable" data-act-id="Actividad 1">
+                        <table class="box_targets">
+                            <tbody>
+                                <tr>
+                                    <td><h5>Medidas simples</h5><div data-target-group="1" class="target"></div></td>
+                                    <td><h5>Medidas complejas</h5><div data-target-group="2" class="target"></div></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="buttons">
+                            <button class="general verify">Verificar</button>
+                            <button class="general continue" style="display: none;">Continuar intentando</button>
                         </div>
-                </div>
-                <div class="box-text activity" label="Actividad #2">
-                    <p><b>Objetivo de aprendizaje: </b>Reconocer elementos característicos de los indicadores de salud para análisis de desigualdades geográficas.</p>
-                    <p><b>Enunciado: </b>Selecciona la(s) respuesta(s) correcta(s) para completar la siguiente afirmación.</p>
-                    <div class="jpit-activities-quiz " data-act-id="Actividad 2">
-                        <question type="multichoice">
-                            <description>
-                                <img src="./content/img20.png" alt="Act 2 - Question 1">
-                                <p>Este método sugiere ser el más apropiado cuando:</p>
-                            </description>
-                            <ul data-shuffle="true">
-                                <li data-response="true">Se analizan áreas geográficas con escaso número de población</li>
-                                <li data-response="true">La población de las áreas geográficas difieren por edad</li>
-                                <li>Se espera como resultado estimaciones de tasas poco precisas</li>
-                                <li>Se comparan municipios que tengan un número pequeño de población</li>
-                                <li>Se desean comparar los casos</li>
-                            </ul>
-                        </question>
-                        <feedback>
+                        <div class="box_end"></div>
+                        <div class="sources">
+                            <div data-group="1">realizan comparaciones de la salud entre un territorio y un punto de referencia</div>
+                            <div data-group="2">valoran la desigualdad haciendo uso de los datos de todos los territorios</div>
+                            <div data-group="1">son las más básicas para medir la desigualdad territorial</div>
+                            <div data-group="2">índice de desigualdad de la pendiente</div>
+                            <div data-group="1">medición de la brecha absoluta</div>
+                            <div data-group="2">índice de concentración</div>
+                            <div data-group="1">expresión de la brecha relativa</div>
+                            <div data-group="2">se basa en el análisis de regresión de la relación entre el indicador de salud territorial y el estratificador de equidad.</div>
+                            <div data-group="1">medidas de gradiente</div>
+                            <div data-group="1">valoran la desigualdad a través de la comparación de la salud entre dos territorios</div>
+                        </div>
+                        <feedback style="display: none;">
                             <correct>
-                                <p><span class="feedback_title">¡Excelente!</span><br>Has reconocido para qué se utiliza el método indirecto. Recuerda que este es tan solo uno de los métodos existentes en el proceso de estandarización o ajuste de tasas. El método indirecto es el más utilizado para los indicadores que se representan en los atlas de mortalidad, dado que corrige la alta variabilidad en la distribución de la población en el espacio. </p>
+                                <p><span class="feedback_title">¡Excelente!</span><br>Has identificado características del análisis de datos para medidas simples y complejas de desigualdad. Recuerda que ninguna es suficiente para mostrar la total magnitud de las inequidades, y que tampoco hay alguna medida que sea mejor que la otra. 
+                                </p>
                             </correct>
                             <wrong>
-                                <p><span class="feedback_title">¡Bien!</span><br>Aunque identificaste parcialmente para qué se utiliza el método indirecto, te falta reconocer otros elementos característicos. Estudia un poco más y reintenta la actividad hasta que puedas responder correctamente al enunciado. </p>
+                                <p><span class="feedback_title">¡Bien!</span><br>Has reconocido algunas características del análisis de datos para medidas simples y complejas de desigualdad. Sin embargo te falta identificar plenamente todas las de la actividad. Estudia un poco más y reintenta hasta que definas completamente estos dos tipos de medidas.</p>
                             </wrong>
                         </feedback>
-                        <div class="box_end"></div>
-                    </div>
-                </div>
-                <div class="box-text activity" label="Actividad #3">
-                    <p><b>Objetivo de aprendizaje: </b>Reconocer elementos característicos de los indicadores de salud para análisis de desigualdades geográficas.</p>
-                    <p><b>Enunciado: </b>Selecciona la respuesta correcta para completar la siguiente afirmación.</p>
-                    <div class="jpit-activities-quiz " data-act-id="Actividad 2">
-                        <question type="simplechoice">
-                            <description>
-                                <img src="./content/img21.png" alt="Act 3 - Question 1">
-                                <p>Por ello, una RME suavizada (RMEs) permite:</p>
-                            </description>
-                            <ul data-shuffle="true">
-                                <li data-response="true">indicar que el riesgo relativo de cada municipio fue estimado combinando la información de mortalidad de cada municipio (local) con el promedio de la información de mortalidad de los municipios aledaños (vecinos)</li>
-                                <li>expresar la razón de mortalidad multiplicada por 100</li>
-                                <li>representar indicadores ajustados por edad</li>
-                            </ul>
-                        </question>
-                        <feedback>
-                            <correct>
-                                <p><span class="feedback_title">¡Excelente!</span><br>Has reconocido en qué consiste una RMEs. Recuerda que este método estadístico te permite reducir el impacto del “número pequeño” en los conteos de casos o de población característicos de las áreas geográficas pequeñas. Por lo tanto, esta metodología resulta muy útil cuando tu interés sea analizar indicadores de salud a escalas geográficas menores a las departamentales, por ejemplo municipios, barrios o unidades censales. </p>
-                            </correct>
-                            <wrong>
-                                <p><span class="feedback_title">¡Bien!</span><br>Aunque identificaste parcialmente en qué consiste una RMEs, aún falta reconocer otros elementos característicos. Estudia un poco más y reintenta la actividad hasta que puedas responder correctamente al enunciado. </p>
-                            </wrong>
-                        </feedback>
-                        <div class="box_end"></div>
-                    </div>
-                </div>
-                <div class="box-text activity" label="Actividad #4">
-                    <p><b>Objetivo de aprendizaje: </b>Identificar las formas más comunes de analizar las desigualdades de la salud.</p>
-                    <p><b>Enunciado: </b>Selecciona la(s) respuesta(s) correcta(s) para completar la siguiente afirmación.</p>
-                    <div class="jpit-activities-quiz " data-act-id="Actividad 4">
-                        <question type="multichoice">
-                            <description>
-                                <img src="./content/img22.png" alt="Act 4 - Question 1">
-                                <p>Selecciona aquella(s) respuesta(s) correcta(s):</p>
-                            </description>
-                            <ul data-shuffle="true">
-                                <li data-response="true">Estadísticas</li>
-                                <li data-response="true">Mapas </li>
-                                <li data-response="true">Tablas  </li>
-                                <li data-response="true">Figuras </li>
-                                <li>Multiplicadores</li>
-                                <li>Indicadores</li>
-                            </ul>
-                        </question>
-                        <feedback>
-                            <correct>
-                                <p><span class="feedback_title">¡Excelente!</span><br>Has identificado cuáles son las formas más comunes de analizar desigualdades. Recuerda que lo más importante es la claridad en la forma como representas los indicadores, permitiendo llegar a conclusiones sobre su variabilidad y distribución en el espacio.</p>
-                            </correct>
-                            <wrong>
-                                <p><span class="feedback_title">¡Bien!</span><br>¡Bien! Aunque identificaste algunas formas de analizar desigualdades, aún falta reconocer otros elementos importantes. Estudia un poco más y reintenta la actividad hasta que puedas responder correctamente al enunciado.</p>
-                            </wrong>
-                        </feedback>
-                        <div class="box_end"></div>
                     </div>
                 </div>
             </section>
             <section id="pag-bibliografia" ptitle="Bibliografía">
                 <h2 class="page-title"></h2>
                 <ul class="bibliografia">
-                    <li>Barceló MA et al. Métodos para la suavización de indicadores de mortalidad: aplicación al análisis de desigualdades en mortalidad en ciudades del Estado español (Proyecto MEDEA). Gac Sanit. 2008;22(6):596-608.</li>
-                    <li>C. Borrell, M. Rué, M. I. Pasarín, J. Benach y cols.— La medición de las desigualdades en salud. Gac Sanit 2000;14(Supl. 3):20-33.</li>
-                    <li>Cómo hacer comprensibles los datos. Parte 2: Una guía para presentar estadísticas. Naciones Unidas, Comisión económica para Europa. Ginebra, 2009. Recuperado de <a href="https://www.unece.org/fileadmin/DAM/stats/documents/writing/MDM_Part2_Spanish.pdf" target="_blank">https://www.unece.org/fileadmin/DAM/stats/documents/writing/MDM_Part2_Spanish.pdf</a></li>
-                    <li>Equiplot: A Chart to Display Equity Data. Health Intelligence.  Analyzing health data, generating and communicating evidence to improve population health. 2011-2017. Recuperado de <a href="http://publichealthintelligence.org/content/equiplot-chart-display-equity-data" target="_blank">http://publichealthintelligence.org/content/equiplot-chart-display-equity-data</a></li>
-                    <li>Indicadores de Salud: Aspectos conceptuales y operativos (Sección 2). Washington, D.C.: OPS, s.f.. Recuperado de <a href="https://www.paho.org/hq/index.php?option=com_content&view=article&id=14402:health-indicators-conceptual-and-operational-considerations-section-2&Itemid=0&lang=es" target="_blank">https://www.paho.org/hq/index.php?option=com_content&view=article&id=14402:health-indicators-conceptual-and-operational-considerations-section-2&Itemid=0&lang=es</a></li>
+                    <li>Aluısio J. D. Barros, Cesar G. Victora. 2013 Measuring Coverage in MNCH: Determining and Interpreting Inequalities in Coverage of Maternal, New born, and Child Health Interventions.</li>
+                    <li>Croydon Joint Strategic Needs Assessment 2009-10 Geographical health inequalities <a href="https://www.croydonobservatory.org/wp-content/uploads/2016/11/JSNA-Geographical-Health-Inequalities-2009-10.pdf" target="_blank">https://www.croydonobservatory.org/wp-content/uploads/2016/11/JSNA-Geographical-Health-Inequalities-2009-10.pdf</a></li>
+                    <li>Manual para el Monitoreo de las Desigualdades en Salud, con especial énfasis en países de ingresos medianos y bajos. Washington, D.C.: OPS, 2016.</li>
+                    <li>Monitoring subnational regional inequalities in health: measurement approaches and challenges Ahmad Reza Hosseinpoor1*, Nicole Bergen1 , Aluisio J. D. Barros2 , Kerry L. M. Wong2 , Ties Boerma1 and Cesar G. Victora</li>
+                    <li>Schneider et al. Métodos de medición de las desigualdades de salud. Rev Panam Salud Publica/Pan Am J Public Health 12(6), 2002</li>
                 </ul>
             </section>
             <section id="pag-creditos" ptitle="Créditos">
@@ -923,7 +626,7 @@
                     </div>
                     <div class="editions">
                         <br>
-                        1ª edición: diciembre 2013
+                        1ª edición: noviembre 2019
                     </div>
                 </div>
             </section>
