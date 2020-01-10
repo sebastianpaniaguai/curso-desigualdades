@@ -648,6 +648,15 @@ footer {
     position: relative;
 }
 
+.box-text.long>.title {
+    width: 60%;
+    padding: 5px 0 5px 100px;
+}
+
+.box-text.long>.title::before {
+    width:28%;
+}
+
 .box-text {
     max-width: 800px;
     margin: 10px auto;

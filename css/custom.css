@@ -224,8 +224,8 @@
     height: auto;
 }
 
-.jpit_activities_quiz_question_answers { height: 150px; overflow: auto; }
-.jpit_activities_quiz_board { height: 220px; }
+.jpit_activities_quiz_question_answers { height: fit-content; overflow: auto; }
+.jpit_activities_quiz_board { height: fit-content; }
 
 /********************************************************************************/
 /* Actividad Sopa de letras
@@ -537,10 +537,18 @@
 
 .jpit-activities-check .board {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .jpit-activities-check .check_left {
     /* float: left; */
-    width: 50%;
+    width: 100%;
+}
+
+.play .flexbox img{
+    max-width: none;
+    flex: 0 0 100%;
 }
 
 .jpit-activities-check .check_left .word_content {
