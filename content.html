@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <link rel="shortcut icon" href="img/icon.svg">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>Modificar el perfil</title>
+    <title>Práctica: Describiendo e interpretando las desigualdades sociales en salud
+    </title>
 
     <link href="components/jquery/css/custom/jquery-ui.min.css" rel="stylesheet" type="text/css">
     <link href="components/ionicons/css/ionicons.min.css" rel="stylesheet" type="text/css">
@@ -98,9 +99,13 @@
                     </menuitem>
                     <menuitem label="Contenido">
                     <menu>
-                        <menuitem label="1. Aspectos generales" data-page="pag-aspectos">
+                        <menuitem label="1. Primer Paso: Preparación de los datos" data-page="pag-primero">
                         </menuitem>
-                        <menuitem label="2. Configuración" data-page="pag-configuracion">
+                        <menuitem label="2. Segundo paso: Exploración de la magnitud de las desigualdades geográficas" data-page="pag-segundo">
+                        </menuitem>
+                        <menuitem label="3. Tercer paso: Exploración de la magnitud de las inequidades geográficas" data-page="pag-tercero">
+                        </menuitem>
+                        <menuitem label="4. Cuarto paso: Cálculo de métricas de gradiente de inequidad geográfica en salud" data-page="pag-cuarto">
                         </menuitem>
                     </menu>
                     </menuitem>
@@ -123,363 +128,240 @@
                 </menu>
             </nav>
             <div class="header-text">
-                <h1>Manejo de la plataforma</h1>
-                <span>Modificar el perfil</span>
+                <h1>Práctica</h1>
+                <span>Describiendo e interpretando las desigualdades sociales en salud</span>
             </div>
             <!-- <h2 class="page-title"></h2> -->
         </header>
 
         <main style="display: none;">
 
-            <section id="pag-aspectos" ptitle="1. Aspectos generales">
+            <section id="pag-primero" ptitle="1. Primer Paso: Preparación de los datos">
+                <h2 class="page-title"></h2>
                 <div class="subpage">
-                    <h2 class="page-title"></h2>
+                    <p>Este primer paso  tiene como objetivo la construcción de una base de datos que contenga los datos requeridos para el análisis de desigualdad: </p>
+                    <ol>
+                        <li><b>Indicadores de salud</b>: sean estos, tasas, razones de mortalidad o de incidencias estandarizadas, o prevalencias, sobre los cuales se realizarán los cálculos sobre brechas de desigualdad.</li>
+                        <li><b>Estratificadores de equidad</b>: son las variables socioeconómicas que se utilizan para ordenar la distribución de los municipios de acuerdo a su mayor o menor vulnerabilidad social. Pueden ser estos socioeconómicos, o demográficos. Igualmente, estos indicadores pueden estar disponibles por años / períodos.
+                        </li>
+                        <li><b>Variables demográficas -denominadores de los indicadores de salud-</b>: sirven para construir los ponderadores que introducen mayor o menor peso en los cálculos según la magnitud de las poblaciones
+                        </li>
+                    </ol>
+                    <div class="box-text example" label="Algunos ejemplos son:">
+                        <ol>
+                            <li>Indicador de salud: tasa de mortalidad masculina por causas externas para cada municipio</li>
+                            <li>Estratificador de equidad: % municipal de hogares con necesidades básicas insatisfechas</li>
+                            <li>Variable demográfica: población de hombres para cada municipio</li>
+                        </ol>
+                        <ol>
+                            <li>Indicador de salud: prevalencia municipal de bajo peso al nacer para cada municipio</li>
+                            <li>Estratificador de equidad: índice de desarrollo humano municipal</li>
+                            <li>Variable demográfica: población de nacidos vivos</li>
+                        </ol>
+                    </div>
+                    <p>Es recomendable que estos datos se integren en un archivo de Excel, como el que se muestra a continuación. Importante notar que cuando se desee realizar comparaciones en el tiempo, es útil incluir esta información en columnas para cada año / período de estudio:</p>
                     <div class="box_media">
-                        <img src="content/img1.jpg">
-                        <div class="about"><b>Foto 1. </b>¿Qué es el perfil de usuario? (2019). Fotografía
-                            recuperada de <a
-                                href="https://pixabay.com/es/photos/ordenador-port%C3%A1til-equipo-explorador-2562325/"
-                                target="_blank">Pixabay</a>
-                        </div>
+                        <img src="content/Imagen1.png" alt="Imagen 1">
                     </div>
-                    <h3>1.1. El perfil de usuario</h3>
-                    <p>La plataforma Moodle dispone de un espacio para que puedas ubicar tu perfil, es decir, la
-                        información personal que te identificará ante otros usuarios.</p>
-                    <div class="box-text important" label="¡Ojo!">
-                        <p>Gran parte de la información del perfil, será visible por todos los participantes inscritos
-                            en los cursos donde estés matriculado.</p>
+                    <p>Esta plantilla de base de datos es la que vamos a utilizar durante la práctica.</p>
+                    <div class="box-text note" label="Nota">
+                        <p>Puedes descargar la plantilla haciendo clic en el siguiente botón:</p>
+                        <a href="content/Plantilla_2020_Descargar.xlsx" target="_blank"><i>Plantilla_2020_Descargar.xlxs</i></a>
                     </div>
-                    <h3>1.2. Elementos que componen el perfil de usuario</h3>
-                    <div class="flexbox">
-                        <div>
-                            <p>En este espacio se ubican elementos relacionados con:</p>
-                            <ul>
-                                <li><b>Información general</b>: nombres y apellidos, dirección de correo, ciudad, país,
-                                    zona horaria e idiomas, entre otros, así como una descripción de tu actividad
-                                    laboral, académica o profesional.</li>
-                                <li>Una <b>imagen</b> que te permita ser identificado ante los demás.</li>
-                                <li><b>Nombres adicionales</b> e <b>intereses</b> que quieras compartir.</li>
-                                <li><b>Información opcional</b>: datos de contacto por otras redes, números telefónicos,
-                                    entre otros.</li>
-                            </ul>
-                            <div class="box-text note" label="Nota">
-                                <p>Adicional a toda esta información, la vista pública del perfil te permite incluir
-                                    elementos como:</p>
-                                <ul>
-                                    <li><b>Miscelánea</b> con notas, mensajes y demás participaciones en espacios de
-                                        comunicación.</li>
-                                    <li><b>Actividad de accesos</b> a la plataforma</li>
-                                    <li><b>Detalles del curso</b> en el que estés matriculado</li>
-                                </ul>
-                            </div>
-
-                        </div>
-                        <div class="box_media">
-                            <img src="content/img6.png" alt="Vista pública del perfil de Pepito Pérez (2019)">
-                            <div class="about"><b>Imagen 1. </b>Vista pública del perfil de Pepito Pérez (2019)</div>
-                        </div>
-                    </div>
+                    <p>Para el ejemplo que realizaremos, se disponen de datos para los 1122 municipios de Colombia relacionados con la tasa de mortalidad enfermedades cardiovasculares para los años 2015 y 2017 (indicador de salud), índice de pobreza multidimensional -IPM (estratificador de equidad) y la población de cada año como denominador. 
+                    </p>
                     <div class="box-text connection">
-                        <p>Ahora que conoces qué es el perfil de usuario de la plataforma Moodle, entérate a
-                            continuación de cómo podrás modificar los datos que hacen parte de él.</p>
+                        <p>Ahora pasemos al segundo paso. Haz clic en siguiente para continuar.</p>
                     </div>
                 </div>
             </section>
-            <section id="pag-configuracion" ptitle="2. Configuración">
+
+            <section id="pag-segundo" ptitle="2. Segundo paso: Exploración de la magnitud de las desigualdades geográficas">
                 <h2 class="page-title"></h2>
                 <div class="subpage">
-                    <div class="box_media">
-                        <img src="content/img2.jpg">
-                        <div class="about"><b>Foto 2. </b>¿Cómo edito mi perfil de usuario? (2019). Fotografía
-                            recuperada de <a
-                                href="https://pixabay.com/es/photos/escritorio-manos-escribir-oficina-4208112/"
-                                target="_blank">Pixabay</a>
-                        </div>
-                    </div>
-                    <p>Cuando ingresas a tu perfil por primera vez, notarás que hay ciertos campos que ya contienen
-                        información por defecto. Esto sucede porque cuando se crea un usuario nuevo, para la plataforma
-                        es indispensable que éste tenga unos datos mínimos: identificación, nombre de usuario y correo
-                        electrónico; además, se ubicarán por defecto algunas configuraciones y datos adicionales
-                        predefinidos, como la ciudad y el país.
+                    <p>La identificación de desigualdades geográficas, esto es, la diferencia en los valores de la mortalidad entre los municipios de Colombia, puede realizarse a través de <b>estadística descriptiva</b>. 
                     </p>
-                    <p>Es posible que por diferentes motivos requieras editar tu perfil de usuario en la plataforma,
-                        razón por la cual es importante conocer cómo realizar ajustes a dichos datos y/o agregar nuevos;
-                        por ejemplo, actualizar la imagen de identificación, modificar el correo electrónico o cambiar
-                        la ciudad de ubicación, entre otros.
-                    </p>
-                    <div class="box-text connection">
-                        <p>A continuación te explicaremos los pasos que debes llevar a cabo para realizar dichas
-                            modificaciones.</p>
+                    <div class="box-text example" label="Por ejemplo">
+                        <p>Usaremos el rango y la desviación estándar para explorar la poca variabilidad del indicador de mortalidad. </p>
                     </div>
-                    <h3>2.1. Acceder al formulario de edición del perfil de usuario</h3>
-                    <p>Cuando necesites modificar la información del perfil de usuario, despliega el menú de acceso
-                        rápido haciendo clic en el Nombre de Usuario que puedes ver en la parte superior derecha de la
-                        pantalla; en el menú que se despliega haz clic en la opción Preferencias y allí selecciona la
-                        opción Editar perfil ubicada en el apartado Cuenta de usuario.</p>
-                    <div class="instruction">Pasa el mouse por cada ítem para conocer su descripción.</div>
-                    <div id="point_img7">
-                        <div class="box_l">
-                            <div class="note_pointer_right note_1">
-                                <div class="tooltip" title="Clic en el <strong>Nombre de usuario</strong>.">1</div>
-                            </div>
-                            <div class="note_pointer_right note_2">
-                                <div class="tooltip" title="Ingresar por la opción <strong>Preferencias</strong>.">2
+                    <p>Recuerda que si hay poca variabilidad, el análisis de desigualdades e incluso de inequidades geográficas sería poco ilustrativo. El coeficiente de variación (desviación estándar / media x 100%) es útil para comparar la variabilidad de dos o más indicadores incluso si éstas se miden en diferentes unidades.</p>
+                    <div class="ctrl-pagination" data-layer-height="310px" data-labelcurrent="true" >
+                        <li>
+                          <div class="row">
+                              <div class="col-2">
+                                  <p>Ubícate al final del conjunto de datos y prepara el espacio en el cual calcularás los estadísticos:</p>
+                                  <ul>
+                                      <li>tasa promedio,</li>
+                                      <li>rango, </li>
+                                      <li>desviación estándar, y </li>
+                                      <li>coeficiente de variación.</li>
+                                  </ul>
+                                  <div class="box-text connection" label="Nota:">Para estos cálculos debes utilizar las opciones del menú AutoSum (AutoSuma), ubicado en el lado derecho de la pestaña Home (Inicio).</div>
+                              </div>
+                              <div class="col-2">
+                                  <img src="content/Imagen2.png" alt="Imagen 2">
+                              </div>
+                          </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-2">
+                                    <p>Para calcular la tasa mínima, ubica el cursor en la celda B1 y en el menú <i>Autosum</i> selecciona la opción <i>Min</i></p>
                                 </div>
-                            </div>
-                            <div class="note_pointer_left note_3">
-                                <div class="tooltip" title="Seleccionar la opción <strong>Editar perfil.</strong>">3
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="about"><b>Imagen 2. </b>Pasos para editar el perfil de usuario (2019)</div>
-                    <p>Ahora veamos un formulario con la información existente del usuario, quien tiene la posibilidad
-                        de modificarla según su necesidad.</p>
-                    <div class="box-text important" label="¡Ojo!">
-                        <p>Los campos marcados con un asterisco rojo son de carácter obligatorio, por consiguiente, si
-                            no son diligenciados, la plataforma no permitirá realizar la actualización, modificación o
-                            adición de la información.
-                        </p>
-                    </div>
-                    <p>En la ventana de datos de perfil se despliegan cinco (5) secciones:</p>
-                    <div class="box_media">
-                        <img src="content/img8.png" alt="Formulario de edición del perfil de usuario">
-                        <div class="about"><b>Imagen 3. </b>Formulario de edición del perfil de usuario (2019)</div>
-                    </div>
-                    <div class="box-text connection">
-                        <p>Entérate de qué se trata cada una:</p>
-                    </div>
-                    <div class="horizontal-menu">
-                        <dl>
-                            <dt>General</dt>
-                            <dd>
-                                <h3>2.2. Sección general</h3>
-                                <p>Esta sección contiene los campos referidos al <b>Nombre, Apellidos, Dirección de
-                                        correo, Mostrar correo</b> (quiénes lo pueden ver), <b>Ciudad, País, Zona
-                                        horaria, Tema preferido</b> (para visualizar los cursos) y la <b>Descripción</b>
-                                    de la información personal que deseas compartir con los demás participantes.</p>
-                                <div class="instruction">Pasa el mouse por cada ítem para conocer su descripción.</div>
-                                <div id="point_img9">
-                                    <div class="box_l">
-                                        <div class="note_pointer_left note_4">
-                                            <div class="tooltip"
-                                                title="Verifica que los <strong>nombres y apellidos</strong> estén correctos.">
-                                                a</div>
-                                        </div>
-                                        <div class="note_pointer_left note_5">
-                                            <div class="tooltip"
-                                                title="Verifica que la <strong>dirección de correo</strong> sea la indicada.">
-                                                b</div>
-                                        </div>
-                                        <div class="note_pointer_left note_6">
-                                            <div class="tooltip"
-                                                title="Selecciona <strong>a quién deseas mostrar la dirección de correo:</strong> solo compañeros de curso, todos los usuarios de la plataforma o nadie.">
-                                                c</div>
-                                        </div>
-                                        <div class="note_pointer_left note_7">
-                                            <div class="tooltip"
-                                                title="Verifica que los datos de su <strong>ciudad, país y zona horaria</strong> sean los correctos.">
-                                                d</div>
-                                        </div>
-                                        <div class="note_pointer_left note_8">
-                                            <div class="tooltip"
-                                                title="Si la configuración de la plataforma lo permite, esta opción brinda la posibilidad de modificar el <strong>tema gráfico</strong> preferido para visualizar los cursos.">
-                                                e</div>
-                                        </div>
-                                        <div class="note_pointer_left note_9">
-                                            <div class="tooltip"
-                                                title="Digita en este espacio una pequeña <strong>descripción</strong> del perfil personal (puedes incluir información académica, profesional o laboral).">
-                                                f</div>
+                                <div class="col-2">
+                                    <div id="point_img3">
+                                        <div class="box_l">
+                                            <div class="note_pointer_left note_1"><div class="tooltip" title="Luego de haber ubicado el cursor en la celda B1, selecciona esta opción.">1</div></div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="about"><b>Imagen 4. Sección General del formulario de edición del perfil de
-                                        usuario (2019)</b></div>
-                            </dd>
-                        </dl>
-                        <dl>
-                            <dt>Imagen de usuario</dt>
-                            <dd>
-                                <h3>2.3. Sección <i>Imágen de usuario</i></h3>
-                                <p>En esta sección se incluyen los campos relacionados con la imagen que utilizas para
-                                    tu
-                                    identificación; brindándote la posibilidad de borrarla, cargar una nueva imagen y
-                                    hacer una
-                                    descripción de esta.</p>
-                                <div class="instruction">Pasa el mouse por cada ítem para conocer su descripción.</div>
-                                <div id="point_img10">
-                                    <div class="box_l">
-                                        <div class="note_pointer_left note_10">
-                                            <div class="tooltip"
-                                                title="Indica que la plataforma define una <strong>imagen estándar</strong> mientras el usuario carga la propia.">
-                                                a</div>
-                                        </div>
-                                        <div class="note_pointer_left note_11">
-                                            <div class="tooltip"
-                                                title="Versión en miniatura de la <strong>imagen actual</strong> que tiene el perfil.">
-                                                b
-                                            </div>
-                                        </div>
-                                        <div class="note_pointer_left note_12">
-                                            <div class="tooltip"
-                                                title="Basta con marcar esta casilla para <strong>borrar la imagen</strong> de perfil actual y dejar la imagen predeterminada por la plataforma.">
-                                                c</div>
-                                        </div>
-                                        <div class="note_pointer_left note_13">
-                                            <div class="tooltip"
-                                                title="Te permite <strong>agregar una nueva imagen</strong> de usuario.">
-                                                d</div>
-                                        </div>
-                                        <div class="note_pointer_left note_14">
-                                            <div class="tooltip"
-                                                title="Brinda la posibilidad de realizar una corta <strong>descripción de la imagen</strong> publicada.">
-                                                e</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-2">
+                                    <p>Dirígete a la hoja Datos y selecciona la columna que contiene los valores de las tasas para el año 2015 para los 125 municipios.</p>
+                                    <p>Finaliza presionando la tecla enter.</p>
+                                    <div class="box-text note" label="¡Ojo!"><p>Notarás que la fórmula automáticamente queda como: <br> <span class="excel-form">=MIN(Datos!D2:D126)</span></p></div>
+                                </div>
+                                <div class="col-2">
+                                    <div id="point_img4">
+                                        <div class="box_l">
+                                            <div class="note_pointer_left note_2"><div class="tooltip" title="Dirígete a esta hoja de la plantilla.">2</div></div>
+                                            <div class="note_pointer_left note_3"><div class="tooltip" title="Selecciona la columna que contiene los valores de las tasas para los 125 municipios en el año 2015.">3</div></div>
+                                            <div class="note_pointer_left note_4"><div class="tooltip" title="Presiona la tecla enter.">4</div></div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="about"><b>Imagen 5. </b>Sección Imagen del usuario del formulario de edición
-                                    del perfil de
-                                    usuario (2019)</div>
-                                <div class="box-text important" label="¡Ojo!">
-                                    <p>Tu imagen hace parte importante del perfil, pues te identifica ante los demás
-                                        participantes de la
-                                        plataforma. Ten en cuenta que esta debe tener un tamaño tipo documento (3cm *
-                                        4cm), buena
-                                        resolución (utilizar formato jpg o png), a color y con tu rostro visible.
-                                        Además:</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-2">
+                                    <p>Debes realizar el mismo procedimiento para los demás estadísticos: </p>
                                     <ul>
-                                        <li>Evita que en la imagen esté muy alejado tu rostro.</li>
-                                        <li>Procura no tener sombreros o gafas oscuras.</li>
-                                        <li>La presentación personal es fundamental.</li>
-                                        <li>Muy importante que solo aparezcas tú en la imagen, para evitar confusiones.
-                                        </li>
+                                        <li>Máximo (MAX)</li>
+                                        <li>Desviación estándar (STDEV)</li>
                                     </ul>
                                 </div>
-                                <div class="instruction">Desplaza a izquierda o derecha con el mouse para observar las
-                                    diferencias.
-                                </div>
-                                <div class="box_media">
-                                    <div class="after-before">
-                                        <img src="content/img11_2.png" />
-                                        <img src="content/img11_1.png" />
+                                <div class="col-2">
+                                    <div id="point_img5">
+                                        <div class="box_l">
+                                            <div class="note_pointer_left note_5"><div class="tooltip" title="Realiza el mismo procedimiento para calcular el máximo.">5</div></div>
+                                            <div class="note_pointer_right note_6"><div class="tooltip" title="Realiza el mismo procedimiento para calcular la desviación estándar.">6</div></div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="about"><strong>Imagen 6. </strong>Ejemplos de imágenes de usuario correctas
-                                    e incorrectas,
-                                    (2018)</div>
-                                <div class="box-text important" label="¡Ojo!">Es posible que al subirla no veas de
-                                    inmediato la imagen,
-                                    en ese caso, actualiza la página pulsando F5 o el botón Actualizar del navegador.
-                                </div>
-                            </dd>
-                        </dl>
-                        <dl>
-                            <dt>Nombres adicionales</dt>
-                            <dd>
-                                <h4>2.4. Sección <i>Nombres Adicionales</i></h4>
-                                <p>Esta sección permite diligenciar los campos de los nombres adicionales del usuario
-                                    como:</p>
-                                <p><strong>Nombre – fonético: </strong>indica cómo debe pronunciarse el nombre.</p>
-                                <p><strong>Apellido- fonético: </strong>indica cómo debe pronunciarse el apellido.</p>
-                                <p><strong>Nombre intermedio: </strong>indica otro nombre que tenga el usuario.</p>
-                                <p><strong>Nombre alterno: </strong>puede usarse para definir un alias del usuario.</p>
-                                <div class="box_media" id="configuracion_0_img12">
-                                    <img src="content/img12.png"
-                                        alt="Sección Nombres adicionales del formulario de edición del perfil de usuario" />
-                                </div>
-                                <div class="about"><strong>Imagen 7. </strong>Sección Nombres adicionales del formulario
-                                    de edición del
-                                    perfil de usuario, (2018)</div>
-                                <div class="box-text example" label="Ejemplo:">
-                                    <table class="datatable" id="configuracion_0_table">
-                                        <thead>
-                                            <th>Nombre</th>
-                                            <th>Apellido</th>
-                                            <th>Nombre intermedio</th>
-                                            <th>Apellido fonético</th>
-                                            <th>Nombre fonético</th>
-                                            <th>Nombre alternativo</th>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>Wolfang</td>
-                                                <td>Mozart</td>
-                                                <td>Amadeus</td>
-                                                <td>Mosar</td>
-                                                <td>Guolfang</td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Clark </td>
-                                                <td>Kent</td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td>Superman</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    <div class="about"><strong>Tabla 1. </strong>Ejemplos nombres adicionales, (2018)
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-2">
+                                    <p>El coeficiente de variación se calcula como el cociente entre la desviación estándar y el promedio de las tasas.</p>
+                                    <div class="box-text note" label="Nota">
+                                        <p>La fórmula queda como: <span class="excel-form">=B4/AVERAGE(Datos!D2:D126)*100</span></p>
+                                        <p>Donde:</p>
+                                        <ul>
+                                            <li>B4 representa la celda donde tienes calculada la desviación estándar.</li>
+                                            <li>AVERAGE(Datos!D2:D126), es la función con la que se calcula la tasa promedio para el año 2015.</li>
+                                            <li>100 es la constante por la cual se multiplica el resultado.</li>
+                                        </ul>
                                     </div>
                                 </div>
-                            </dd>
-                        </dl>
-                        <dl>
-                            <dt>Intereses</dt>
-                            <dd>
-                                <h3>2.5. Sección <i>Intereses</i></h3>
-                                <p>Aquí tienes la posibilidad de publicar tus intereses personales. Cada interés o
-                                    preferencia debes
-                                    digitarlo en el campo Lista de intereses, separados por una coma y, automáticamente,
-                                    se mostrarán
-                                    como botones. Para borrarlos, basta con hacer clic en la X que acompaña cada
-                                    interés.</p>
-                                <div class="box_media" id="configuracion_0_img13">
-                                    <img src="content/img13.png"
-                                        alt="Sección Intereses del formulario de edición del perfil de usuario" />
-                                    <div class="about"><strong>Imagen 8. </strong>Sección Intereses del formulario de
-                                        edición del perfil
-                                        de usuario, (2018)</div>
+                                <div class="col-2">
+                                    <div id="point_img6">
+                                        <div class="box_l">
+                                            <div class="note_pointer_left note_7"><div class="tooltip" title="Esta es la fórmula para calcular el coeficiente de variación.">7</div></div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </dd>
-                        </dl>
-                        <dl>
-                            <dt>Opcional</dt>
-                            <dd>
-                                <h3>2.6. Sección <i>Opcional</i> </h3>
-                                <p>En esta sección es posible agregar información para que el usuario pueda ser
-                                    contactado por medios
-                                    diferentes a los que dispone la plataforma. Entre los datos que puede añadir se
-                                    encuentran: página
-                                    web, ID para mensajería, números de teléfono, dirección física e información de
-                                    cuentas en redes
-                                    sociales.</p>
-                                <div class="box_media" id="configuracion_0_img14">
-                                    <img src="content/img14.png"
-                                        alt="Sección Opcional del formulario de edición del perfil de usuario" />
-                                    <div class="about"><strong>Imagen 9. </strong>Sección Opcional del formulario de
-                                        edición del perfil
-                                        de usuario, (2018)</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-2">
+                                    <p>Para las estadísticas del año 2017 aplica las mismas fórmulas que en la columna de 2015</p>
                                 </div>
-                            </dd>
-                        </dl>
+                                <div class="col-2">
+                                    <img src="content/Imagen7.png" alt="Imagen 7">
+                                </div>
+                            </div>
+                        </li>
+                    </div>      
+                      <div class="box-text important" label="¡interpretemos los resultados!">
+                          <ul>
+                              <li>¿Para cada año, puedes sospechar sobre diferencias entre los municipios en las tasas de mortalidad?</li>
+                              <li>Comparando los dos años, ¿evidencias una tendencia de aumento o disminución en las diferencias del riesgo de mortalidad entre municipios?</li>
+                          </ul>
+                      </div>
+                      <div class="box-text connection">
+                          <p>Ahora pasemos al tercer paso, para explorar la magnitud de las inequidades geográficas. Haz clic en siguiente para continuar.</p>
+                      </div>
+                </div>
+            </section>
+            <section id="pag-tercero" ptitle="3. Tercer paso: Exploración de la magnitud de las inequidades geográficas">
+                <h2 class="page-title"></h2>
+                <div class="subpage">
+                    <div class="box-text important" label="¡Atención!">
+                        <p>Es altamente recomendable que antes de utilizar cualquiera de las técnicas disponibles para cuantificar las inequidades en salud te familiarices con los datos.</p>
                     </div>
-                </div>
-                <p>Para finalizar la edición del perfil personal, basta con hacer clic en el botón <strong>Actualizar
-                        información personal</strong> y de este modo tú y tus compañeros podrán conocerse y reconocerse
-                    fácilmente en la plataforma UVirtual Académica.</p>
-                <div class="box_media" id="configuracion_0_img14_1">
-                    <img src="content/img14_1.png"
-                        alt="Sección Opcional del formulario de edición del perfil de usuario" />
-                    <div class="about"><strong>Imagen 10. </strong>Botón para guardar los cambios realizados en la
-                        configuración del perfil de usuario, (2018)</div>
-                </div>
-                <p>Una vez terminado el proceso, la plataforma te llevará directamente al panel de
-                    <strong>Preferencias</strong>, donde existen otras opciones de configuración que podrían ser útiles
-                    en otros escenarios. La caja de opciones tiene la siguiente apariencia:</p>
-                <div class="box_media" id="configuracion_0_img15">
-                    <img src="content/img15.png" alt="Preferencias del usuario" />
-                    <div class="about"><strong>Imagen 11. </strong>Preferencias del usuario, (2018)</div>
+                    <p>Por ello, vamos a practicar diferentes formas. Comencemos explorando las tasas de mortalidad de acuerdo a los valores del estratificador de equidad (IPM). </p>
+                    <p>Lo primero es ordenar la base de datos según los valores del IPM. Para esto, la base de datos en el archivo de Excel será ordenada de la peor situación a la mejor situación socioeconómica. </p>
+                    <p>Es importante tener en cuenta que, dependiendo de la orientación del indicador, la "peor situación" puede corresponder a sus valores más bajos (por ejemplo, el índice de desarrollo humano), en cuyo caso el ordenamiento se hace de menor a mayor. Cuando la "peor situación" corresponde a los valores más altos del estratificador de equidad (por ejemplo, el índice de pobreza multidimensional), el ordenamiento se hace de mayor a menor.  </p>
+                    <p>Para lograrlo debes seguir este paso a paso:</p>
+                    <div class="ctrl-pagination" data-layer-height="310px" data-labelcurrent="true" >
+                        <li>
+                          <div class="row">
+                              <div class="col-2">
+                                  <p>Selecciona todas las filas y columnas que contienen los datos.</p>
+                                  <p>En el Menú Data (Datos) haz clic sobre el botón Sort (Ordenar).</p>
+                              </div>
+                              <div class="col-2">
+                                  <img src="content/Imagen8.png" alt="Imagen 8">
+                              </div>
+                          </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-2">
+                                    <p>En el campo Sort by (Ordenar por) selecciona Estratificador de equidad (IPM).</p>
+                                    <p>En el campo Order (Criterio de ordenación) selecciona Largest to smallest (De mayor a menor).</p>
+                                </div>
+                                <div class="col-2">
+                                    <img src="content/Imagen9.png" alt="Imagen 9">
+                                </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="row">
+                                <div class="col-2">
+                                    <p>La base de datos debe verse como en la imagen:</p>
+                                </div>
+                                <div class="col-2">
+                                    <img src="content/Imagen10.png" alt="Imagen 10">
+                                </div>
+                            </div>
+                          </li>
+                    </div>
+                    <p>El objetivo de calcular métricas de brecha de desigualdad socioeconómica en salud es realizar una comparación del nivel de mortalidad entre los municipios más pobres y los municipios más ricos. Dado el gran volumen de municipios, lo más pertinente es convertir la variable IPM en una variable con valores ordinales que permita contrastar los municipios  con menos riqueza con aquellos con más riqueza.<sup class="tooltip" title="En caso de contar con menos de 10 municipios, es recomendable omitir este paso y utilizar a los municipios extremos para los cálculos, esto es, comparando el municipio más rico con el municipio más pobre.">1</sup>1</p>
+                    <p>Para esto transformaremos la variable IPM en una nueva variable ordinal utilizando los quintiles, la cual divide la distribución de los datos de IPM en cinco (5) grupos de acuerdo a sus puntos de corte en los percentiles 20, 40, 60 y 80, denotados por P.20, P.40, P.60, P.80.</p>
+                    <p>Para la variable IPM, la cual fue ordenada de MAYOR A MENOR, los grupos se crean de la siguiente forma:</p>
+                    <ul>
+                        <li>Grupo 1 (más pobres): municipios con valores de IPM  mayores a P.80.</li>
+                        <li>Grupo 2: municipios con valores de IPM  mayores que P.60 y menores o iguales que P.80.</li>
+                        <li>Grupo 3: municipios con valores de IPM  mayores que P.40 y menores o iguales que P.60.</li>
+                        <li>Grupo 4: municipios con valores de IPM  mayores que P.20 y menores o iguales que P.40.</li>
+                        <li>Grupo 5 (más ricos): municipios con valores de IPM  menores o iguales a P.20.</li>
+                    </ul>
+                    <p>Cuando el estratificador de equidad se ordena de MENOR A MAYOR, como por ejemplo se haría para el indicador Índice de Desarrollo Humano -IDH, los grupos se crean de la siguiente forma:</p>
+                    <ul>
+                        <li>Grupo 1 (menor ventaja social): municipios con valores del estratificador de equidad menores o iguales a P.20.</li>
+                        <li>Grupo 2: municipios con valores del estratificador de equidad mayores que P.20 y menores o iguales que P.40.</li>
+                        <li>Grupo 3: municipios con valores del estratificador de equidad mayores que P.40 y menores o iguales que P.60.</li>
+                        <li>Grupo 4: municipios con valores del estratificador de equidad mayores que P.60 y menores o iguales que P.80.</li>
+                        <li>Grupo 5 (mayor ventaja social): municipios con valores del estratificador de equidad mayores a P.80.</li>
+                    </ul>
+                    <p>Para llevar a cabo esta tarea en Excel realiza los siguientes pasos:</p>
                 </div>
             </section>
             <section id="pag-bibliografia" ptitle="Bibliografía">
