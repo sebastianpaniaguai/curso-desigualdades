@@ -932,22 +932,22 @@ footer {
     background-position: -662px -51px;
 }
 
-.note_pointer_left,
-.note_pointer_right {
+.note_pointer_left, .note_pointer_right {
     background: url(../img/sprite.png) no-repeat;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: bold;
     border: none;
-    width: 43px;
-    height: 31px;
+    width: 30px;
+    height: 25px;
     color: #ffffff;
-    padding-top: 10px;
+    padding-top: 5px;
+    padding-left: 5px;
     position: absolute;
 }
 
 .note_pointer_right {
     background-position: -1198px 0;
-    padding-left: 15px;
+    padding-left: 26px;
     text-align: left;
 }
 
