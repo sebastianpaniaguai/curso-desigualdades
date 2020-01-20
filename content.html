@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <link rel="shortcut icon" href="img/icon.svg">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>Modificar el perfil</title>
+    <title>Participar en un Foro</title>
 
     <link href="components/jquery/css/custom/jquery-ui.min.css" rel="stylesheet" type="text/css">
     <link href="components/ionicons/css/ionicons.min.css" rel="stylesheet" type="text/css">
@@ -98,9 +98,13 @@
                     </menuitem>
                     <menuitem label="Contenido">
                     <menu>
-                        <menuitem label="1. Aspectos generales" data-page="pag-aspectos">
+                        <menuitem label="1. El foro y sus tipos" data-page="pag-foro">
                         </menuitem>
-                        <menuitem label="2. Configuración" data-page="pag-configuracion">
+                        <menuitem label="2. Cómo participar en un foro" data-page="pag-participar">
+                        </menuitem>
+                        <menuitem label="3. Responder a una participación" data-page="pag-responder">
+                        </menuitem>
+                        <menuitem label="4. Filtrar mensajes en los foros" data-page="pag-filtrar">
                         </menuitem>
                     </menu>
                     </menuitem>
@@ -124,7 +128,7 @@
             </nav>
             <div class="header-text">
                 <h1>Manejo de la plataforma</h1>
-                <span>Modificar el perfil</span>
+                <span>Participar en un Foro</span>
             </div>
             <!-- <h2 class="page-title"></h2> -->
         </header>
@@ -136,382 +140,276 @@
                     <h2 class="page-title"></h2>
                     <div class="box_media">
                         <img src="content/img1.jpg">
-                        <div class="about"><b>Foto 1. </b>¿Qué es el perfil de usuario? (2019). Fotografía
+                        <div class="about"><b>Foto 1. </b>Carga de archivos a la plataforma (2019). Fotografía
                             recuperada de <a
-                                href="https://pixabay.com/es/photos/ordenador-port%C3%A1til-equipo-explorador-2562325/"
+                                href="https://pixabay.com/es/photos/mensajes-de-texto-tel%C3%A9fonos-m%C3%B3viles-1490691/"
                                 target="_blank">Pixabay</a>
                         </div>
                     </div>
-                    <h3>1.1. El perfil de usuario</h3>
-                    <p>La plataforma Moodle dispone de un espacio para que puedas ubicar tu perfil, es decir, la
-                        información personal que te identificará ante otros usuarios.</p>
-                    <div class="box-text important" label="¡Ojo!">
-                        <p>Gran parte de la información del perfil, será visible por todos los participantes inscritos
-                            en los cursos donde estés matriculado.</p>
+                    <p>Un foro es una herramienta que permite el intercambio de información o debate específico, donde el profesor o estudiante propone un tema de discusión o plantea una pregunta al grupo, con el propósito de que los demás participantes expresen sus conocimientos y opiniones a través de la interacción.</p>
+                    <p>Es una herramienta que propicia la comunicación <a href="https://deconceptos.com/general/asincronico" target="_blank">asincrónica</a>, es decir, aquella diferida en el tiempo (cuando no existe coincidencia temporal).</p>
+                    <div class="text-box connection">
+                        <p>Aunque el concepto de foro es único, la intención que este tenga puede variar según las necesidades del espacio virtual, por eso podrás encontrar distintos tipos de foro en un curso, cada uno con un objetivo diferente. Entérate a continuación cuáles son.</p>
                     </div>
-                    <h3>1.2. Elementos que componen el perfil de usuario</h3>
-                    <div class="flexbox">
+                    <div class="instruction"><span class="onlymobile">Toque sobre cada concepto para más información.</span> <span class="notmobile">Haga clic sobre cada concepto para más información.</span></div>
+                    <div class="accordion">
+                        <h3>Foro de presentación</h3>
                         <div>
-                            <p>En este espacio se ubican elementos relacionados con:</p>
-                            <ul>
-                                <li><b>Información general</b>: nombres y apellidos, dirección de correo, ciudad, país,
-                                    zona horaria e idiomas, entre otros, así como una descripción de tu actividad
-                                    laboral, académica o profesional.</li>
-                                <li>Una <b>imagen</b> que te permita ser identificado ante los demás.</li>
-                                <li><b>Nombres adicionales</b> e <b>intereses</b> que quieras compartir.</li>
-                                <li><b>Información opcional</b>: datos de contacto por otras redes, números telefónicos,
-                                    entre otros.</li>
-                            </ul>
-                            <div class="box-text note" label="Nota">
-                                <p>Adicional a toda esta información, la vista pública del perfil te permite incluir
-                                    elementos como:</p>
-                                <ul>
-                                    <li><b>Miscelánea</b> con notas, mensajes y demás participaciones en espacios de
-                                        comunicación.</li>
-                                    <li><b>Actividad de accesos</b> a la plataforma</li>
-                                    <li><b>Detalles del curso</b> en el que estés matriculado</li>
-                                </ul>
+                            <div class="row">
+                                <div class="col-2">
+                                    <div class="box_media" id="foro_0_img5_1">
+                                        <img src="content/img5_1.png" alt="" />
+                                    </div>
+                                    <div class="about"><strong>Ilustración  1. </strong>Foro de presentación, (2018)</div>
+                                </div>
+                                <div class="col-2">
+                                    <p>Está concebido para que cada participante se presente ante los demás y así puedan conocerse todos, compartiendo información personal, académica, profesional o laboral.</p>
+                                    <p>Este espacio busca, tal y como en el primer día de clase, que todos puedan reconocerse entre sí.</p> 
+                                    <div class="box-text important" label="¡PILAS!" id="foro_0_important">
+                                        <p>El foro de presentación se puede encontrar en un curso con nombres como: Conozcámonos, Encuentro inicial y Presentación inicial, entre otros.</p>
+                                    </div>
+                                </div>
                             </div>
-
+                           
                         </div>
-                        <div class="box_media">
-                            <img src="content/img6.png" alt="Vista pública del perfil de Pepito Pérez (2019)">
-                            <div class="about"><b>Imagen 1. </b>Vista pública del perfil de Pepito Pérez (2019)</div>
+                        <h3>Foro de anuncios</h3>
+                        <div>
+                            <div class="row">
+                                 <div class="col-2">
+                                    <div class="box_media" id="foro_0_img5_2">
+                                        <img src="content/img5_2.png" alt="" />
+                                    </div>
+                                    <div class="about"><strong>Ilustración 2. </strong>Foro de anuncios, (2018)</div>
+                                </div>
+                                <div class="col-2">
+                                    <p>Es aquel programado en la plataforma para que el profesor o moderador publiquen avisos e imprevistos que puedan presentarse durante el desarrollo del curso, y sea necesario dar a conocer a todos los participantes.</p>
+                                    <p>Solo el profesor o moderador podrán publicar en este escenario.</p>
+                                    <div class="box-text important" label="¡PILAS!" id="foro_0_important">
+                                        <p>El foro de anuncios se puede encontrar en un curso con nombres como: Novedades, Entérate, Noticias y Avisos, entre otros.</p>
+                                    </div>
+                                </div>
+                            </div>
+                          
+                        </div>
+                        
+                        <h3>Foro de inquietudes</h3>
+                        <div>
+                            <div class="row">
+                                <div class="col-2">
+                                    <div class="box_media" id="foro_0_img6_1">
+                                        <img src="content/img6_1.png" alt="" />
+                                    </div>
+                                    <div class="about"><strong>Ilustración 3. </strong>Foro de inquietudes, (2018)</div>
+                                </div>
+                                <div class="col-2">
+                                    <p>Desde este foro cualquier participante puede hacer preguntas sobre los temas abordados, la realización de actividades o el manejo técnico de la plataforma. Así mismo, se pueden resolver las inquietudes planteadas por otros compañeros.</p>
+                                    <div class="box-text important" label="¡PILAS!" id="foro_0_important">
+                                        <p>El foro de anuncios se puede encontrar en un curso con nombres como: <em>Preguntas, Dudas, Consultas e Indaguemos</em>, entre otros.</p>
+                                    </div>
+                                </div>
+                            </div>
+                          
+                        </div>
+                        
+                        <h3>Foro cafetín</h3>
+                        <div>
+                            <div class="row">
+                                <div class="col-2">
+                                    <div class="box_media" id="foro_0_img6_2">
+                                        <img src="content/img6_2.png" alt="" />
+                                    </div>
+                                    <div class="about"><strong>Ilustración 4. </strong>Foro cafetín, (2018)</div>
+                                </div> 
+                                <div class="col-2">
+                                    <p>Está dispuesto para que, de una manera más informal, los participantes interactúen con temas relacionados o no con la temática trabajada.</p>
+                                    <p>Este escenario tiene el propósito de fortalecer la interacción y los espacios de reconocimiento entre los participantes del curso.</p>
+                                    <div class="box-text important" label="¡PILAS!" id="foro_0_important">
+                                        <p>El foro cafetín se puede encontrar en un curso con nombres como: <em>Cafetería virtual y Charlemos</em>, entre otros.</p>
+                                    </div>
+                                </div>
+                                </div>
+                        </div>
+                        
+                        <h3>Otros foros</h3>
+                        <div>
+                            <p>Además de los foros ya mencionados, existe la posibilidad de incluir en un curso foros específicos, a través de los cuales se desarrolle alguna actividad que refuerce el compromiso académico. Según sea el caso, estos foros tendrán algunas particularidades como:</p>
+                            <ul class="data_list">
+                               <li>Foros en los que <strong>cada participante plantee solo un tema</strong> de discusión.</li>
+                               <li>Foros de <strong>debate sencillo</strong>, es decir, el moderador o profesor plantea un solo tema sobre el cual motiva la interacción entre los participantes.</li>
+                               <li>Foros <strong>tipo blog</strong>, mediante los cuales se propicie la interacción entre los participantes sobre los temas que deseen abordar y, al mismo tiempo, responder a los aportes de otros, tal y como un blog en la web.</li>
+                               <li>Foros de <strong>preguntas y respuestas</strong>, donde el moderador presenta una serie de preguntas que deberán ser respondidas por los participantes y estos, a su vez, sólo podrán ver lo que han respondido los demás una vez hayan enviado sus propias respuestas.</li>
+                            </ul>
                         </div>
                     </div>
                     <div class="box-text connection">
-                        <p>Ahora que conoces qué es el perfil de usuario de la plataforma Moodle, entérate a
-                            continuación de cómo podrás modificar los datos que hacen parte de él.</p>
+                        <p>Como acabas de ver, los foros pueden tener diferentes intenciones, pero ello no implica que el manejo técnico sea diferente; por el contrario, la forma de participar es igual para todos los tipos de foro. Aprende a continuación cómo hacerlo.</p>
                     </div>
                 </div>
             </section>
-            <section id="pag-configuracion" ptitle="2. Configuración">
+            <section id="pag-participar" ptitle="2. Cómo participar en un foro">
                 <h2 class="page-title"></h2>
                 <div class="subpage">
                     <div class="box_media">
                         <img src="content/img2.jpg">
-                        <div class="about"><b>Foto 2. </b>¿Cómo edito mi perfil de usuario? (2019). Fotografía
+                        <div class="about"><b>Foto 2. </b>Cómo participar en un foro? (2019). Fotografía
                             recuperada de <a
-                                href="https://pixabay.com/es/photos/escritorio-manos-escribir-oficina-4208112/"
+                                href="https://pixabay.com/es/photos/iphone-6s-plus-apple-blanco-1032782/"
                                 target="_blank">Pixabay</a>
                         </div>
                     </div>
-                    <p>Cuando ingresas a tu perfil por primera vez, notarás que hay ciertos campos que ya contienen
-                        información por defecto. Esto sucede porque cuando se crea un usuario nuevo, para la plataforma
-                        es indispensable que éste tenga unos datos mínimos: identificación, nombre de usuario y correo
-                        electrónico; además, se ubicarán por defecto algunas configuraciones y datos adicionales
-                        predefinidos, como la ciudad y el país.
-                    </p>
-                    <p>Es posible que por diferentes motivos requieras editar tu perfil de usuario en la plataforma,
-                        razón por la cual es importante conocer cómo realizar ajustes a dichos datos y/o agregar nuevos;
-                        por ejemplo, actualizar la imagen de identificación, modificar el correo electrónico o cambiar
-                        la ciudad de ubicación, entre otros.
-                    </p>
-                    <div class="box-text connection">
-                        <p>A continuación te explicaremos los pasos que debes llevar a cabo para realizar dichas
-                            modificaciones.</p>
+                    <h3>Paso 1: Buscar en el foro</h3>
+                    <p>Para comenzar es necesario identificar y seleccionar el foro en el que se desea participar, haciendo clic en su nombre. Podrá verse de distintas formas, por ejemplo:</p>
+                    <div class="box_media">
+                        <img src="content/img7.png" alt="Ejemplos de cómo se ve un foro, para acceder a él">
+                        <div class="about"><b>Imagen 5. </b>Ejemplos de cómo se ve un foro, para acceder a él (2019)</div>
                     </div>
-                    <h3>2.1. Acceder al formulario de edición del perfil de usuario</h3>
-                    <p>Cuando necesites modificar la información del perfil de usuario, despliega el menú de acceso
-                        rápido haciendo clic en el Nombre de Usuario que puedes ver en la parte superior derecha de la
-                        pantalla; en el menú que se despliega haz clic en la opción Preferencias y allí selecciona la
-                        opción Editar perfil ubicada en el apartado Cuenta de usuario.</p>
-                    <div class="instruction">Pasa el mouse por cada ítem para conocer su descripción.</div>
-                    <div id="point_img7">
-                        <div class="box_l">
-                            <div class="note_pointer_right note_1">
-                                <div class="tooltip" title="Clic en el <strong>Nombre de usuario</strong>.">1</div>
-                            </div>
-                            <div class="note_pointer_right note_2">
-                                <div class="tooltip" title="Ingresar por la opción <strong>Preferencias</strong>.">2
+                    <h3>Paso 2: Identificar sus elementos</h3>
+                    <p>Una vez hayas ingresado al foro, es necesario identificar los elementos que lo componen; teniendo en cuenta que la disposición de dichos elementos podría variar según el tema gráfico que se haya elegido en el curso:</p>
+                    <div class="instruction"><span class="onlymobile">Toque sobre las letra de la imagen para más información.</span> <span class="notmobile">Pase el mouse sobre las letras de la imagen para más información.</span></div>
+                    <div id="point_img8">
+                    <div class="box_l">
+                        <div class="note_pointer_left note_1"><div class="tooltip" title="<strong>Nombre</strong> del foro">a</div></div>
+                        <div class="note_pointer_left note_2"><div class="tooltip" title="Botón para configurar la <strong>suscripción a la discusión</strong>, cuando es una suscripción opcional y el curso tiene el <strong>Tema gráfico Clean</strong>">b</div></div>
+                        <div class="note_pointer_right note_3"><div class="tooltip" title="Botón para configurar la <strong>suscripción a la discusión</strong>, cuando es una suscripción opcional y se visualiza, además el curso tiene el <strong>Tema gráfico Boost</strong>">c</div></div>
+                        <div class="note_pointer_right note_4"><div class="tooltip" title="<strong>Descripción</strong>, la cual debe tenerse en cuenta para saber cómo realizar la participación.">d</div></div>
+                        <div class="note_pointer_right note_5"><div class="tooltip" title="<strong>Botón de enlace</strong> para agregar una participación.">e</div></div>
+                    </div>
+                    </div>
+                    <div class="about"><strong>Imagen 6. </strong>Elementos de un foro (2018)</div>
+                    <div class="instruction"><span class="onlymobile">Toque sobre cada concepto para más información.</span> <span class="notmobile">Haga clic sobre cada concepto para más información.</span></div>
+                    <div class="accordion" id="como_0_accordion1">
+                        <h3>A. Nombre</h3>
+                        <div>Da una idea del tipo de foro y la intención que tiene.</div>
+                        <h3>B. Suscripción a la discusión</h3>
+                        <div>
+                            <p>Cuando se está suscrito a un foro, la plataforma enviará un mensaje de correo electrónico a la dirección asociada en el perfil, cada que se publique un nuevo mensaje en ese foro.</p>
+                            <p>Dicha suscripción puede ser <strong>opcional</strong>, es decir, el usuario decide si quiere o no recibir dichas notificaciones, o <strong>forzosa</strong>, ya que la configuración de la plataforma, por parte del profesor o moderador del foro, está configurada para que se notifique al correo electrónico la publicación de un nuevo mensaje.</p>
+                            <div class="box-text example" label="Ejemplo:">
+                                <p>El Foro de anuncios tiene suscripción forzosa, esto quiere decir que cada vez que el profesor publique una nueva noticia, todos los participantes recibirán un mensaje de correo electrónico y así se informarán, incluso, sin haber ingresado a la plataforma.</p>
+                                <p>Si se está suscrito a un foro, el mensaje que se recibe en el correo electrónico tiene la siguiente apariencia:</p>
+                                <div class="box_media" id="como_0_img9">
+                                    <img src="content/img9.png" alt="" />
                                 </div>
+                                <div class="about"><strong>Imagen 5. </strong>Notificación al correo electrónico de un mensaje en un Foro de inquietudes, (2018)</div>
                             </div>
-                            <div class="note_pointer_left note_3">
-                                <div class="tooltip" title="Seleccionar la opción <strong>Editar perfil.</strong>">3
-                                </div>
+                            <p>Este mensaje permite conocer la intervención realizada en el foro y, además, acceder a la plataforma para responderlo (haciendo clic en Responder) o ver el mensaje con sus anexos (Ver el mensaje en su contexto).</p>
+                            <div class="box-text important" label="¡OJO!">
+                                <p>Si respondes a ese mensaje mediante el correo electrónico, ¡la respuesta se perderá!, pues el remitente del mensaje de notificación es un perfil automático de la plataforma, identificado como:<em>no-responder@uvirtual.udem.edu.co</em> </p>
+                            </div>
+                            <div class="box-text note" label="Tip...">
+                                <p>Una buena práctica para estar al tanto de lo que se está diciendo en un foro temático y a la vez conocer las preguntas que tus compañeros hacen al profesor, es suscribirse a ese foro. Así podrás estar siempre al día sobre lo que allí se dice. </p>
                             </div>
                         </div>
+                        <h3>D. Descripción </h3>
+                        <div>Incluye los parámetros, es decir las especificaciones definidas por el profesor o moderador y que deben tenerse en cuenta al participar en el foro.</div>
+                        <h3>E. Enlace para hacer una participación </h3>
+                        <div>
+                            <p>Permite acceder al área para redactar el mensaje que se incluirá en el foro. Si el foro brinda la posibilidad de añadir varios temas de discusión se observa el botón: <em>Añadir un nuevo tema de discusión</em>; por el contrario, si el foro es de debate sencillo, solo se permite Responder a ese único tema de discusión, como muestra la imagen:</p>
+                            <div class="box_media" id="como_0_img10">
+                                <img src="content/img10.png" alt="" />
+                            </div>
+                            <div class="about"><strong>Imagen 6. </strong>Foro de debate sencillo donde sólo se puede responder a un único tema de discusión, (2018)</div>
+                        </div>
                     </div>
-                    <div class="about"><b>Imagen 2. </b>Pasos para editar el perfil de usuario (2019)</div>
-                    <p>Ahora veamos un formulario con la información existente del usuario, quien tiene la posibilidad
-                        de modificarla según su necesidad.</p>
-                    <div class="box-text important" label="¡Ojo!">
-                        <p>Los campos marcados con un asterisco rojo son de carácter obligatorio, por consiguiente, si
-                            no son diligenciados, la plataforma no permitirá realizar la actualización, modificación o
-                            adición de la información.
-                        </p>
+                    <h3>Paso 3: Redactar el mensaje y enviar</h3>
+                    <p>Al momento de redactar el mensaje se habilitará un formulario en el que se consigna la información, según las siguientes indicaciones:</p>
+                    <div class="instruction"><span class="onlymobile">Toque sobre las letra de la imagen para más información.</span> <span class="notmobile">Pase el mouse sobre las letras de la imagen para más información.</span></div>
+                    <div id="point_img11">
+                    <div class="box_l">
+                        <div class="note_pointer_left note_6"><div class="tooltip" title="<strong>Asunto</strong> sobre el cual trata el mensaje, es decir, el título que identifica el mensaje.">a</div></div>
+                        <div class="note_pointer_left note_7"><div class="tooltip" title="Área para redactar el <strong>Mensaje</strong>.">b</div></div>
+                        <div class="note_pointer_left note_8"><div class="tooltip" title="Configurar la <strong>suscripción a la discusión</strong> si es opcional. Si ya está predeterminada se verá deshabilitada.">c</div></div>
+                        <div class="note_pointer_right note_9"><div class="tooltip" title="Selector para subir <strong>Archivos adjuntos</strong> si así se desea.">d</div></div>
+                        <div class="note_pointer_right note_10"><div class="tooltip" title="Botón para <strong>enviar la participación</strong> al foro.">e</div></div>
                     </div>
-                    <p>En la ventana de datos de perfil se despliegan cinco (5) secciones:</p>
+                    </div>
+                    <div class="about"><b>Imagen 9.</b>Agregar una participación (2019) </div>
+                    <div class="instruction"><span class="onlymobile">Toque sobre cada concepto para más información.</span> <span class="notmobile">Haga clic sobre cada concepto para más información.</span></div>
+                    <div class="accordion" id="como_0_accordion2">
+                        <h3>A. Asunto</h3>
+                        <div>Este texto debe ser corto y resumir el tema del mensaje con el que participará en el foro.</div>
+                        <h3>B. Mensaje</h3>
+                        <div>Espacio en el que se redacta el mensaje, teniendo en cuenta las indicaciones previstas en la descripción del foro. Es posible agregar texto, imágenes y tablas, entre otros.</div>
+                        <h3>C. Suscripción a la discusión</h3>
+                        <div>Permite configurar la suscripción al foro, si es opcional. De lo contrario, esta opción estará deshabilitada si ya fue configurada por el profesor o moderador del foro.</div>
+                        <h3>D. Archivo adjunto</h3>
+                        <div>Esta opción permite al participante adjuntar archivos que respalden o complementen el mensaje.</div>
+                        <h3>E. Enviar al foro</h3>
+                        <div>Una vez consideres pertinente, haz clic en esta opción para enviar el mensaje al foro. Al enviar el mensaje, la plataforma te notificará el envío y el tiempo disponible (30 minutos) para editarlo.
+                        <div class="box_media" id="como_0_img12">
+                            <img src="content/img12.png" alt="" />
+                        </div>
+                        <div class="about"><strong>Imagen 8. </strong>Mensaje de confirmación del envío y tiempo disponible para edición, (2018)</div>
+                        </div>
+                    </div>
+                    <p>La participación en el foro tiene la siguiente apariencia</p>
+                    <div class="instruction"><span class="onlymobile">Toque sobre las letra de la imagen para más información.</span> <span class="notmobile">Pase el mouse sobre las letras de la imagen para más información.</span></div>
+                    <div id="point_img13">
+                    <div class="box_l">
+                        <div class="note_pointer_right note_11"><div class="tooltip" title="<strong>Asunto</strong> con el que se ha nombrado la participación.">a</div></div>
+                        <div class="note_pointer_right note_12"><div class="tooltip" title="Nombre del <strong>participante que ha comenzado</strong> el tema de discusión.">b</div></div>
+                        <div class="note_pointer_right note_13"><div class="tooltip" title="Número de <strong>respuestas</strong> que ha tenido la discusión. ">c</div></div>
+                        <div class="note_pointer_right note_14"><div class="tooltip" title="Fecha en la que se ha realizado la última participación. ">d</div></div>
+                        <div class="note_pointer_left note_15"><div class="tooltip" title="<strong>Estado de la suscripción al tema</strong> (suscrito/no suscrito) ">e</div></div>
+                    </div>
+                    </div>
+                    <div class="about"><strong>Imagen 9. </strong>Elementos de una participación en el foro, (2018)</div>
+                    <div class="box-text connection">
+                        <p>Ahora que sabes cómo participar en un foro, aprende cómo responder a una participación de otro participante o propia.</p>
+                    </div>
+                </div>
+            </section>
+            <section id="pag-responder" ptitle="3. Responder a una participación">
+                <h2 class="page-title"></h2>
+                <div class="subpage">
                     <div class="box_media">
-                        <img src="content/img8.png" alt="Formulario de edición del perfil de usuario">
-                        <div class="about"><b>Imagen 3. </b>Formulario de edición del perfil de usuario (2019)</div>
+                        <img src="content/img3.jpg" alt="¿Cómo cargar archivos en la plataforma? ">
+                        <div class="about"><b>Foto 3. </b>¿Cómo cargar archivos en la plataforma? (2019). Fotografía recuperada de <a href="https://pixabay.com/es/photos/manos-antigua-escribir-545394/" target="_blank">Pixabay</a></div>
+                    </div>
+                    <h3>Paso 1: Elegir la participación</h3>
+                    <p>Haz clic sobre el nombre del mensaje que quieras responder y, una vez esté habilitado, haz clic en la opción “Responder”, inmediatamente se abrirá el espacio para redactar tu respuesta.</p>
+                    <div class="box_media">
+                        <img src="content/gif1.gif"  class="animation" title="Responder a una participación en el foro (2018)" />
+                        <div class="about"><strong>Animación 1. </strong>Responder a una participación en el foro (2018)</div>
+                    </div>
+                    <h3>Paso 2: Redactar la respuesta y enviar</h3>
+                    <p>Elaborar tu respuesta siguiendo los pasos que realizas para cualquier participación, finalizando con el botón “Enviar al foro”. La respuesta llevará por Asunto el nombre de la primera participación, antecedido por la sílaba Re y se mostrará con una sangría a la derecha, de modo que se puedan identificar claramente los hilos de conversación en los distintos temas de discusión y así saber quién respondió a quién.</p>
+                    <div class="box_media">
+                        <img src="content/img14.png" alt="Respuesta a una participación con sangría a la derecha" />
+                        <div class="about"><strong>Imagen 10. </strong>Respuesta a una participación con sangría a la derecha, (2018)</div>
                     </div>
                     <div class="box-text connection">
-                        <p>Entérate de qué se trata cada una:</p>
-                    </div>
-                    <div class="horizontal-menu">
-                        <dl>
-                            <dt>General</dt>
-                            <dd>
-                                <h3>2.2. Sección general</h3>
-                                <p>Esta sección contiene los campos referidos al <b>Nombre, Apellidos, Dirección de
-                                        correo, Mostrar correo</b> (quiénes lo pueden ver), <b>Ciudad, País, Zona
-                                        horaria, Tema preferido</b> (para visualizar los cursos) y la <b>Descripción</b>
-                                    de la información personal que deseas compartir con los demás participantes.</p>
-                                <div class="instruction">Pasa el mouse por cada ítem para conocer su descripción.</div>
-                                <div id="point_img9">
-                                    <div class="box_l">
-                                        <div class="note_pointer_left note_4">
-                                            <div class="tooltip"
-                                                title="Verifica que los <strong>nombres y apellidos</strong> estén correctos.">
-                                                a</div>
-                                        </div>
-                                        <div class="note_pointer_left note_5">
-                                            <div class="tooltip"
-                                                title="Verifica que la <strong>dirección de correo</strong> sea la indicada.">
-                                                b</div>
-                                        </div>
-                                        <div class="note_pointer_left note_6">
-                                            <div class="tooltip"
-                                                title="Selecciona <strong>a quién deseas mostrar la dirección de correo:</strong> solo compañeros de curso, todos los usuarios de la plataforma o nadie.">
-                                                c</div>
-                                        </div>
-                                        <div class="note_pointer_left note_7">
-                                            <div class="tooltip"
-                                                title="Verifica que los datos de su <strong>ciudad, país y zona horaria</strong> sean los correctos.">
-                                                d</div>
-                                        </div>
-                                        <div class="note_pointer_left note_8">
-                                            <div class="tooltip"
-                                                title="Si la configuración de la plataforma lo permite, esta opción brinda la posibilidad de modificar el <strong>tema gráfico</strong> preferido para visualizar los cursos.">
-                                                e</div>
-                                        </div>
-                                        <div class="note_pointer_left note_9">
-                                            <div class="tooltip"
-                                                title="Digita en este espacio una pequeña <strong>descripción</strong> del perfil personal (puedes incluir información académica, profesional o laboral).">
-                                                f</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="about"><b>Imagen 4. Sección General del formulario de edición del perfil de
-                                        usuario (2019)</b></div>
-                            </dd>
-                        </dl>
-                        <dl>
-                            <dt>Imagen de usuario</dt>
-                            <dd>
-                                <h3>2.3. Sección <i>Imágen de usuario</i></h3>
-                                <p>En esta sección se incluyen los campos relacionados con la imagen que utilizas para
-                                    tu
-                                    identificación; brindándote la posibilidad de borrarla, cargar una nueva imagen y
-                                    hacer una
-                                    descripción de esta.</p>
-                                <div class="instruction">Pasa el mouse por cada ítem para conocer su descripción.</div>
-                                <div id="point_img10">
-                                    <div class="box_l">
-                                        <div class="note_pointer_left note_10">
-                                            <div class="tooltip"
-                                                title="Indica que la plataforma define una <strong>imagen estándar</strong> mientras el usuario carga la propia.">
-                                                a</div>
-                                        </div>
-                                        <div class="note_pointer_left note_11">
-                                            <div class="tooltip"
-                                                title="Versión en miniatura de la <strong>imagen actual</strong> que tiene el perfil.">
-                                                b
-                                            </div>
-                                        </div>
-                                        <div class="note_pointer_left note_12">
-                                            <div class="tooltip"
-                                                title="Basta con marcar esta casilla para <strong>borrar la imagen</strong> de perfil actual y dejar la imagen predeterminada por la plataforma.">
-                                                c</div>
-                                        </div>
-                                        <div class="note_pointer_left note_13">
-                                            <div class="tooltip"
-                                                title="Te permite <strong>agregar una nueva imagen</strong> de usuario.">
-                                                d</div>
-                                        </div>
-                                        <div class="note_pointer_left note_14">
-                                            <div class="tooltip"
-                                                title="Brinda la posibilidad de realizar una corta <strong>descripción de la imagen</strong> publicada.">
-                                                e</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="about"><b>Imagen 5. </b>Sección Imagen del usuario del formulario de edición
-                                    del perfil de
-                                    usuario (2019)</div>
-                                <div class="box-text important" label="¡Ojo!">
-                                    <p>Tu imagen hace parte importante del perfil, pues te identifica ante los demás
-                                        participantes de la
-                                        plataforma. Ten en cuenta que esta debe tener un tamaño tipo documento (3cm *
-                                        4cm), buena
-                                        resolución (utilizar formato jpg o png), a color y con tu rostro visible.
-                                        Además:</p>
-                                    <ul>
-                                        <li>Evita que en la imagen esté muy alejado tu rostro.</li>
-                                        <li>Procura no tener sombreros o gafas oscuras.</li>
-                                        <li>La presentación personal es fundamental.</li>
-                                        <li>Muy importante que solo aparezcas tú en la imagen, para evitar confusiones.
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="instruction">Desplaza a izquierda o derecha con el mouse para observar las
-                                    diferencias.
-                                </div>
-                                <div class="box_media">
-                                    <div class="after-before">
-                                        <img src="content/img11_2.png" />
-                                        <img src="content/img11_1.png" />
-                                    </div>
-                                </div>
-                                <div class="about"><strong>Imagen 6. </strong>Ejemplos de imágenes de usuario correctas
-                                    e incorrectas,
-                                    (2018)</div>
-                                <div class="box-text important" label="¡Ojo!">Es posible que al subirla no veas de
-                                    inmediato la imagen,
-                                    en ese caso, actualiza la página pulsando F5 o el botón Actualizar del navegador.
-                                </div>
-                            </dd>
-                        </dl>
-                        <dl>
-                            <dt>Nombres adicionales</dt>
-                            <dd>
-                                <h4>2.4. Sección <i>Nombres Adicionales</i></h4>
-                                <p>Esta sección permite diligenciar los campos de los nombres adicionales del usuario
-                                    como:</p>
-                                <p><strong>Nombre – fonético: </strong>indica cómo debe pronunciarse el nombre.</p>
-                                <p><strong>Apellido- fonético: </strong>indica cómo debe pronunciarse el apellido.</p>
-                                <p><strong>Nombre intermedio: </strong>indica otro nombre que tenga el usuario.</p>
-                                <p><strong>Nombre alterno: </strong>puede usarse para definir un alias del usuario.</p>
-                                <div class="box_media" id="configuracion_0_img12">
-                                    <img src="content/img12.png"
-                                        alt="Sección Nombres adicionales del formulario de edición del perfil de usuario" />
-                                </div>
-                                <div class="about"><strong>Imagen 7. </strong>Sección Nombres adicionales del formulario
-                                    de edición del
-                                    perfil de usuario, (2018)</div>
-                                <div class="box-text example" label="Ejemplo:">
-                                    <table class="datatable" id="configuracion_0_table">
-                                        <thead>
-                                            <th>Nombre</th>
-                                            <th>Apellido</th>
-                                            <th>Nombre intermedio</th>
-                                            <th>Apellido fonético</th>
-                                            <th>Nombre fonético</th>
-                                            <th>Nombre alternativo</th>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>Wolfang</td>
-                                                <td>Mozart</td>
-                                                <td>Amadeus</td>
-                                                <td>Mosar</td>
-                                                <td>Guolfang</td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Clark </td>
-                                                <td>Kent</td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td>Superman</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    <div class="about"><strong>Tabla 1. </strong>Ejemplos nombres adicionales, (2018)
-                                    </div>
-                                </div>
-                            </dd>
-                        </dl>
-                        <dl>
-                            <dt>Intereses</dt>
-                            <dd>
-                                <h3>2.5. Sección <i>Intereses</i></h3>
-                                <p>Aquí tienes la posibilidad de publicar tus intereses personales. Cada interés o
-                                    preferencia debes
-                                    digitarlo en el campo Lista de intereses, separados por una coma y, automáticamente,
-                                    se mostrarán
-                                    como botones. Para borrarlos, basta con hacer clic en la X que acompaña cada
-                                    interés.</p>
-                                <div class="box_media" id="configuracion_0_img13">
-                                    <img src="content/img13.png"
-                                        alt="Sección Intereses del formulario de edición del perfil de usuario" />
-                                    <div class="about"><strong>Imagen 8. </strong>Sección Intereses del formulario de
-                                        edición del perfil
-                                        de usuario, (2018)</div>
-                                </div>
-                            </dd>
-                        </dl>
-                        <dl>
-                            <dt>Opcional</dt>
-                            <dd>
-                                <h3>2.6. Sección <i>Opcional</i> </h3>
-                                <p>En esta sección es posible agregar información para que el usuario pueda ser
-                                    contactado por medios
-                                    diferentes a los que dispone la plataforma. Entre los datos que puede añadir se
-                                    encuentran: página
-                                    web, ID para mensajería, números de teléfono, dirección física e información de
-                                    cuentas en redes
-                                    sociales.</p>
-                                <div class="box_media" id="configuracion_0_img14">
-                                    <img src="content/img14.png"
-                                        alt="Sección Opcional del formulario de edición del perfil de usuario" />
-                                    <div class="about"><strong>Imagen 9. </strong>Sección Opcional del formulario de
-                                        edición del perfil
-                                        de usuario, (2018)</div>
-                                </div>
-                            </dd>
-                        </dl>
+                        <p>Cuando se empiezan a construir discusiones largas en las que se incluyen las participaciones de varias personas, se requiere ordenar los mensajes de acuerdo a las necesidades y así facilitar la lectura. Entérate cómo se lograr esto.</p>
                     </div>
                 </div>
-                <p>Para finalizar la edición del perfil personal, basta con hacer clic en el botón <strong>Actualizar
-                        información personal</strong> y de este modo tú y tus compañeros podrán conocerse y reconocerse
-                    fácilmente en la plataforma UVirtual Académica.</p>
-                <div class="box_media" id="configuracion_0_img14_1">
-                    <img src="content/img14_1.png"
-                        alt="Sección Opcional del formulario de edición del perfil de usuario" />
-                    <div class="about"><strong>Imagen 10. </strong>Botón para guardar los cambios realizados en la
-                        configuración del perfil de usuario, (2018)</div>
+            </section>
+            <section id="pag-filtrar" ptitle="4. Filtrar mensajes en los foros">
+                <h2 class="page-title"></h2>
+                <div class="box_media">
+                    <img src="content/img4.jpg" alt="¿Cómo cargar archivos en la plataforma? ">
+                    <div class="about"><b>Foto 4. </b>¿Cómo cargar archivos en la plataforma? (2019). Fotografía recuperada de<a href="https://pixabay.com/es/photos/ordenador-port%C3%A1til-descanso-caf%C3%A9-1209008/" target="_blank">Pixabay</a></div>
                 </div>
-                <p>Una vez terminado el proceso, la plataforma te llevará directamente al panel de
-                    <strong>Preferencias</strong>, donde existen otras opciones de configuración que podrían ser útiles
-                    en otros escenarios. La caja de opciones tiene la siguiente apariencia:</p>
-                <div class="box_media" id="configuracion_0_img15">
-                    <img src="content/img15.png" alt="Preferencias del usuario" />
-                    <div class="about"><strong>Imagen 11. </strong>Preferencias del usuario, (2018)</div>
+                <p>En la parte superior de los debates, comentarios o respuestas de los diferentes foros, está la opción para buscar y/o visualizar por criterios los mensajes de los diferentes participantes.</p>
+                <p>Para realizar la búsqueda o clasificación de los mensajes se utiliza la lista: “Mostrar respuestas anidadas”, en la cual se incluyen las siguientes opciones:</p>
+                <div class="box_media">
+                    <img src="content/img15.png" alt=" Formas de organizar las respuestas en el foro. En la imagen están organizadas por rama" />
+                    <div class="about"><strong>Imagen 12. </strong> Formas de organizar las respuestas en el foro. En la imagen están organizadas por rama, (2018)</div>
                 </div>
+                <h3>4.1. Mostrar respuestas anidadas</h3>
+                <div class="box-text"><p>Permite visualizar de forma descendente las respuestas o comentarios que se le hicieron a un tema.</p></div>
+                <h3>4.2. Ordenar desde más antiguo</h3>
+                <div class="box-text"><p>Ordena las respuestas por fecha, desde la más antigua hasta la más reciente.</p></div>
+                <h3>4.3. Ordenar desde el más reciente</h3>
+                <div class="box-text"><p>Ordena las respuestas por fecha, desde la más reciente hasta la más antigua.</p></div>
+                <h3>4.4. Mostrar respuestas por rama</h3>
+                <div class="box-text"><p>Muestra las respuestas sin el formato de tabla, sólo los nombres, autores y fechas, una debajo de la otra.</p></div>
             </section>
             <section id="pag-bibliografia" ptitle="Bibliografía">
                 <h2 class="page-title"></h2>
                 <h3>Contenido adaptado de:</h3>
                 <ul class="bibliografia">
-                    <li>Programa Integración de Tecnologías a la Docencia (2010). Editar el perfil o la información
-                        personal. Banco de Objetos Virtuales de Aprendizaje – Universidad de Antioquia. Recuperado de <a
-                            href="http://aprendeenlinea.udea.edu.co/boa/contenidos.php/f61acedbc23ad2b03d76645b552a6fb4/300/1/contenido/"
-                            target="_blank">http://aprendeenlinea.udea.edu.co/boa/contenidos.php/f61acedbc23ad2b03d76645b552a6fb4/300/1/contenido/</a>
-                        el 17 de mayo de 2018</li>
-                    <li>Programa Integración de Tecnologías a la Docencia (2010). Perfil en Moodle. Banco de Objetos
-                        Virtuales de Aprendizaje – Universidad de Antioquia. Recuperado de <a
-                            href="http://aprendeenlinea.udea.edu.co/boa/contenidos.php/c7ed1707f74f204e722ad823598d25e6/208/1/contenido/"
-                            target="_blank">http://aprendeenlinea.udea.edu.co/boa/contenidos.php/c7ed1707f74f204e722ad823598d25e6/208/1/contenido/</a>
-                        el 17 de mayo de 2018
-                    </li>
-                    <li>Programa Integración de Tecnologías a la Docencia (2013). Editar perfil o información personal
-                        en Moodle 2.3. Banco de Objetos Virtuales de Aprendizaje – Universidad de Antioquia. Recuperado
-                        de <a
-                            href="http://aprendeenlinea.udea.edu.co/boa/contenidos.php/0cc79112fcd99fddc0233423a0923e24/945/1/contenido/"
-                            target="_blank">http://aprendeenlinea.udea.edu.co/boa/contenidos.php/0cc79112fcd99fddc0233423a0923e24/945/1/contenido/</a>
-                    </li>
-                    <li>Programa Integración de Tecnologías a la Docencia (2015). Cómo editar el perfil en Moodle 2.7.
-                        Banco de Objetos Virtuales de Aprendizaje – Universidad de Antioquia. Recuperado de <a
-                            href="http://aprendeenlinea.udea.edu.co/boa/contenidos.php/e77f6e2952c4215c8f50c0b91a4d4e25/1136/1/contenido/"
-                            target="_blank">http://aprendeenlinea.udea.edu.co/boa/contenidos.php/e77f6e2952c4215c8f50c0b91a4d4e25/1136/1/contenido/</a>
-                        el 17 de mayo de 2018</li>
-                    <li>Comunidad Moodle (2014). Campos de nombre adicionales. MoodleDocs. Recuperado de
-                        <a href="https://docs.moodle.org/all/es/Campos_de_nombre_adicionales"
-                            target=_blank>https://docs.moodle.org/all/es/Campos_de_nombre_adicionales</a> el 17 de mayo
-                        de 2018</li>
+                    <li>Comunidad Moodle (2014). Foros. MoodleDocs. <a href="https://docs.moodle.org/all/es/Foros" target="_blank">https://docs.moodle.org/all/es/Foros</a></li>
+                    <li>Programa Integración de Tecnologías a la Docencia (2013). ¿Cómo participar en un foro de Moodle 2.3? Banco de Objetos Virtuales de Aprendizaje – Universidad de Antioquia. <a href="http://aprendeenlinea.udea.edu.co/boa/contenidos.php/b8222998749bf25543a85dfdfdc5a256/951/1/contenido/" target="_blank">http://aprendeenlinea.udea.edu.co/boa/contenidos.php/b8222998749bf25543a85dfdfdc5a256/951/1/contenido/</a></li>
                 </ul>
                 <h3>Imágenes adaptadas de:</h3>
                 <ul>
