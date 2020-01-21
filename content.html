@@ -101,11 +101,15 @@
                     <menu>
                         <menuitem label="1. Primer Paso: Preparación de los datos" data-page="pag-primero">
                         </menuitem>
-                        <menuitem label="2. Segundo paso: Exploración de la magnitud de las desigualdades geográficas" data-page="pag-segundo">
+                        <menuitem label="2. Segundo paso: Exploración de la magnitud de las desigualdades geográficas"
+                            data-page="pag-segundo">
                         </menuitem>
-                        <menuitem label="3. Tercer paso: Exploración de la magnitud de las inequidades geográficas" data-page="pag-tercero">
+                        <menuitem label="3. Tercer paso: Exploración de la magnitud de las inequidades geográficas"
+                            data-page="pag-tercero">
                         </menuitem>
-                        <menuitem label="4. Cuarto paso: Cálculo de métricas de gradiente de inequidad geográfica en salud" data-page="pag-cuarto">
+                        <menuitem
+                            label="4. Cuarto paso: Cálculo de métricas de gradiente de inequidad geográfica en salud"
+                            data-page="pag-cuarto">
                         </menuitem>
                     </menu>
                     </menuitem>
@@ -139,18 +143,28 @@
             <section id="pag-primero" ptitle="1. Primer Paso: Preparación de los datos">
                 <h2 class="page-title"></h2>
                 <div class="subpage">
-                    <p>Este primer paso  tiene como objetivo la construcción de una base de datos que contenga los datos requeridos para el análisis de desigualdad: </p>
+                    <p>Este primer paso tiene como objetivo la construcción de una base de datos que contenga los datos
+                        requeridos para el análisis de desigualdad: </p>
                     <ol>
-                        <li><b>Indicadores de salud</b>: sean estos, tasas, razones de mortalidad o de incidencias estandarizadas, o prevalencias, sobre los cuales se realizarán los cálculos sobre brechas de desigualdad.</li>
-                        <li><b>Estratificadores de equidad</b>: son las variables socioeconómicas que se utilizan para ordenar la distribución de los municipios de acuerdo a su mayor o menor vulnerabilidad social. Pueden ser estos socioeconómicos, o demográficos. Igualmente, estos indicadores pueden estar disponibles por años / períodos.
+                        <li><b>Indicadores de salud</b>: sean estos, tasas, razones de mortalidad o de incidencias
+                            estandarizadas, o prevalencias, sobre los cuales se realizarán los cálculos sobre brechas de
+                            desigualdad.</li>
+                        <li><b>Estratificadores de equidad</b>: son las variables socioeconómicas que se utilizan para
+                            ordenar la distribución de los municipios de acuerdo a su mayor o menor vulnerabilidad
+                            social. Pueden ser estos socioeconómicos, o demográficos. Igualmente, estos indicadores
+                            pueden estar disponibles por años / períodos.
                         </li>
-                        <li><b>Variables demográficas -denominadores de los indicadores de salud-</b>: sirven para construir los ponderadores que introducen mayor o menor peso en los cálculos según la magnitud de las poblaciones
+                        <li><b>Variables demográficas -denominadores de los indicadores de salud-</b>: sirven para
+                            construir los ponderadores que introducen mayor o menor peso en los cálculos según la
+                            magnitud de las poblaciones
                         </li>
                     </ol>
                     <div class="box-text example" label="Algunos ejemplos son:">
                         <ol>
-                            <li>Indicador de salud: tasa de mortalidad masculina por causas externas para cada municipio</li>
-                            <li>Estratificador de equidad: % municipal de hogares con necesidades básicas insatisfechas</li>
+                            <li>Indicador de salud: tasa de mortalidad masculina por causas externas para cada municipio
+                            </li>
+                            <li>Estratificador de equidad: % municipal de hogares con necesidades básicas insatisfechas
+                            </li>
                             <li>Variable demográfica: población de hombres para cada municipio</li>
                         </ol>
                         <ol>
@@ -159,16 +173,22 @@
                             <li>Variable demográfica: población de nacidos vivos</li>
                         </ol>
                     </div>
-                    <p>Es recomendable que estos datos se integren en un archivo de Excel, como el que se muestra a continuación. Importante notar que cuando se desee realizar comparaciones en el tiempo, es útil incluir esta información en columnas para cada año / período de estudio:</p>
+                    <p>Es recomendable que estos datos se integren en un archivo de Excel, como el que se muestra a
+                        continuación. Importante notar que cuando se desee realizar comparaciones en el tiempo, es útil
+                        incluir esta información en columnas para cada año / período de estudio:</p>
                     <div class="box_media">
                         <img src="content/Imagen1.png" alt="Imagen 1">
                     </div>
                     <p>Esta plantilla de base de datos es la que vamos a utilizar durante la práctica.</p>
                     <div class="box-text note" label="Nota">
                         <p>Puedes descargar la plantilla haciendo clic en el siguiente botón:</p>
-                        <a href="content/Plantilla_2020_Descargar.xlsx" target="_blank"><i>Plantilla_2020_Descargar.xlxs</i></a>
+                        <a href="content/Plantilla_2020_Descargar.xlsx"
+                            target="_blank"><i>Plantilla_2020_Descargar.xlxs</i></a>
                     </div>
-                    <p>Para el ejemplo que realizaremos, se disponen de datos para los 1122 municipios de Colombia relacionados con la tasa de mortalidad enfermedades cardiovasculares para los años 2015 y 2017 (indicador de salud), índice de pobreza multidimensional -IPM (estratificador de equidad) y la población de cada año como denominador. 
+                    <p>Para el ejemplo que realizaremos, se disponen de datos para los 1122 municipios de Colombia
+                        relacionados con la tasa de mortalidad enfermedades cardiovasculares para los años 2015 y 2017
+                        (indicador de salud), índice de pobreza multidimensional -IPM (estratificador de equidad) y la
+                        población de cada año como denominador.
                     </p>
                     <div class="box-text connection">
                         <p>Ahora pasemos al segundo paso. Haz clic en siguiente para continuar.</p>
@@ -176,42 +196,57 @@
                 </div>
             </section>
 
-            <section id="pag-segundo" ptitle="2. Segundo paso: Exploración de la magnitud de las desigualdades geográficas">
+            <section id="pag-segundo"
+                ptitle="2. Segundo paso: Exploración de la magnitud de las desigualdades geográficas">
                 <h2 class="page-title"></h2>
                 <div class="subpage">
-                    <p>La identificación de desigualdades geográficas, esto es, la diferencia en los valores de la mortalidad entre los municipios de Colombia, puede realizarse a través de <b>estadística descriptiva</b>. 
+                    <p>La identificación de desigualdades geográficas, esto es, la diferencia en los valores de la
+                        mortalidad entre los municipios de Colombia, puede realizarse a través de <b>estadística
+                            descriptiva</b>.
                     </p>
                     <div class="box-text example" label="Por ejemplo">
-                        <p>Usaremos el rango y la desviación estándar para explorar la poca variabilidad del indicador de mortalidad. </p>
+                        <p>Usaremos el rango y la desviación estándar para explorar la poca variabilidad del indicador
+                            de mortalidad. </p>
                     </div>
-                    <p>Recuerda que si hay poca variabilidad, el análisis de desigualdades e incluso de inequidades geográficas sería poco ilustrativo. El coeficiente de variación (desviación estándar / media x 100%) es útil para comparar la variabilidad de dos o más indicadores incluso si éstas se miden en diferentes unidades.</p>
-                    <div class="ctrl-pagination" data-layer-height="310px" data-labelcurrent="true" >
+                    <p>Recuerda que si hay poca variabilidad, el análisis de desigualdades e incluso de inequidades
+                        geográficas sería poco ilustrativo. El coeficiente de variación (desviación estándar / media x
+                        100%) es útil para comparar la variabilidad de dos o más indicadores incluso si éstas se miden
+                        en diferentes unidades.</p>
+                    <div class="ctrl-pagination" data-layer-height="310px" data-labelcurrent="true">
                         <li>
-                          <div class="row">
-                              <div class="col-2">
-                                  <p>Ubícate al final del conjunto de datos y prepara el espacio en el cual calcularás los estadísticos:</p>
-                                  <ul>
-                                      <li>tasa promedio,</li>
-                                      <li>rango, </li>
-                                      <li>desviación estándar, y </li>
-                                      <li>coeficiente de variación.</li>
-                                  </ul>
-                                  <div class="box-text connection" label="Nota:">Para estos cálculos debes utilizar las opciones del menú AutoSum (AutoSuma), ubicado en el lado derecho de la pestaña Home (Inicio).</div>
-                              </div>
-                              <div class="col-2">
-                                  <img src="content/Imagen2.png" alt="Imagen 2">
-                              </div>
-                          </div>
+                            <div class="row">
+                                <div class="col-2">
+                                    <p>Ubícate al final del conjunto de datos y prepara el espacio en el cual calcularás
+                                        los estadísticos:</p>
+                                    <ul>
+                                        <li>tasa promedio,</li>
+                                        <li>rango, </li>
+                                        <li>desviación estándar, y </li>
+                                        <li>coeficiente de variación.</li>
+                                    </ul>
+                                    <div class="box-text connection" label="Nota:">Para estos cálculos debes utilizar
+                                        las opciones del menú AutoSum (AutoSuma), ubicado en el lado derecho de la
+                                        pestaña Home (Inicio).</div>
+                                </div>
+                                <div class="col-2">
+                                    <img src="content/Imagen2.png" alt="Imagen 2">
+                                </div>
+                            </div>
                         </li>
                         <li>
                             <div class="row">
                                 <div class="col-2">
-                                    <p>Para calcular la tasa mínima, ubica el cursor en la celda B1 y en el menú <i>Autosum</i> selecciona la opción <i>Min</i></p>
+                                    <p>Para calcular la tasa mínima, ubica el cursor en la celda B1 y en el menú
+                                        <i>Autosum</i> selecciona la opción <i>Min</i></p>
                                 </div>
                                 <div class="col-2">
                                     <div id="point_img3">
                                         <div class="box_l">
-                                            <div class="note_pointer_left note_1"><div class="tooltip" title="Luego de haber ubicado el cursor en la celda B1, selecciona esta opción.">1</div></div>
+                                            <div class="note_pointer_left note_1">
+                                                <div class="tooltip"
+                                                    title="Luego de haber ubicado el cursor en la celda B1, selecciona esta opción.">
+                                                    1</div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -220,16 +255,29 @@
                         <li>
                             <div class="row">
                                 <div class="col-2">
-                                    <p>Dirígete a la hoja Datos y selecciona la columna que contiene los valores de las tasas para el año 2015 para los 125 municipios.</p>
+                                    <p>Dirígete a la hoja Datos y selecciona la columna que contiene los valores de las
+                                        tasas para el año 2015 para los 125 municipios.</p>
                                     <p>Finaliza presionando la tecla enter.</p>
-                                    <div class="box-text note" label="¡Ojo!"><p>Notarás que la fórmula automáticamente queda como: <br> <span class="excel-form">=MIN(Datos!D2:D126)</span></p></div>
+                                    <div class="box-text note" label="¡Ojo!">
+                                        <p>Notarás que la fórmula automáticamente queda como: <br> <span
+                                                class="excel-form">=MIN(Datos!D2:D126)</span></p>
+                                    </div>
                                 </div>
                                 <div class="col-2">
                                     <div id="point_img4">
                                         <div class="box_l">
-                                            <div class="note_pointer_left note_2"><div class="tooltip" title="Dirígete a esta hoja de la plantilla.">2</div></div>
-                                            <div class="note_pointer_left note_3"><div class="tooltip" title="Selecciona la columna que contiene los valores de las tasas para los 125 municipios en el año 2015.">3</div></div>
-                                            <div class="note_pointer_left note_4"><div class="tooltip" title="Presiona la tecla enter.">4</div></div>
+                                            <div class="note_pointer_left note_2">
+                                                <div class="tooltip" title="Dirígete a esta hoja de la plantilla.">2
+                                                </div>
+                                            </div>
+                                            <div class="note_pointer_left note_3">
+                                                <div class="tooltip"
+                                                    title="Selecciona la columna que contiene los valores de las tasas para los 125 municipios en el año 2015.">
+                                                    3</div>
+                                            </div>
+                                            <div class="note_pointer_left note_4">
+                                                <div class="tooltip" title="Presiona la tecla enter.">4</div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -247,8 +295,16 @@
                                 <div class="col-2">
                                     <div id="point_img5">
                                         <div class="box_l">
-                                            <div class="note_pointer_left note_5"><div class="tooltip" title="Realiza el mismo procedimiento para calcular el máximo.">5</div></div>
-                                            <div class="note_pointer_right note_6"><div class="tooltip" title="Realiza el mismo procedimiento para calcular la desviación estándar.">6</div></div>
+                                            <div class="note_pointer_left note_5">
+                                                <div class="tooltip"
+                                                    title="Realiza el mismo procedimiento para calcular el máximo.">5
+                                                </div>
+                                            </div>
+                                            <div class="note_pointer_right note_6">
+                                                <div class="tooltip"
+                                                    title="Realiza el mismo procedimiento para calcular la desviación estándar.">
+                                                    6</div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -257,13 +313,17 @@
                         <li>
                             <div class="row">
                                 <div class="col-2">
-                                    <p>El coeficiente de variación se calcula como el cociente entre la desviación estándar y el promedio de las tasas.</p>
+                                    <p>El coeficiente de variación se calcula como el cociente entre la desviación
+                                        estándar y el promedio de las tasas.</p>
                                     <div class="box-text note" label="Nota">
-                                        <p>La fórmula queda como: <span class="excel-form">=B4/AVERAGE(Datos!D2:D126)*100</span></p>
+                                        <p>La fórmula queda como: <span
+                                                class="excel-form">=B4/AVERAGE(Datos!D2:D126)*100</span></p>
                                         <p>Donde:</p>
                                         <ul>
-                                            <li>B4 representa la celda donde tienes calculada la desviación estándar.</li>
-                                            <li>AVERAGE(Datos!D2:D126), es la función con la que se calcula la tasa promedio para el año 2015.</li>
+                                            <li>B4 representa la celda donde tienes calculada la desviación estándar.
+                                            </li>
+                                            <li>AVERAGE(Datos!D2:D126), es la función con la que se calcula la tasa
+                                                promedio para el año 2015.</li>
                                             <li>100 es la constante por la cual se multiplica el resultado.</li>
                                         </ul>
                                     </div>
@@ -271,7 +331,11 @@
                                 <div class="col-2">
                                     <div id="point_img6">
                                         <div class="box_l">
-                                            <div class="note_pointer_left note_7"><div class="tooltip" title="Esta es la fórmula para calcular el coeficiente de variación.">7</div></div>
+                                            <div class="note_pointer_left note_7">
+                                                <div class="tooltip"
+                                                    title="Esta es la fórmula para calcular el coeficiente de variación.">
+                                                    7</div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -280,59 +344,72 @@
                         <li>
                             <div class="row">
                                 <div class="col-2">
-                                    <p>Para las estadísticas del año 2017 aplica las mismas fórmulas que en la columna de 2015</p>
+                                    <p>Para las estadísticas del año 2017 aplica las mismas fórmulas que en la columna
+                                        de 2015</p>
                                 </div>
                                 <div class="col-2">
                                     <img src="content/Imagen7.png" alt="Imagen 7">
                                 </div>
                             </div>
                         </li>
-                    </div>      
-                      <div class="box-text important" label="¡interpretemos los resultados!">
-                          <ul>
-                              <li>¿Para cada año, puedes sospechar sobre diferencias entre los municipios en las tasas de mortalidad?</li>
-                              <li>Comparando los dos años, ¿evidencias una tendencia de aumento o disminución en las diferencias del riesgo de mortalidad entre municipios?</li>
-                          </ul>
-                      </div>
-                      <div class="box-text connection">
-                          <p>Ahora pasemos al tercer paso, para explorar la magnitud de las inequidades geográficas. Haz clic en siguiente para continuar.</p>
-                      </div>
+                    </div>
+                    <div class="box-text important" label="¡interpretemos los resultados!">
+                        <ul>
+                            <li>¿Para cada año, puedes sospechar sobre diferencias entre los municipios en las tasas de
+                                mortalidad?</li>
+                            <li>Comparando los dos años, ¿evidencias una tendencia de aumento o disminución en las
+                                diferencias del riesgo de mortalidad entre municipios?</li>
+                        </ul>
+                    </div>
+                    <div class="box-text connection">
+                        <p>Ahora pasemos al tercer paso, para explorar la magnitud de las inequidades geográficas. Haz
+                            clic en siguiente para continuar.</p>
+                    </div>
                 </div>
             </section>
-            <section id="pag-tercero" ptitle="3. Tercer paso: Exploración de la magnitud de las inequidades geográficas">
+            <section id="pag-tercero"
+                ptitle="3. Tercer paso: Exploración de la magnitud de las inequidades geográficas">
                 <h2 class="page-title"></h2>
                 <div class="subpage">
                     <div class="box-text important" label="¡Atención!">
-                        <p>Es altamente recomendable que antes de utilizar cualquiera de las técnicas disponibles para cuantificar las inequidades en salud te familiarices con los datos.</p>
+                        <p>Es altamente recomendable que antes de utilizar cualquiera de las técnicas disponibles para
+                            cuantificar las inequidades en salud te familiarices con los datos.</p>
                     </div>
-                    <p>Por ello, vamos a practicar diferentes formas. Comencemos explorando las tasas de mortalidad de acuerdo a los valores del estratificador de equidad (IPM). </p>
-                    <p>Lo primero es ordenar la base de datos según los valores del IPM. Para esto, la base de datos en el archivo de Excel será ordenada de la peor situación a la mejor situación socioeconómica. </p>
-                    <p>Es importante tener en cuenta que, dependiendo de la orientación del indicador, la "peor situación" puede corresponder a sus valores más bajos (por ejemplo, el índice de desarrollo humano), en cuyo caso el ordenamiento se hace de menor a mayor. Cuando la "peor situación" corresponde a los valores más altos del estratificador de equidad (por ejemplo, el índice de pobreza multidimensional), el ordenamiento se hace de mayor a menor.  </p>
+                    <p>Por ello, vamos a practicar diferentes formas. Comencemos explorando las tasas de mortalidad de
+                        acuerdo a los valores del estratificador de equidad (IPM). </p>
+                    <p>Lo primero es ordenar la base de datos según los valores del IPM. Para esto, la base de datos en
+                        el archivo de Excel será ordenada de la peor situación a la mejor situación socioeconómica. </p>
+                    <p>Es importante tener en cuenta que, dependiendo de la orientación del indicador, la "peor
+                        situación" puede corresponder a sus valores más bajos (por ejemplo, el índice de desarrollo
+                        humano), en cuyo caso el ordenamiento se hace de menor a mayor. Cuando la "peor situación"
+                        corresponde a los valores más altos del estratificador de equidad (por ejemplo, el índice de
+                        pobreza multidimensional), el ordenamiento se hace de mayor a menor. </p>
                     <p>Para lograrlo debes seguir este paso a paso:</p>
-                    <div class="ctrl-pagination" data-layer-height="310px" data-labelcurrent="true" >
+                    <div class="ctrl-pagination" data-layer-height="310px" data-labelcurrent="true">
                         <li>
-                          <div class="row">
-                              <div class="col-2">
-                                  <p>Selecciona todas las filas y columnas que contienen los datos.</p>
-                                  <p>En el Menú Data (Datos) haz clic sobre el botón Sort (Ordenar).</p>
-                              </div>
-                              <div class="col-2">
-                                  <img src="content/Imagen8.png" alt="Imagen 8">
-                              </div>
-                          </div>
+                            <div class="row">
+                                <div class="col-2">
+                                    <p>Selecciona todas las filas y columnas que contienen los datos.</p>
+                                    <p>En el Menú Data (Datos) haz clic sobre el botón Sort (Ordenar).</p>
+                                </div>
+                                <div class="col-2">
+                                    <img src="content/Imagen8.png" alt="Imagen 8">
+                                </div>
+                            </div>
                         </li>
                         <li>
                             <div class="row">
                                 <div class="col-2">
                                     <p>En el campo Sort by (Ordenar por) selecciona Estratificador de equidad (IPM).</p>
-                                    <p>En el campo Order (Criterio de ordenación) selecciona Largest to smallest (De mayor a menor).</p>
+                                    <p>En el campo Order (Criterio de ordenación) selecciona Largest to smallest (De
+                                        mayor a menor).</p>
                                 </div>
                                 <div class="col-2">
                                     <img src="content/Imagen9.png" alt="Imagen 9">
                                 </div>
                             </div>
-                          </li>
-                          <li>
+                        </li>
+                        <li>
                             <div class="row">
                                 <div class="col-2">
                                     <p>La base de datos debe verse como en la imagen:</p>
@@ -341,70 +418,806 @@
                                     <img src="content/Imagen10.png" alt="Imagen 10">
                                 </div>
                             </div>
-                          </li>
+                        </li>
                     </div>
-                    <p>El objetivo de calcular métricas de brecha de desigualdad socioeconómica en salud es realizar una comparación del nivel de mortalidad entre los municipios más pobres y los municipios más ricos. Dado el gran volumen de municipios, lo más pertinente es convertir la variable IPM en una variable con valores ordinales que permita contrastar los municipios  con menos riqueza con aquellos con más riqueza.<sup class="tooltip" title="En caso de contar con menos de 10 municipios, es recomendable omitir este paso y utilizar a los municipios extremos para los cálculos, esto es, comparando el municipio más rico con el municipio más pobre.">1</sup>1</p>
-                    <p>Para esto transformaremos la variable IPM en una nueva variable ordinal utilizando los quintiles, la cual divide la distribución de los datos de IPM en cinco (5) grupos de acuerdo a sus puntos de corte en los percentiles 20, 40, 60 y 80, denotados por P.20, P.40, P.60, P.80.</p>
-                    <p>Para la variable IPM, la cual fue ordenada de MAYOR A MENOR, los grupos se crean de la siguiente forma:</p>
+                    <p>El objetivo de calcular métricas de brecha de desigualdad socioeconómica en salud es realizar una
+                        comparación del nivel de mortalidad entre los municipios más pobres y los municipios más ricos.
+                        Dado el gran volumen de municipios, lo más pertinente es convertir la variable IPM en una
+                        variable con valores ordinales que permita contrastar los municipios con menos riqueza con
+                        aquellos con más riqueza.<sup class="tooltip"
+                            title="En caso de contar con menos de 10 municipios, es recomendable omitir este paso y utilizar a los municipios extremos para los cálculos, esto es, comparando el municipio más rico con el municipio más pobre.">1</sup>1
+                    </p>
+                    <p>Para esto transformaremos la variable IPM en una nueva variable ordinal utilizando los quintiles,
+                        la cual divide la distribución de los datos de IPM en cinco (5) grupos de acuerdo a sus puntos
+                        de corte en los percentiles 20, 40, 60 y 80, denotados por P.20, P.40, P.60, P.80.</p>
+                    <p>Para la variable IPM, la cual fue ordenada de MAYOR A MENOR, los grupos se crean de la siguiente
+                        forma:</p>
                     <ul>
-                        <li>Grupo 1 (más pobres): municipios con valores de IPM  mayores a P.80.</li>
-                        <li>Grupo 2: municipios con valores de IPM  mayores que P.60 y menores o iguales que P.80.</li>
-                        <li>Grupo 3: municipios con valores de IPM  mayores que P.40 y menores o iguales que P.60.</li>
-                        <li>Grupo 4: municipios con valores de IPM  mayores que P.20 y menores o iguales que P.40.</li>
-                        <li>Grupo 5 (más ricos): municipios con valores de IPM  menores o iguales a P.20.</li>
+                        <li>Grupo 1 (más pobres): municipios con valores de IPM mayores a P.80.</li>
+                        <li>Grupo 2: municipios con valores de IPM mayores que P.60 y menores o iguales que P.80.</li>
+                        <li>Grupo 3: municipios con valores de IPM mayores que P.40 y menores o iguales que P.60.</li>
+                        <li>Grupo 4: municipios con valores de IPM mayores que P.20 y menores o iguales que P.40.</li>
+                        <li>Grupo 5 (más ricos): municipios con valores de IPM menores o iguales a P.20.</li>
                     </ul>
-                    <p>Cuando el estratificador de equidad se ordena de MENOR A MAYOR, como por ejemplo se haría para el indicador Índice de Desarrollo Humano -IDH, los grupos se crean de la siguiente forma:</p>
+                    <p>Cuando el estratificador de equidad se ordena de MENOR A MAYOR, como por ejemplo se haría para el
+                        indicador Índice de Desarrollo Humano -IDH, los grupos se crean de la siguiente forma:</p>
                     <ul>
-                        <li>Grupo 1 (menor ventaja social): municipios con valores del estratificador de equidad menores o iguales a P.20.</li>
-                        <li>Grupo 2: municipios con valores del estratificador de equidad mayores que P.20 y menores o iguales que P.40.</li>
-                        <li>Grupo 3: municipios con valores del estratificador de equidad mayores que P.40 y menores o iguales que P.60.</li>
-                        <li>Grupo 4: municipios con valores del estratificador de equidad mayores que P.60 y menores o iguales que P.80.</li>
-                        <li>Grupo 5 (mayor ventaja social): municipios con valores del estratificador de equidad mayores a P.80.</li>
+                        <li>Grupo 1 (menor ventaja social): municipios con valores del estratificador de equidad menores
+                            o iguales a P.20.</li>
+                        <li>Grupo 2: municipios con valores del estratificador de equidad mayores que P.20 y menores o
+                            iguales que P.40.</li>
+                        <li>Grupo 3: municipios con valores del estratificador de equidad mayores que P.40 y menores o
+                            iguales que P.60.</li>
+                        <li>Grupo 4: municipios con valores del estratificador de equidad mayores que P.60 y menores o
+                            iguales que P.80.</li>
+                        <li>Grupo 5 (mayor ventaja social): municipios con valores del estratificador de equidad mayores
+                            a P.80.</li>
                     </ul>
                     <p>Para llevar a cabo esta tarea en Excel realiza los siguientes pasos:</p>
+                    <div class="ctrl-pagination" data-layer-height="310px" data-labelcurrent="true">
+                        <li>
+                            <div class="row">
+                                <div class="col-2">
+                                    <p>En una nueva columna crea el título IMPq para la nueva variable con los quintiles
+                                        de IPM. <br>En la celda H2 escribe la fórmula como se indica en la imagen.
+                                        <br>Lo que esta fórmula realiza para cada uno de los valores de IPM es obtener
+                                        los puntos de corte para los percentiles .20, .40, .60, .80 y 1 a través de la
+                                        función PERCENTILE. INC, y luego busca su coincidencia con los valores
+                                        originales de IPM utilizando la función MATCH <br>Para equipos en español
+                                        utilizar: <span
+                                            class="excel-form">=COINCIDIR(K2,PERCENTILE.INC(E$2:E$1223,{5,4,3,2,1}/5),-1)</span>
+                                    </p>
+                                </div>
+                                <div class="col-2">
+                                    <img src="content/Imagen11.png" alt="Imagen 11">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-2">
+                                    <p>Como vemos, municipios con el valor de <b>IMPq =1</b> representa el grupo de
+                                        <b>municipios más pobres</b>, mientras que municipios con el valor de
+                                        <b>IMPq=5</b> el grupo de <b>municipios más ricos</b>.</p>
+                                    <p>Con el fin de conocer para cada quintil, el total de la población que representa
+                                        y la tasa ponderada de acuerdo al tamaño poblacional del quintil, utilizaremos
+                                        la plantilla de la hoja Medidas Simples plantilla, la cual resumirá el conjunto
+                                        de datos como muestra la imagen.</p>
+                                </div>
+                                <div class="col-2">
+                                    <img src="content/Imagen12.png" alt="Imagen 12">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-2">
+                                    <p>Vamos a completar las dos primeras columnas de la tabla con los datos de la hoja
+                                        de Datos.</p>
+                                    <p>Para esto utilizaremos una tabla dinámica que calcule la suma de de la población
+                                        para cada uno de los quintiles</p>
+                                    <p>Ubícate en cualquier celda sobre la base de datos de la hoja datos y haz clic
+                                        sobre el Menú Principal <i>Insert/Pivot Table</i>.</p>
+                                    <p>Aparecerá un cuadro de diálogo en el que harás clic en <i>OK</i> sin hacer ningún
+                                        cambio.</p>
+                                </div>
+                                <div class="col-2">
+                                    <div id="point_img13">
+                                        <div class="box_l">
+                                            <div class="note_pointer_left note_1">
+                                                <div class="tooltip" title="Haz clic sobre el Menú Principal.">1</div>
+                                            </div>
+                                            <div class="note_pointer_left note_2">
+                                                <div class="tooltip"
+                                                    title="Haz clic en este botón sin hacer ningún cambio.">2</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-2">
+                                    <p>Como resultado, tendrás una hoja adicional como la de la imagen.</p>
+                                    <p>En el cuadro de la izquierda estará la tabla dinámica en blanco y a la derecha se
+                                        mostrará la lista Campos de tabla la dinámica.</p>
+                                </div>
+                                <div class="col-2">
+                                    <img src="content/Imagen14.png" alt="Imagen 14">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-2">
+                                    <p>Ahora crea la tabla dinámica que tenga en las filas los quintiles de IPMq y como
+                                        medida resumen la suma de la población de los municipios en cada quintil para
+                                        los años 2015 y 2017.</p>
+                                    <p>Para esto trabaja en la lista de Campos de la tabla la dinámica: </p>
+                                    <ul>
+                                        <li>Arrastra la variable <b>IPMq</b> hasta el recuadro izquierdo inferior
+                                            llamado <b>Rows (Filas)</b>.</li>
+                                        <li>Arrastra la variable <b>Variable demográfica (2015 y 2017)</b> hasta el
+                                            recuadro derecho inferior llamado <b>Values (Valores)</b>.</li>
+                                    </ul>
+                                    <p>De forma predeterminada, los campos de tabla dinámica que se coloquen en el área
+                                        Valores se mostrarán como SUMA.</p>
+                                </div>
+                                <div class="col-2">
+                                    <div id="point_img15">
+                                        <div class="box_l">
+                                            <div class="note_pointer_right note_1">
+                                                <div class="tooltip" title="Arrastra la variable IPMq a este campo.">1
+                                                </div>
+                                            </div>
+                                            <div class="note_pointer_left note_2">
+                                                <div class="tooltip"
+                                                    title="Arrastra la variable demográfica (2015 y 2017) a este campo.">
+                                                    2</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-2">
+                                    <p>Automáticamente la tabla dinámica completa los resultados.</p>
+                                    <p>Cópialos y pégalos en las celdas respectivas de la hoja <i>Medidas Simples
+                                            Plantilla</i>.</p>
+                                </div>
+                                <div class="col-2">
+                                    <img src="content/Imagen16.png" alt="Imagen 16">
+                                    <img src="content/Imagen17.png" alt="Imagen 17">
+                                </div>
+                            </div>
+                        </li>
+                    </div>
+                    <div class="box-text connection">
+                        <p>Ahora vamos a calcular el valor de la tasa para los dos años disponibles, y para cada uno de
+                            los quintiles de IPM. Esto requiere estimar la tasa de mortalidad ponderada por el tamaño
+                            poblacional de cada quintil. </p>
+                    </div>
+                    <p>Para su cálculo agrega las siguientes columnas a la hoja de <i>Datos</i>:</p>
+                    <div class="box_media">
+                        <img src="content/Imagen18.png" alt="Imagen 18">
+                    </div>
+                    <div class="row">
+                        <div class="col-2">
+                            <p>Las columnas: <b>Peso de cada municipio al interior de cada quintil (2015 y 2017)</b>,
+                                corresponden a la estimación del peso poblacional que tiene cada municipio al interior
+                                de cada quintil.</p>
+                            <p>Para calcularlas, realiza el cociente entre la población del municipio y el total de
+                                población del quintil al que pertenece (dato que se encuentra en la hoja Medidas Simples
+                                plantilla).</p>
+                            <br>
+                            <div class="excel-form">=POBLACIÓN DE CADA MUNICIPIO / TOTAL POBLACIÓN DEL QUINTIL</div>
+                        </div>
+                        <div class="col-2">
+                            <p>Las dos siguientes columnas: <b>Promedio ponderado de la tasa (2015 y 2017)</b>
+                                contendrán el componente del promedio ponderado del indicador de salud para cada
+                                municipio.</p>
+                            <p>Para esto, calcula el producto entre el peso de población de cada municipio y el
+                                indicador de salud correspondiente.</p>
+                        </div>
+                    </div>
+                    <p>Para facilitar el ejercicio utiliza la función Filter (Filtro), con el cual podrás seleccionar
+                        los datos de cada quintil que vayas necesitando.</p>
+                    <div class="ctrl-pagination" data-layer-height="310px" data-labelcurrent="true">
+                        <li>
+                            <div class="row">
+                                <div class="col-2">
+                                    <p>Ubícate en la hoja Datos y activa la función Filter (Filtro). Para esto ubica el
+                                        cursor en cualquier celda de la fila de los títulos de la base de datos y haz
+                                        clic sobre el botón Filter (Filtro).</p>
+                                </div>
+                                <div class="col-2">
+                                    <div id="point_img19">
+                                        <div class="box_l">
+                                            <div class="note_pointer_right note_1">
+                                                <div class="tooltip"
+                                                    title="Ubica el cursor en cualquier celda de la fila de los títulos.">
+                                                    1</div>
+                                            </div>
+                                            <div class="note_pointer_left note_2">
+                                                <div class="tooltip" title="Haz clic en este botón.">2</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-2">
+                                    <div class="box-text note" label="Nota">
+                                        <p>Como aparece un botón al lado de cada una de las columnas. Estos botones te
+                                            permitirán seleccionar los municipios que necesitas en cada parte del
+                                            ejercicio.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <img src="content/Imagen20.png" alt="Imagen 20">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-2">
+                                    <p>Empieza haciendo los cálculos para los municipios del Quintil 1.</p>
+                                    <p>Selecciona entonces solo los municipios de este quintil. Para esto, ubícate en la
+                                        hoja Datos y haz clic sobre el botón de la columna IPMq y deja solo seleccionado
+                                        el número 1.</p>
+                                </div>
+                                <div class="col-2">
+                                    <img src="content/Imagen21.png" alt="Imagen 21">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-2">
+                                    <p>Comienza con la columna <b>Peso de cada municipio al interior de cada quintil
+                                            2015</b>.</p>
+                                    <p>Crea la fórmula como se muestra en la imagen.</p>
+                                    <div class="box-text important" label="Recuerda que">
+                                        <p>Es el cociente entre la población del municipio (Variable demográfica
+                                            2015-Población) y el total de población del quintil al que pertenece (dato
+                                            que se encuentra en la hoja Medidas Simples plantilla).</p>
+                                    </div>
+                                    <p>Repite la fórmula para todos los municipios del quintil 1.</p>
+                                    <p>Repite los mismos pasos para los municipios del quintil 2 al quintil 5.</p>
+                                </div>
+                                <div class="col-2">
+                                    <img src="content/Imagen22.png" alt="Imagen 22">
+                                    <div class="box-text example" label="Por ejemplo">
+                                        <p>para Vigía del Fuerte en el 2015 el cálculo</p>
+                                        <p class="excel-form">=F2/'Medidas Simples Plantilla'!$B$4</p>
+                                        <p>correspondería al cociente entre: <br>2165 (población en Vigia del Fuerte en
+                                            el 2015)/ 174715 (población 2015 de los municipios del quintil 1)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-2">
+                                    <div class="box-text important" label="Recuerda">
+                                        <ol>
+                                            <li>En la hoja Datos, filtra los municipios del quintil de interés.</li>
+                                            <li>Escribe la fórmula correspondiente: </li>
+                                        </ol>
+                                    </div>
+                                    <p class="excel-form"> =POBLACIÓN DE CADA MUNICIPIO / TOTAL POBLACIÓN DEL QUINTIL
+                                        RESPECTIVO</p>
+                                    <p>Finalmente repite estos mismos pasos para la columna <b>Peso de cada municipio al
+                                            interior de cada quintil 2017.</b></p>
+                                </div>
+                                <div class="col-2">
+                                    <img src="content/Imagen23.png" alt="Imagen 23">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-2">
+                                    <p>El siguiente paso consiste en calcular los resultados para las columnas
+                                        <b>Promedio ponderado de la tasa (2015 y 2017).</b></p>
+                                    <p>Para esto, calcula el producto entre el peso de población de cada municipio y la
+                                        columna con el indicador de salud correspondiente (tasa).</p>
+                                </div>
+                                <div class="col-2">
+                                    <img src="content/Imagen24.png" alt="Imagen 24">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-2">
+                                    <p>Finalmente completas la tabla de la hoja <i>Medidas Simple Plantilla</i>
+                                        calculando para cada quintil el promedio ponderado del indicador de salud
+                                        (tasa).</p>
+                                    <p>Para esto debes sumar todos los promedios ponderados de la tasa en cada quintil.
+                                    </p>
+                                    <p>Los pasos a seguir son los siguientes:</p>
+                                    <ol>
+                                        <li>En la hoja Datos, filtras los municipios de cada Quintil (1 al 5)</li>
+                                        <li>En la hoja <i>Medidas Simples Plantilla</i> calculas la suma de la columna
+                                            <b>Promedio ponderado de la tasa</b> para los municipios del quintil
+                                            respectivo.</li>
+                                    </ol>
+                                </div>
+                                <div class="col-2">
+                                    <img src="content/Imagen25.png" alt="Imagen 25">
+                                    <img src="content/Imagen26.png" alt="Imagen 26">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <p>El resultado queda:</p>
+                            <div class="box_media">
+                                <img src="content/Imagen27.png" alt="Imagen 27">
+                                <img src="content/Imagen28.png" alt="Imagen 28">
+                            </div>
+                        </li>
+                    </div>
+                    <div class="box-text important" label="¡Interpretemos los resultados!">
+                        <ul>
+                            <li>¿Qué puedes deducir?</li>
+                            <li>¿Hay diferencia entre los municipios más ricos y los más pobres en el riesgo de
+                                mortalidad?</li>
+                            <li>¿Los resultados cambian entre 2015 y 2017?</li>
+                        </ul>
+                    </div>
+                    <p>Para entender mejor los resultados es posible graficar la mortalidad por quintiles de IPM. En
+                        Excel lo haremos así:</p>
+                    <div class="row">
+                        <div class="col-2">
+                            <p>En la hoja <i>Medidas Simples Plantilla</i> selecciona la tabla con los datos de la
+                                mortalidad para los dos años.</p>
+                            <p>Haz clic en <i>Insertar Gráfico de barras</i> y elige la primera opción de gráfico que
+                                aparece.
+                            </p>
+                        </div>
+                        <div class="col-2">
+                            <img src="content/Imagen29.png" alt="Imagen 29">
+                        </div>
+                    </div>
+                    <p>Otra forma de responder a estas preguntas es utilizando las métricas de desigualdad. Ahora
+                        calcularemos e interpretaremos la brecha absoluta entre el Quintil 1 (más pobre) y el Quintil 5
+                        (más rico). Para esto haremos uso de la hoja en el archivo de Excel llamada Medidas Simples
+                        Plantilla.</p>
+                    <p>En esta plantilla, la diferencia absoluta se calcula a partir de la substracción de la tasa de
+                        mortalidad del quintil más pobre (q1) menos el riesgo de mortalidad del quintil más rico (q5).
+                        En cuanto a la razón de riesgos, o diferencia relativa, el grupo de referencia en el denominador
+                        es el quintil con los municipios más ricos (q5).</p>
+                    <div class="row">
+                        <div class="col-2">
+                            <p>La hoja Medidas Simples Plantilla calcula automáticamente la Brecha absoluta y relativa
+                                entre el Quintil 1 y el Quintil 5</p>
+                        </div>
+                        <div class="col-2">
+                            <img src="content/Imagen30.png" alt="Imagen 30">
+                            <p>De acuerdo a las estimaciones, durante los años 2015 y 2017 Colombia experimentó un
+                                ligero aumento de las desigualdades en sus riesgos de mortalidad absoluta. Los riesgos
+                                de mortalidad en los municipios más ricos tuvieron un leve aumento absoluto, mientras
+                                que en los municipios más pobres, se observó una ligera disminución absoluto.
+                                <br>Adicionalmente, cuando se comparan los municipios más pobres con los más ricos se
+                                observa que la diferencia en el riesgo de mortalidad es bajo y muy similar en ambos
+                                periodos.</p>
+                        </div>
+                    </div>
+                    <p>Para la interpretación puedes utilizar la siguiente estructura:</p>
+                    <cite>La diferencia absoluta entre tasa del grupo de municipios más pobres y el grupo de municipios
+                        más ricos es de XX puntos porcentuales.
+                        En términos relativos, el riesgo de mortalidad en el grupo de municipios más pobres es XXX veces
+                        mayor que el riesgo en el grupo de municipios más ricos.
+                    </cite>
+                    <div class="box-text important" label="¡Importante!">
+                        <p>Recuerda qué cambios importantes en periodos de tiempo son más notorios en espacios de tiempo
+                            de mínimo 5 años. En este caso los años analizados son muy próximos entre sí y por lo tanto
+                            los cambios no son muy fácilmente apreciables.</p>
+                    </div>
+                    <h3>Explorando la tendencia de las brechas con gráficos</h3>
+                    <p>Existen otros dos tipos de gráficos que pueden utilizarse para explorar si las brechas en el
+                        indicador de salud están aumentando o disminuyendo en el tiempo, el primero de ellos llamado
+                        Equiplot y el segundo, un gráfico de tendencia.
+                    </p>
+                    <p>Para crear estos gráficos debes cambiar el orden de la tabla, de manera que en las filas tengas
+                        los años, y en las columnas los quintiles. En Excel haces este cambio utilizando el botón
+                        Transponer.</p>
+                    <div class="text-image right">
+                        <div class="box_media">
+                            <img src="content/Imagen31.png" alt="Imagen 31">
+                        </div>
+                        <p>Selecciona el rango de datos de la tabla de mortalidad, incluidas las etiquetas de filas y
+                            columnas, y presiona <i>Pegar/Pegado Especial/Valores</i>. Esto hará que la tabla se pegue
+                            sin las fórmulas, solo con los valores. <br>Seguidamente, selecciona el rango de datos de la
+                            tabla que acabas de pegar, incluidas las etiquetas de filas y columnas, y presiona Ctrl+C.
+                            Haz clic con el botón derecho en la primera celda donde quieres pegar los datos y elige
+                            <b>Transponer</b>. <br> Compara las dos tablas y observa el cambio.
+                        </p>
+                    </div>
+                    <p>El primer gráfico que haremos es el Equiplot. Este es un gráfico propuesto por The International
+                        Center for Equity in Health, de la Universidad Federal de Pelotas, Brasil, el cual permite un
+                        forma visual para representar y comunicar efectivamente datos sobre equidad para profesionales
+                        de salud, administradores de salud, tomadores de decisiones y el público en general.<sup
+                            class="tooltip"
+                            title="<a href='http://www.equidade.org/equiplot' target='_blank'>http://www.equidade.org/equiplot</a>"></sup>
+                    </p>
+                    <p>El gráfico Equiplot que vamos elaborar incluirá cada uno de los años que tenemos disponibles y
+                        sus estimados para los quintiles extremos de pobreza (q1 y q5). Cada línea representará un año y
+                        cada círculo representará el estimado de la tasa del quintil 1 y 5.
+                    </p>
+                    <p>Para eso, necesitas organizar la tabla tal y como se indica a continuación:
+                    </p>
+                    <div class="text-image right">
+                        <div class="box_media">
+                            <img src="content/Imagen32.png" alt="Imagen 32">
+                        </div>
+                        <p>Edita la tabla para que sea igual a la del ejemplo <br>Con esto, tienes la tabla preparada
+                            para generar el Equiplot. Este gráfico se construye utilizando el software Stata v14.0.</p>
+                    </div>
+                    <div class="ctrl-pagination" data-layer-height="310px" data-labelcurrent="true">
+                        <li>
+                            <div class="row">
+                                <div class="col-2">
+                                    <p>Abre Stata</p>
+                                    <p>En la línea de comandos copia y pega la siguiente sintaxis</p>
+                                    <p class="excel-form">net install equiplot, from("http://www.equidade.org/files")
+                                    </p>
+                                </div>
+                                <div class="col-2">
+                                    <img src="content/Imagen33.png" alt="Imagen 33">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-2">
+                                    <p>Ahora copia en Stata la tabla con los datos que vas a graficar.</p>
+                                    <p>En Excel selecciona el rango de datos con la tabla de mortalidad, incluidas las
+                                        etiquetas de filas y columnas, y presiona <i>Ctrl+C.</i></p>
+                                </div>
+                                <div class="col-2">
+                                    <img src="content/Imagen34.png" alt="Imagen 34">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-2">
+                                    <p>Regresa a Stata y haz clic sobre el botón Data Editor.</p>
+                                </div>
+                                <div class="col-2">
+                                    <img src="content/Imagen35.png" alt="Imagen 35">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-2">
+                                    <p>Haz clic sobre la primera celda y presiona Ctrl+V.</p>
+                                    <p>Haz clic en el cuadro de diálogo que aparece aceptando que la primera fila
+                                        contiene el nombre de las columnas</p>
+                                </div>
+                                <div class="col-2">
+                                    <img src="content/Imagen36.png" alt="Imagen 36">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-2">
+                                    <p>Los datos han sido copiados como una base de datos en Stata.</p>
+                                    <p>A la derecha estará el cuadro de Variables con su respectivo panel de Propiedades
+                                        <i>(Properties)</i>.</p>
+                                </div>
+                                <div class="col-2">
+                                    <img src="content/Imagen37.png" alt="Imagen 37">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-2">
+                                    <p>Antes de cerrar esta ventana, vamos a hacer que la variable q1 tenga como
+                                        etiqueta: Municipios más pobres, y la variable q5 Municipios más ricos.</p>
+                                    <p>Para esto, en el cuadro de la derecha llamado <b>Variables</b> haz clic sobre la
+                                        variable q1. Ahora en el cuadro inferior <b>Properties</b>, en la línea
+                                        <b>Label</b> escribe:
+                                        Q1 (Municipios más pobres)
+                                    </p>
+                                </div>
+                                <div class="col-2">
+                                    <img src="content/Imagen38.png" alt="Imagen 38">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-2">
+                                    <p>Ubícate ahora en la variable q5 y cambia el Label por Q5 (Municipios más ricos)
+                                    </p>
+                                    <p>Cierra la ventana.</p>
+                                </div>
+                                <div class="col-2">
+                                    <img src="content/Imagen39.png" alt="Imagen 39">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-2">
+                                    <p>En la línea de comandos utiliza el comando a continuación para producir el
+                                        gráfico Equiplot: </p>
+                                    <p class="excel-form">equiplot q1 q5, over(ano) sort(orden) xtitle(Tasa (por
+                                        10.000))</p>
+                                    <p>Finaliza con enter</p>
+                                </div>
+                                <div class="col-2">
+                                    <img src="content/Imagen40.png" alt="Imagen 40">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-2">
+                                    <p>Con el gráfico generado, puedes utilizar la herramienta de edición de gráfico de
+                                        Stata para personalizar nuestro Equiplot.</p>
+                                    <p>Haz clic en el botón para habilitar la herramienta de edición. <br> Permanezca en
+                                        este paso el tiempo que considere necesario para personalizar el gráfico con
+                                        alteraciones que desee, como por ejemplo para reducir el tamaño de los círculos,
+                                        cambiar la escala del eje X, etc.</p>
+                                </div>
+                                <div class="col-2">
+                                    <img src="content/Imagen41.png" alt="Imagen 41">
+                                    <img src="content/Imagen42.png" alt="Imagen 42">
+                                </div>
+                            </div>
+                        </li>
+                    </div>
+                    <div class="box-text important" label="Interpretación">
+                        <p>La Figura muestra que para todos los años, los municipios en el quintil intermedio presentan
+                            mayores riesgos de mortalidad por enfermedades cardiovasculares que los municipios más
+                            ricos. Además, la distancia entre los municipios más pobres y los más ricos claramente
+                            aumenta en el último año.</p>
+                    </div>
+                    <p>Finalmente,</p>
+                    <div class="ctrl-pagination" data-layer-height="310px" data-labelcurrent="true">
+                        <li>
+                            <div class="row">
+                                <div class="col-2">
+                                    <p>Utilizando la segunda tabla que pegaste, creas el gráfico de tendencia.</p>
+                                </div>
+                                <div class="col-2">
+                                    <img src="content/Imagen43.png" alt="Imagen 43">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-2">
+                                    <p>Selecciona la tabla y haz clic sobre el menú Insertar, Gráficos de líneas, y
+                                        elige la primera opción.</p>
+                                </div>
+                                <div class="col-2">
+                                    <img src="content/Imagen44.png" alt="Imagen 44">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-2">
+                                    <p>Edita el gráfico para que se intercambien los ejes (haz clic derecho sobre y
+                                        selecciona Select Data/Switch Row/Column)</p>
+                                </div>
+                                <div class="col-2">
+                                    <img src="content/Imagen45.png" alt="Imagen 45">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-2">
+                                    <p>La figura muestra la tendencia de los riesgos de mortalidad de acuerdo con
+                                        quintiles de pobreza. Se observa para los municipios de todos los quintiles una
+                                        reducción en los riesgos de mortalidad, excepto para los municipios del
+                                        quintil4, quienes presentaron los mayores aumentos.</p>
+                                </div>
+                                <div class="col-2">
+                                    <img src="content/Imagen47.png" alt="Imagen 47">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-2">
+                                    <p>en la brecha de las desigualdades para la mortalidad, esto no solo evidente para
+                                        los quintiles extremos de pobreza (q1vsq5), sino también para los quintiles
+                                        intermedios.</p>
+                                </div>
+                                <div class="col-2">
+                                    <img src="content/Imagen46.png" alt="Imagen 46">
+                                </div>
+                            </div>
+                        </li>
+                    </div>
+                    <div class="box-text connection">
+                        <p>Veamos ahora cómo en el cuarto paso, se calculan las métricas de gradiente de inequidad
+                            geográfica en salud. Haz clic en siguiente para continuar.</p>
+                    </div>
                 </div>
             </section>
+            <section id="pag-cuarto"
+                ptitle="4. Cuarto paso: Cálculo de métricas de gradiente de inequidad geográfica en salud">
+                <h2 class="page-title"></h2>
+                <div class="subpage">
+                    <p>Ahora calcularemos e interpretaremos el índice de desigualdad de la pendiente, una medida de
+                        gradiente de la desigualdad. Para esto utilizaremos como base la tabla que creamos en la hoja
+                        Medidas Simples Plantilla.</p>
+                    <div class="ctrl-pagination" data-layer-height="310px" data-labelcurrent="true">
+                        <li>
+                            <div class="row">
+                                <div class="col-2">
+                                    <p>Utilizando los resultados obtenidos a través de las medidas de brechas de
+                                        desigualdad, crea una tabla con las siguientes columnas en la hoja Medidas
+                                        Complejas Plantilla:</p>
+                                    <ol>
+                                        <li>Quintil</li>
+                                        <li>Población total en cada quintil</li>
+                                        <li>Frecuencia</li>
+                                        <li>Frecuencia acumulada</li>
+                                        <li>Ridit (punto medio)</li>
+                                    </ol>
+                                </div>
+                                <div class="col-2">
+                                    <img src="content/Imagen48.png" alt="Imagen 48">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-2">
+                                    <p>Vamos a calcular la frecuencia relativa en cada quintil. Para esto, primero debes
+                                        sumar las poblaciones de todos los quintiles para obtener la suma total y luego
+                                        dividir la población en cada quintil por la suma total.</p>
+                                    <p class="excel-form">=POBLACION DE CADA QUINTIL/ SUMA DE LAS POBLACIONES DE TODOS
+                                        LOS QUINTILES</p>
+                                </div>
+                                <div class="col-2">
+                                    <img src="content/Imagen49.png" alt="Imagen 49">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-2">
+                                    <p>Ahora calcula la frecuencia acumulada de cada quintil.</p>
+                                    <p>Para el quintil 1 la frecuencia acumulada es el mismo valor de la columna
+                                        frecuencia. Para los demás quintiles utilizaremos la fórmula: </p>
+                                    <p class="excel-form">=FRECUENCIA DE CADA GRUPO+FRECUENCIA ACUMULADA
+                                        DEL GRUPO ANTERIOR</p>
+                                </div>
+                                <div class="col-2">
+                                    <img src="content/Imagen50.png" alt="Imagen 50">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-2">
+                                    <p>Finalizamos la tabla calculando el Ridit (punto Medio) de cada quintil.</p>
+                                    <p>Para el primer quintil, el ridit es el valor de su frecuencia acumulada dividido
+                                        por 2
+                                    </p>
+                                </div>
+                                <div class="col-2">
+                                    <img src="content/Imagen51.png" alt="Imagen 51">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-2">
+                                    <p>La fórmula a utilizar para los demás quintiles es la siguiente:</p>
+                                    <p class="excel-form">=(FRECUENCIA ACUMULADA DE CADA QUINTIL + FRECUENCIA
+                                        ACUMULADA QUINTIL ANTERIOR) / 2</p>
+                                    <p>Repite los cálculos para el año 2017</p>
+                                </div>
+                                <div class="col-2">
+                                    <img src="content/Imagen52.png" alt="Imagen 52">
+                                </div>
+                            </div>
+                        </li>
+                    </div>
+                    <p>Ahora debes crear y llenar una nueva tabla con 7 columnas: </p>
+                    <div class="instruction desktop"></i>Pasa el mouse por cada columna para conocer su descripción
+                    </div>
+                    <img class="maphilight" src="content/Imagen53.png" usemap="#newmap" data-mark-stroke-color="B9E6F5"
+                        data-mark-fill-color="B9E6F5" data-mark-opacity="0.5" />
+                    <map name="newmap">
+
+                        <area class="tooltip"
+                            title="Indicador de salud de cada quintil (tasa obtenida en el paso anterior en el ejercicio de medidas de brecha)"
+                            shape="rect" coords="302,44,354,169" nohref="nohref" />
+                        <area class="tooltip" title="Ridit de cada quintil" shape="rect" coords="354,44,406,169"
+                            nohref="nohref" />
+                        <area class="tooltip" title="raíz cuadrada de la población total de cada quintil" shape="rect"
+                            coords="501,45,590,170" nohref="nohref" />
+                        <area class="tooltip"
+                            title="Ridit ponderado= es el producto del ponderador (W) por el Ridit (X)" shape="rect"
+                            coords="590,44,642,169" nohref="nohref" />
+                        <area class="tooltip" title="Indicador de salud ponderado= es el producto del ponderador (W) por
+                        el indicador de salud de cada quintil (Y)" shape="rect" coords="642,45,694,169"
+                            nohref="nohref" />
+                        <area class="tooltip" title="Población total en cada quintil" shape="rect"
+                            coords="406,44,501,170" nohref="nohref" />
+                        <area class="tooltip" title="Columna Quintil" shape="rect" coords="212,44,303,170"
+                            nohref="nohref" />
+                    </map>
+                    <p>Las fórmulas a utilizar se muestran en la siguiente imagen:</p>
+                    <div class="box_media">
+                        <img src="content/Imagen54.png" alt="Imagen 54">
+                    </div>
+                    <p>Recuerda repetir los cálculos para el año 2017</p>
+                    <div class="box_media">
+                        <img src="content/Imagen55.png" alt="Imagen 55">
+                    </div>
+                    <p>Estas tablas son el insumo base para estimar el modelo de regresión que calculará el índice de desigualdad de la pendiente. Para esta regresión utilizaremos Excel, el complemento llamado <i>"Análisis de datos"</i>. Si no lo tienes instalado, sigue los siguientes pasos en <i>Excel</i>:</p>
+                    <div class="ctrl-pagination" data-layer-height="310px" data-labelcurrent="true">
+                        <li>
+                            <div class="row">
+                                <div class="col-2">
+                                    <p>Haz clic sobre Archivo/Opciones/Add Ins/Go. <br><br>
+                                        En el cuadro de diálogo selecciona las opciones que muestran la imagen y finaliza con OK:</p>
+                                </div>
+                                <div class="col-2">
+                                    <img src="content/Imagen56.png" alt="Imagen 56">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-2">
+                                    <p>Para calcular el índice de desigualdad de la pendiente En Excel haz clic en:</p>
+                                    <p>DATOS -> Análisis de datos -> Regresión</p>
+                                </div>
+                                <div class="col-2">
+                                    <img src="content/Imagen57.png" alt="Imagen 57">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-2">
+                                    <p>En el cuadro de diálogo, ingresa para el rango de Y la columna "(Y*W)". Para el rango de X ingresa dos columnas "W, y X*W".</p>
+                                    <p>Marca Constant is zero y selecciona donde ubicar los resultados (New worksheet).</p>
+                                </div>
+                                <div class="col-2">
+                                    <img src="content/Imagen58.png" alt="Imagen 58">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-2">
+                                    <p>El valor del “X VARIABLE 2” es el índice de la pendiente.</p>
+                                </div>
+                                <div class="col-2">
+                                    <img src="content/Imagen59.png" alt="Imagen 59">
+                                </div>
+                            </div>
+                            <div class="box-text important" label="Interpretación">
+                                <p>El signo negativo del coeficiente de “X2” indica que conforme se avanza en la escala social (desplazamiento hacia la derecha en “X”), la mortalidad por enfermedades cardiovasculares disminuye (la recta de regresión posee una pendiente negativa). La magnitud del coeficiente indica la diferencia entre la tasa del grupo de municipios menos pobres (Q5) con el más pobre (Q1). En este caso, hay un exceso de 2.6 muertes por cada 10,000 habitantes entre los municipios con mayor concentración de pobreza, considerando la información de todos los grupos y su peso poblacional.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-2">
+                                    <p>Realizando la regresión para el año 2017, tenemos</p>
+                                </div>
+                                <div class="col-2">
+                                    <img src="content/Imagen60.png" alt="Imagen 60">
+                                </div>
+                            </div>
+                            <div class="box-text important" label="Interpretación">
+                                <p>El signo negativo del coeficiente de “X2” indica que conforme se avanza en la escala social (desplazamiento hacia la derecha en “X”), la mortalidad por enfermedades cardiovasculares disminuye (la recta de regresión posee una pendiente negativa). La diferencia absoluta entre el grupo con menor nivel de educacion es de 155 muertes maternas por cada 100,000 nacidos vivos, respecto al grupo con mayor educación; considerando la información de todos los grupos y los pesos poblacionales de éstos.</p>
+                            </div>
+                        </li>
+                    </div>
+                    <h3 style="text-align: center;">¡BUEN TRABAJO!</h3>
+                </div>
+            </section>
+
             <section id="pag-bibliografia" ptitle="Bibliografía">
                 <h2 class="page-title"></h2>
-                <h3>Contenido adaptado de:</h3>
-                <ul class="bibliografia">
-                    <li>Programa Integración de Tecnologías a la Docencia (2010). Editar el perfil o la información
-                        personal. Banco de Objetos Virtuales de Aprendizaje – Universidad de Antioquia. Recuperado de <a
-                            href="http://aprendeenlinea.udea.edu.co/boa/contenidos.php/f61acedbc23ad2b03d76645b552a6fb4/300/1/contenido/"
-                            target="_blank">http://aprendeenlinea.udea.edu.co/boa/contenidos.php/f61acedbc23ad2b03d76645b552a6fb4/300/1/contenido/</a>
-                        el 17 de mayo de 2018</li>
-                    <li>Programa Integración de Tecnologías a la Docencia (2010). Perfil en Moodle. Banco de Objetos
-                        Virtuales de Aprendizaje – Universidad de Antioquia. Recuperado de <a
-                            href="http://aprendeenlinea.udea.edu.co/boa/contenidos.php/c7ed1707f74f204e722ad823598d25e6/208/1/contenido/"
-                            target="_blank">http://aprendeenlinea.udea.edu.co/boa/contenidos.php/c7ed1707f74f204e722ad823598d25e6/208/1/contenido/</a>
-                        el 17 de mayo de 2018
-                    </li>
-                    <li>Programa Integración de Tecnologías a la Docencia (2013). Editar perfil o información personal
-                        en Moodle 2.3. Banco de Objetos Virtuales de Aprendizaje – Universidad de Antioquia. Recuperado
-                        de <a
-                            href="http://aprendeenlinea.udea.edu.co/boa/contenidos.php/0cc79112fcd99fddc0233423a0923e24/945/1/contenido/"
-                            target="_blank">http://aprendeenlinea.udea.edu.co/boa/contenidos.php/0cc79112fcd99fddc0233423a0923e24/945/1/contenido/</a>
-                    </li>
-                    <li>Programa Integración de Tecnologías a la Docencia (2015). Cómo editar el perfil en Moodle 2.7.
-                        Banco de Objetos Virtuales de Aprendizaje – Universidad de Antioquia. Recuperado de <a
-                            href="http://aprendeenlinea.udea.edu.co/boa/contenidos.php/e77f6e2952c4215c8f50c0b91a4d4e25/1136/1/contenido/"
-                            target="_blank">http://aprendeenlinea.udea.edu.co/boa/contenidos.php/e77f6e2952c4215c8f50c0b91a4d4e25/1136/1/contenido/</a>
-                        el 17 de mayo de 2018</li>
-                    <li>Comunidad Moodle (2014). Campos de nombre adicionales. MoodleDocs. Recuperado de
-                        <a href="https://docs.moodle.org/all/es/Campos_de_nombre_adicionales"
-                            target=_blank>https://docs.moodle.org/all/es/Campos_de_nombre_adicionales</a> el 17 de mayo
-                        de 2018</li>
-                </ul>
-                <h3>Imágenes adaptadas de:</h3>
                 <ul>
-                    <li>Vectorpocket - Freepik.com. Recuperado de <a href="https://www.freepik.es/vector-gratis/conjunto-de-iconos-de-avatar-redondo-del-arte-pop-para-los-usuarios-de-las-redes-sociales-blogs-iconos-de-perfil_1442435.htm" target="_blank">https://www.freepik.es/vector-gratis/conjunto-de-iconos-de-avatar-redondo-del-arte-pop-para-los-usuarios-de-las-redes-sociales-blogs-iconos-de-perfil_1442435.htm</a> el 17 de mayo de 2018</li>
-                    <li>Vectorpocket - Freepik.com. Recuperado de <a href="https://www.freepik.es/vector-gratis/conjunto-de-iconos-de-avatar-redondo-del-arte-pop-para-los-usuarios-de-las-redes-sociales-blogs-iconos-de-perfil_1472051.htm" target="_blank">https://www.freepik.es/vector-gratis/conjunto-de-iconos-de-avatar-redondo-del-arte-pop-para-los-usuarios-de-las-redes-sociales-blogs-iconos-de-perfil_1472051.htm</a> el 17 de mayo de 2018</li>
-                    <li>Vectorpocket - Freepik.com. Recuperado de <a href="https://www.freepik.es/vector-gratis/conjunto-de-icono-de-avatar-redondo-del-arte-pop-para-los-usuarios-de-las-redes-sociales-blogs-iconos-de-perfil_1472063.htm" target="_blank">https://www.freepik.es/vector-gratis/conjunto-de-icono-de-avatar-redondo-del-arte-pop-para-los-usuarios-de-las-redes-sociales-blogs-iconos-de-perfil_1472063.htm</a> el 17 de mayo de 2018</li>
-                    <li>Vectorpocket - Freepik.com. Recuperado de <a href="https://www.freepik.es/vector-gratis/conjunto-de-iconos-de-avatar-redondo-del-arte-pop-para-los-usuarios-de-las-redes-sociales-blogs-iconos-de-perfil_1472059.htm" target="_blank">https://www.freepik.es/vector-gratis/conjunto-de-iconos-de-avatar-redondo-del-arte-pop-para-los-usuarios-de-las-redes-sociales-blogs-iconos-de-perfil_1472059.htm</a> el 17 de mayo de 2018</li>
-                    <li>Vectorpocket - Freepik.com. Recuperado de <a href="https://www.freepik.es/vector-gratis/conjunto-de-iconos-de-avatar-redondo-del-arte-pop-para-los-usuarios-de-las-redes-sociales-blogs-iconos-de-perfil_1472061.htm" target="_blank">https://www.freepik.es/vector-gratis/conjunto-de-iconos-de-avatar-redondo-del-arte-pop-para-los-usuarios-de-las-redes-sociales-blogs-iconos-de-perfil_1472061.htm</a> el 17 de mayo de 2018</li>
-                    <li>Vectorpocket - Freepik.com. Recuperado de <a href="https://www.freepik.es/vector-gratis/conjunto-de-iconos-de-avatar-redondo-del-arte-pop-para-los-usuarios-de-las-redes-sociales-blogs-iconos-de-perfil_1442400.htm" target="_blank">https://www.freepik.es/vector-gratis/conjunto-de-iconos-de-avatar-redondo-del-arte-pop-para-los-usuarios-de-las-redes-sociales-blogs-iconos-de-perfil_1442400.htm</a> el 17 de mayo de 2018</li>
-                    <li>Ddraw - Freepik.com. Recuperado de <a href="https://www.freepik.es/vector-gratis/avatares-de-mujeres-diferentes_1089194.htm" target="_blank">https://www.freepik.es/vector-gratis/avatares-de-mujeres-diferentes_1089194.htm</a> el 17 de mayo de 2018</li>
-                    <li>Ddraw - Freepik.com. Recuperado de <a href="https://www.freepik.es/vector-gratis/avatares-de-hombres-diferentes_1089198.htm" target="_blank">https://www.freepik.es/vector-gratis/avatares-de-hombres-diferentes_1089198.htm</a> el 17 de mayo de 2018</li>
+                    <li>Microsoft Excel ® <a href="https://products.office.com/es-co/excel" target="_blank">https://products.office.com/es-co/excel</a></li>
+                    <li>Stata 14.0 <a href="https://www.stata.com/stata14/" target="_blank">https://www.stata.com/stata14/</a></li>
                 </ul>
             </section>
             <section id="pag-creditos" ptitle="Créditos">
@@ -412,12 +1225,8 @@
                     <h2 class="page-title" style="text-align: center;"></h2>
                     <div>
                         <h3>Desarrollo de Contenidos</h3>
-                        <cite>Carolina Llanos Tobón<br />
-                            <i>Asesora en Formación e-learning</i></cite>
-                    </div>
-                    <div>
-                        <h3>Corrección de estilos</h3>
-                        <cite>Luisa Fernanda Mesa Tobón</cite>
+                        <cite>Beatriz Elena Caicedo Velásquez<br />
+                            <i>Profesora asociada. Universidad de Antioquia. Facultad nacional de salud pública</i></cite>
                     </div>
                     <div>
                         <h3>Asesoría Técnica y Diseño Instruccional</h3>
