@@ -373,6 +373,7 @@ dhbgApp.standard.start = function() {
     });
 
     $('.wf-content-controler').on('click', function(){
+        if($('.wf-content')){$('.wf-content').hide()}
         var $this = $(this);
         var w = $this.attr('data-property-width');
         var h = $this.attr('data-property-height');
