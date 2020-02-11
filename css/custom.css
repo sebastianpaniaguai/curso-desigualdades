@@ -338,7 +338,7 @@
     background-color: transparent;
     border: none;
     border-bottom: 1px solid;
-    width: 350px;
+    width: 370px;
     height: 25px;
 }
 
@@ -678,10 +678,16 @@
 .text-image.right .box_media {
     width: 300px;
     float: right;
+    margin-left: 35px;
 }
 .text-image.left .box_media {
     width: 300px;
     float: left;
+    margin-right: 35px;
+}
+
+#img8{
+    max-width: 500px;
 }
 
 img {
@@ -715,4 +721,11 @@ img {
 }
 .flexbox .box_media {
     flex-grow: 1;
+}
+
+li.sortable-item.ui-sortable-handle {
+    min-height: 42px;
+}
+.droppable-dialog-text{
+    line-height: 30px;
 }

@@ -349,7 +349,8 @@ dhbgApp.standard.start = function() {
     // ==============================================================================================
     $('.wf-content').each(function() {
         var $this = $(this);
-
+        console.log($this);
+        
         var style = '';
         if ($this.attr('data-property-width')) {
             style += 'width:' + $this.attr('data-property-width') + ';';
@@ -372,7 +373,8 @@ dhbgApp.standard.start = function() {
         $this.hide();
     });
 
-    $('.wf-content-controler').on('click', function(){
+    $('.wf-content-controler').on('click', function(){        
+        if($('.wf-content')){$('.wf-content').hide()}
         var $this = $(this);
         var w = $this.attr('data-property-width');
         var h = $this.attr('data-property-height');
