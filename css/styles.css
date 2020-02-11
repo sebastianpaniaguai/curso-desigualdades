@@ -2235,7 +2235,7 @@ ul.menu.horizontal>li:nth-child(7) {
 
 .top-menu-icons {
     background-image: url(../img/sprite_iconos_superior.png);
-    background-size: 500%;
+    background-size: 600%;
     background-repeat: no-repeat;
     background-position: 0 0;
     width: 35px;
@@ -2246,10 +2246,11 @@ ul.menu.horizontal>li:nth-child(7) {
     margin-left: 3px;
 }
 ul.menu.horizontal>li:nth-child(3) .top-menu-icons {background-position: 0 0;}
-ul.menu.horizontal>li:nth-child(4) .top-menu-icons {background-position: 27% 0;}
-ul.menu.horizontal>li:nth-child(5) .top-menu-icons {background-position: 54% 0;}
-ul.menu.horizontal>li:nth-child(6) .top-menu-icons {background-position: 79% 0;margin-left: 0;}
-ul.menu.horizontal>li:nth-child(7) .top-menu-icons {background-position: 105% 0;margin-left: 0;}
+ul.menu.horizontal>li:nth-child(4) .top-menu-icons {background-position: 20% 0;}
+ul.menu.horizontal>li:nth-child(5) .top-menu-icons {background-position: 40% 0;}
+ul.menu.horizontal>li:nth-child(6) .top-menu-icons {background-position: 61% 0;margin-left: 0;}
+ul.menu.horizontal>li.minimized:nth-child(6) .top-menu-icons {background-position: 105% 0;margin-left: 0;}
+ul.menu.horizontal>li:nth-child(7) .top-menu-icons {background-position: 82% 0;margin-left: 0;}
 
 /********************************************************************************/
 /* RESULTS
